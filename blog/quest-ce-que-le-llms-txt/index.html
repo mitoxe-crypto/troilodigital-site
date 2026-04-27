@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Qu'est-ce que le llms.txt ? Guide PME — Troilo Digital</title>
+    <meta name="description" content="Le llms.txt est le nouveau robots.txt. Il permet a ChatGPT, Perplexity et Gemini de vous citer comme source. Explique simplement pour artisans et PMEs belges.">
+    <link rel="canonical" href="https://troilodigital.be/blog/quest-ce-que-le-llms-txt/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Qu'est-ce que le llms.txt ? Guide PME — Troilo Digital">
+    <meta property="og:description" content="Le llms.txt est le nouveau robots.txt. Il permet a ChatGPT, Perplexity et Gemini de vous citer comme source.">
+    <meta property="og:image" content="https://troilodigital.be/og-image.png">
+    <meta property="og:url" content="https://troilodigital.be/blog/quest-ce-que-le-llms-txt/">
+    <meta property="og:site_name" content="Troilo Digital">
+    <meta property="og:locale" content="fr_BE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Qu'est-ce que le llms.txt ? Guide pour PME — Troilo Digital">
+    <meta name="twitter:description" content="Le llms.txt est le nouveau robots.txt. Il permet a ChatGPT, Perplexity et Gemini de vous citer comme source. Explique simplement pour artisans et PMEs belges.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+    <meta property="article:published_time" content="2026-03-29T09:00:00+02:00">
+    <meta property="article:author" content="Michel Troilo">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Qu'est-ce que le llms.txt ? Le fichier qui rend votre site visible sur ChatGPT",
+      "description": "Le llms.txt est le nouveau robots.txt. Il permet a ChatGPT, Perplexity et Gemini de vous citer comme source.",
+      "url": "https://troilodigital.be/blog/quest-ce-que-le-llms-txt/",
+      "image": "https://troilodigital.be/og-image.png",
+      "datePublished": "2026-03-29T09:00:00+02:00",
+      "dateModified": "2026-03-29T09:00:00+02:00",
+      "author": {
+        "@type": "Person",
+        "name": "Michel Troilo",
+        "jobTitle": "Consultant SEO",
+        "url": "https://troilodigital.be/a-propos/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Troilo Digital",
+        "url": "https://troilodigital.be",
+        "logo": {"@type": "ImageObject", "url": "https://troilodigital.be/publisher-logo.png", "width": 600, "height": 60}
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://troilodigital.be/blog/quest-ce-que-le-llms-txt/"
+      },
+      "keywords": ["llms.txt", "visibilité ChatGPT site web", "SEO AI", "artisans Wallonie"],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".article-intro", "h2", ".article-body"]
+      },
+      "inLanguage": "fr-BE"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://troilodigital.be/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Qu'est-ce que le llms.txt ?", "item": "https://troilodigital.be/blog/quest-ce-que-le-llms-txt/"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1.5rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease, cubic-bezier(0.4,0,0.2,1)); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        .article-header { padding: 8rem clamp(1.5rem,5vw,4rem) 3rem; text-align: center; }
+        .category-tag { display: inline-block; background: var(--accent-dim); color: var(--accent); font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 100px; margin-bottom: 1.75rem; border: 1px solid rgba(232,197,71,0.12); opacity: 0; }
+        .article-header h1 { font-family: var(--font-display); max-width: 760px; margin: 0 auto 1.25rem; font-size: clamp(1.8rem, 4.5vw, 2.8rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.04em; opacity: 0; transform: translateY(20px); }
+        .article-meta { font-size: 0.82rem; color: var(--gray); display: flex; align-items: center; justify-content: center; gap: 0.75rem; flex-wrap: wrap; opacity: 0; font-family: var(--font-mono); letter-spacing: 0.03em; }
+        .article-meta a { color: var(--accent); text-decoration: none; }
+
+        .breadcrumb-bar { padding: 0.85rem clamp(1.5rem,5vw,4rem); border-bottom: 1px solid var(--border); background: rgba(20,20,20,0.5); }
+        .breadcrumb { max-width: 720px; margin: 0 auto; font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); display: flex; align-items: center; gap: 0.4rem; letter-spacing: 0.04em; }
+        .breadcrumb a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb .sep { opacity: 0.3; }
+        .breadcrumb .current { color: var(--white); }
+
+        .article-wrap { max-width: 720px; margin: 0 auto; padding: 3rem clamp(1.5rem,5vw,4rem) 5rem; }
+        .article-intro { font-size: 1.05rem; line-height: 1.8; color: rgba(245,245,240,0.7); margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border); }
+        .article-body p { font-size: 1rem; line-height: 1.8; color: rgba(245,245,240,0.75); margin-bottom: 1.25em; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--white); margin: 2.5rem 0 1rem; letter-spacing: -0.03em; line-height: 1.2; }
+        .article-body h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--white); margin: 1.75rem 0 0.75rem; letter-spacing: -0.02em; }
+        .article-body strong { font-weight: 700; color: var(--white); }
+        .article-body ul, .article-body ol { margin: 1rem 0 1.25rem 1.5rem; }
+        .article-body li { font-size: 1rem; line-height: 1.75; color: rgba(245,245,240,0.75); margin-bottom: 0.4rem; }
+        .article-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+        .article-body a:hover { opacity: 0.8; }
+        .article-body code { background: var(--accent-dim); padding: 0.15rem 0.4rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.85em; color: var(--accent); }
+        .article-body hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+        .callout { background: var(--accent-dim); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; padding: 1.25rem 1.5rem; margin: 1.75rem 0; }
+        .callout p { margin-bottom: 0; font-size: 0.97rem; color: var(--white); font-weight: 500; }
+        .callout strong { color: var(--accent); }
+
+        .honest-box { background: rgba(251,146,60,0.05); border: 1px solid rgba(251,146,60,0.15); border-radius: 10px; padding: 1.5rem 1.75rem; margin: 2rem 0; }
+        .honest-box .honest-title { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: #fb923c; margin-bottom: 0.6rem; }
+        .honest-box p { font-size: 0.97rem; color: rgba(245,245,240,0.7); margin-bottom: 0; line-height: 1.7; }
+
+        .code-label { background: var(--surface); color: var(--accent); font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.5rem 1.1rem; border-radius: 10px 10px 0 0; display: flex; align-items: center; gap: 0.5rem; border: 1px solid var(--border); border-bottom: none; }
+        .code-label span.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); opacity: 0.5; }
+        .code-block { background: #0d0d0d; border-radius: 0 0 10px 10px; padding: 1.5rem; margin-bottom: 1.75rem; overflow-x: auto; border: 1px solid var(--border); border-top: none; }
+        .code-block code { font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.7; color: #e2e8f0; display: block; white-space: pre; }
+        .code-block .c-comment { color: #555; font-style: italic; }
+        .code-block .c-key { color: var(--accent); }
+        .code-block .c-val { color: #86efac; }
+        .code-block .c-section { color: #7dd3fc; font-weight: 700; }
+        .code-block .c-url { color: #c084fc; text-decoration: underline; }
+
+        .cta-box { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 3rem 2.5rem; text-align: center; margin: 3rem 0; }
+        .cta-eyebrow { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.85rem; }
+        .cta-box h2 { font-family: var(--font-display); font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: 900; color: var(--white); margin-bottom: 1rem; letter-spacing: -0.04em; line-height: 1.15; }
+        .cta-box p { color: var(--gray-light); font-size: 1rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+        .btn-accent { display: inline-block; background: var(--accent); color: var(--black); padding: 0.85rem 2rem; border-radius: 100px; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: opacity 0.2s, transform 0.15s; }
+        .btn-accent:hover { opacity: 0.88; transform: translateY(-1px); }
+        .cta-price { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray); margin-top: 1rem; letter-spacing: 0.04em; }
+
+        .author-box { display: flex; gap: 1.25rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; margin: 3rem 0; }
+        .author-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--black); border: 2px solid rgba(232,197,71,0.2); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.1rem; font-weight: 900; color: var(--accent); flex-shrink: 0; }
+        .author-info h3 { font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 0.15rem; }
+        .author-info .author-title { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .author-info p { font-size: 0.85rem; color: var(--gray-light); line-height: 1.6; margin: 0; }
+
+        .related-section { margin: 0 0 3rem; }
+        .related-section h3 { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 400; color: var(--accent); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.85rem; }
+        .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1.25rem; text-decoration: none; transition: border-color 0.3s; }
+        .related-card:hover { border-color: rgba(232,197,71,0.2); }
+        .related-card .rc-tag { font-family: var(--font-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.35rem; }
+        .related-card .rc-title { font-size: 0.875rem; font-weight: 600; color: var(--white); line-height: 1.4; font-family: var(--font-display); }
+
+        .footer { padding: 2rem clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer span { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer-links-row { display: flex; gap: 1.5rem; }
+        .footer a { color: var(--gray); text-decoration: none; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.05em; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .article-header { padding: 7rem 1.5rem 2rem; }
+            .article-wrap { padding: 2rem 1.25rem 4rem; }
+            .cta-box { padding: 2rem 1.5rem; }
+            .author-box { flex-direction: column; }
+            .footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="../../" class="nav-logo">Troilo Digital</a>
+        <div class="nav-right">
+            <a href="../../#work" class="nav-link">Services</a>
+            <a href="../../#pricing" class="nav-link">Tarifs</a>
+            <a href="../" class="nav-link">Blog</a>
+            <a href="../../#contact" class="nav-cta">Contact</a>
+        
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    </nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="../../#work" onclick="closeMobileNav()">Services</a>
+    <a href="../../#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="../../blog/">Blog</a>
+    <a href="../../a-propos/">A propos</a>
+    <a href="../../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+    <header class="article-header">
+        <div class="category-tag">AI-Ready SEO</div>
+        <h1>Qu'est-ce que le llms.txt ? <br>Le fichier qui rend votre site visible sur ChatGPT</h1>
+        <div class="article-meta">
+            <span>Par <a href="../../a-propos/">Michel Troilo</a></span>
+            <span>&middot;</span>
+            <span>29 mars 2026</span>
+            <span>&middot;</span>
+            <span>6 min de lecture</span>
+        </div>
+    </header>
+
+    <div class="breadcrumb-bar">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="../../">Accueil</a>
+            <span class="sep">&rsaquo;</span>
+            <a href="../">Blog</a>
+            <span class="sep">&rsaquo;</span>
+            <span class="current">Qu'est-ce que le llms.txt ?</span>
+        </nav>
+    </div>
+
+    <main>
+        <div class="article-wrap">
+
+            <p class="article-intro">
+                Vous avez peut-etre travaille dur pour apparaître dans Google. Mais la prochaine fois qu'un client tape sa question dans ChatGPT, Perplexity ou Gemini &mdash; est-ce que c'est votre nom qui ressort ? Aujourd'hui, une grande partie des recherches locales passent par les IA generatives. Et la plupart des artisans et PMEs wallonnes sont completement absents de ces résultats. Le fichier <strong>llms.txt</strong> est l'une des réponses a ce problème.
+            </p>
+
+            <div class="article-body">
+
+                <h2>Ce que les gens font vraiment en 2026</h2>
+                <p>Imaginez un habitant de Namur qui cherche un plombier en urgence. Il y a quelques annees, il tapait "plombier Namur" dans Google. Aujourd'hui, il demande a ChatGPT : <em>"Quel est le meilleur plombier a Namur disponible rapidement ?"</em></p>
+                <p>La diffèrence est enorme. Google vous trouve si vous êtes bien reference. ChatGPT, lui, ne vous cite que s'il a suffisamment d'informations structurees sur vous pour avoir confiance. Et c'est la qu'intervient le fichier llms.txt.</p>
+
+                <div class="callout">
+                    <p><strong>Chiffre cle :</strong> En 2025, plus de 40 % des internautes utilisent régulièrement une IA generative pour leurs recherches locales. Cette proportion depasse 60 % chez les 18&ndash;35 ans.</p>
+                </div>
+
+                <h2>C'est quoi exactement un fichier llms.txt ?</h2>
+                <p>Le llms.txt est un fichier texte simple, place a la racine de votre site web &mdash; comme <code>troilodigital.be/llms.txt</code>. Il contient des informations structurees sur votre activité : votre nom, vos services, votre zone géographique, vos questions fréquentes et vos liens importants.</p>
+                <p>C'est un guide que vous rédigez specifiquement pour les robots d'intelligence artificielle. Vous leur dites, en clair : "Voici qui je suis, ce que je fais, pour qui je travaille, et pourquoi vous pouvez me citer avec confiance."</p>
+                <p>Le format a ete propose en 2024 par Jeremy Howard, fondateur de fast.ai, et a rapidement ete adopte par les editeurs de contenu qui voulaient être bien representes dans les réponses des IA.</p>
+
+                <h2>Le llms.txt, c'est le robots.txt des intelligences artificielles</h2>
+                <p>Vous connaissez probablement le fichier <strong>robots.txt</strong> &mdash; ce petit fichier qui indique a Google quelles pages de votre site il peut explorer. C'est devenu un standard depuis les annees 90.</p>
+                <p>Le llms.txt joue un role similaire, mais pour une nouvelle generation de lecteurs : les modeles de langage comme GPT-4o, Claude, Gemini, Perplexity.</p>
+
+                <div class="callout">
+                    <p><strong>L'analogie :</strong> robots.txt dit a Google "voici ce que tu peux indexer". llms.txt dit aux IA "voici comment comprendre et citer mon activité de manière precise".</p>
+                </div>
+
+                <p>Sans ce fichier, une IA peut quand même trouver des informations sur vous &mdash; mais elle doit les interpréter depuis votre site, vos avis Google, vos réseaux sociaux. Avec un bon llms.txt, vous contrôlez le message.</p>
+
+                <h2>Qu'est-ce qu'on met dans un llms.txt ?</h2>
+                <p>Un bon fichier llms.txt pour un artisan ou une PME contient généralement :</p>
+                <ul>
+                    <li><strong>L'identite de l'entreprise</strong> &mdash; nom, adresse, zone d'intervention, téléphone</li>
+                    <li><strong>Une description claire des services</strong> &mdash; ce que vous faites, pour qui, et comment vous vous diffèrenciez</li>
+                    <li><strong>Des mots-cles strategiques</strong> &mdash; les termes que vos clients utilisent pour vous chercher</li>
+                    <li><strong>Une FAQ synthetique</strong> &mdash; les questions les plus posees, avec vos réponses</li>
+                    <li><strong>Les liens importants</strong> &mdash; page de contact, page de services, avis clients</li>
+                    <li><strong>Vos atouts concurrentiels</strong> &mdash; ce qui vous distingue de la concurrence locale</li>
+                </ul>
+                <p>Le tout est redige en langage naturel, clairement structure, sans code complexe.</p>
+
+                <h2>Exemple concret : le llms.txt d'un artisan plombier</h2>
+                <p>Voici a quoi ressemble un llms.txt bien construit pour un plombier installé a Liège :</p>
+
+                <div class="code-label"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp;&nbsp;llms.txt &mdash; exemple</div>
+                <div class="code-block"><code><span class="c-comment"># Informations pour les modeles de langage (LLMs)</span>
+
+<span class="c-section">## Identite</span>
+<span class="c-key">Nom:</span> <span class="c-val">Dupont Plomberie</span>
+<span class="c-key">Type:</span> <span class="c-val">Artisan plombier agree, TPE familiale</span>
+<span class="c-key">Fondee:</span> <span class="c-val">1998</span>
+<span class="c-key">Zone d'intervention:</span> <span class="c-val">Liège, Seraing, Herstal, Vise, Blégny</span>
+<span class="c-key">Téléphone:</span> <span class="c-val">+32 4 XXX XX XX</span>
+<span class="c-key">Site web:</span> <span class="c-url">https://dupont-plomberie.be</span>
+
+<span class="c-section">## Services principaux</span>
+<span class="c-val">- Dépannage plomberie urgence 7j/7 a Liège
+- Installation chaudieres a condensation (gaz, mazout)
+- Remplacement boilers et chauffe-eaux
+- Debouchage canalisations
+- Detection et reparation de fuites
+- Renovation salles de bains completes</span>
+
+<span class="c-section">## FAQ</span>
+<span class="c-key">Q: Intervenez-vous le week-end ?</span>
+<span class="c-val">R: Oui, 7j/7 pour les urgences.</span>
+
+<span class="c-key">Q: Donnez-vous des devis gratuits ?</span>
+<span class="c-val">R: Oui, devis gratuit sous 30 min.</span></code></div>
+
+                <h2>Comment creer votre llms.txt ?</h2>
+                <p>Techniquement, c'est un simple fichier texte. Vous l'ouvrez avec le Bloc-notes, vous rédigez les informations selon la structure decrite ci-dessus, et vous l'enregistrez sous le nom <code>llms.txt</code>.</p>
+                <p>Ensuite, il doit être depose a la racine de votre site &mdash; au même endroit que votre <code>robots.txt</code> et votre <code>sitemap.xml</code>. Ce fichier doit être accessible a l'adresse <code>votresite.be/llms.txt</code>.</p>
+                <p>Le plus difficile n'est pas la technique : c'est de rediger des informations precises, completes et strategiques. C'est pour ca que <a href="../../#work">dans notre Audit Complet</a>, nous redigeons le llms.txt pour vous.</p>
+
+                <h2>Est-ce que le llms.txt garantit d'etre cite par ChatGPT ?</h2>
+
+                <div class="honest-box">
+                    <div class="honest-title">Reponse honnete</div>
+                    <p>Non, il n'y a aucune garantie. Les modeles d'IA comme ChatGPT ou Perplexity prennent leurs propres decisions sur quelles sources citer. Le llms.txt augmente vos chances, mais ne les assure pas a 100 %. C'est un signal de confiance parmi d'autres.</p>
+                </div>
+
+                <p>Ce qui est certain : sans llms.txt, vous laissez les IA interpréter votre activité depuis des sources que vous ne contrôlez pas. Avec un bon fichier, vous réduisez les risques d'erreur et vous maximisez la probabilité d'etre identifié comme une source fiable.</p>
+
+                <h2>Qui utilise déjà le llms.txt ? L'opportunité belge</h2>
+                <p>Aujourd'hui, les fichiers llms.txt sont surtout presents sur les sites de grandes entreprises technologiques. Anthropic en a un. Cloudflare en a un. Fast.ai en a un.</p>
+                <p>En Wallonie ? <strong>Quasi personne.</strong> Sur les centaines d'artisans et de PMEs que nous avons audites, moins de 2 % avaient un fichier llms.txt.</p>
+                <p>C'est une opportunité concrete. Si vous créez un llms.txt bien redige maintenant &mdash; pendant que vos concurrents locaux n'en ont pas &mdash; vous avez une longueur d'avance significative dans les réponses des IA.</p>
+
+                <hr>
+
+                <h2>En resume : ce que vous devez retenir</h2>
+                <ol>
+                    <li>Le llms.txt est un fichier texte simple, place a la racine de votre site.</li>
+                    <li>Il guide les IA (ChatGPT, Perplexity, Gemini) pour comprendre et citer votre activité.</li>
+                    <li>C'est l'equivalent du robots.txt &mdash; mais pour les intelligences artificielles.</li>
+                    <li>Il ne garantit pas d'etre cite, mais augmente significativement vos chances.</li>
+                    <li>Tres peu d'artisans belges en ont un &mdash; l'opportunité est reelle.</li>
+                    <li>La partie technique est simple ; la partie strategique fait toute la diffèrence.</li>
+                </ol>
+
+                <p>Si vous voulez savoir comment votre site se positionné face aux IA aujourd'hui, commencez par un <a href="../../#contact">audit gratuit</a>.</p>
+
+            </div>
+
+            <div class="cta-box">
+                <div class="cta-eyebrow">Audit Complet AI-Ready</div>
+                <h2>On créé votre llms.txt<br>et on optimise votre site pour les IA</h2>
+                <p>Dans notre Audit Complet, nous analysons votre visibilité sur Google ET sur les IA generatives. Nous redigeons votre llms.txt, vos schemas JSON-LD, et vous livrons un plan d'action clair sous 5 jours.</p>
+                <a href="../../#contact" class="btn-accent">Demander mon audit gratuit</a>
+                <p class="cta-price">Audit Complet à partir de 397&euro; &mdash; Inclus : llms.txt, Schema JSON-LD, 40+ points de contrôle</p>
+            </div>
+
+            <div class="author-box">
+                <div class="author-avatar">MT</div>
+                <div class="author-info">
+                    <h3>Michel Troilo</h3>
+                    <div class="author-title">Consultant SEO &amp; AI-Ready &mdash; Troilo Digital</div>
+                    <p>Spécialiste en référencement naturel pour artisans et PMEs en Wallonie. Base a Liège, j'interviens dans toute la Wallonie. <a href="tel:+32492222677">+32 492 222 677</a></p>
+                </div>
+            </div>
+
+            <div class="related-section">
+                <h3>Sur le même sujet</h3>
+                <div class="related-links">
+                    <a href="../pourquoi-votre-site-est-invisible-sur-google/" class="related-card"><div class="rc-tag">Guide SEO</div><div class="rc-title">7 raisons pour lesquelles votre site est invisible sur Google</div></a>
+                    <a href="../audit-seo-artisan-belgique/" class="related-card"><div class="rc-tag">SEO Local</div><div class="rc-title">Audit SEO pour artisans en Belgique</div></a>
+                    <a href="../comment-choisir-consultant-seo-artisan/" class="related-card"><div class="rc-tag">Guide</div><div class="rc-title">Comment choisir son consultant SEO artisan</div></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>&copy; 2026 Troilo Digital &mdash; SEO pour artisans wallons</span>
+        <div class="footer-links-row">
+            <a href="../../#work">Services</a>
+            <a href="../../#pricing">Tarifs</a>
+            <a href="../">Blog</a>
+            <a href="../../cgv/">CGV</a>
+            <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a>
+        </div>
+    </footer>
+
+    <script>
+        const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => lenis.raf(time * 1000));
+        gsap.ticker.lagSmoothing(0);
+        gsap.registerPlugin(ScrollTrigger);
+
+        const heroTl = gsap.timeline({ defaults: { ease: "power4.out" } });
+        heroTl
+            .to(".category-tag", { opacity: 1, duration: 0.5 }, 0.2)
+            .to(".article-header h1", { opacity: 1, y: 0, duration: 0.9 }, 0.4)
+            .to(".article-meta", { opacity: 1, duration: 0.6 }, 0.7);
+
+        gsap.utils.toArray(".callout, .honest-box, .code-label, .code-block, .cta-box, .author-box, .related-section").forEach(el => {
+            gsap.from(el, {
+                scrollTrigger: { trigger: el, start: "top 88%" },
+                y: 20, opacity: 0, duration: 0.6, ease: "power3.out"
+            });
+        });
+    </script>
+
+    <script src="/cookie-banner.js" defer></script>
+    <script defer src="/mobile-bar.js"></script><script defer src="/chatbot.js"></script>
+
+<script>
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+if(navBurger){navBurger.addEventListener('click',function(){navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navOverlay.classList.contains('open')?'hidden':'';});}
+function closeMobileNav(){if(navBurger){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';}}
+</script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+functionsDirectory = "/Users/mitch/Desktop/Claude/SEO/site/netlify/functions"
+functionsDirectoryOrigin = "config"
+headersOrigin = "config"
+redirectsOrigin = "config"
+plugins = []
+
+[build]
+publish = "/Users/mitch/Desktop/Claude/SEO/site"
+publishOrigin = "default"
+functions = "/Users/mitch/Desktop/Claude/SEO/site/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[functions]
+
+[functions."*"]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com api.fontshare.com; font-src fonts.gstatic.com cdn.fontshare.com; img-src 'self' data: images.unsplash.com www.facebook.com; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net unpkg.com www.googletagmanager.com www.clarity.ms scripts.clarity.ms connect.facebook.net; connect-src 'self' www.google-analytics.com region1.google-analytics.com www.clarity.ms www.facebook.com graph.facebook.com audits.troilodigital.be; frame-src api.leadconnectorhq.com www.facebook.com"
+
+[[headers]]
+for = "/*.webp"
+
+[headers.values]
+Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+for = "/*.svg"
+
+[headers.values]
+Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+for = "/*.png"
+
+[headers.values]
+Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+for = "/*.js"
+
+[headers.values]
+Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+for = "/llms.txt"
+
+[headers.values]
+Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+for = "/llms-full.txt"
+
+[headers.values]
+Content-Type = "text/plain; charset=utf-8"
+
+[[redirects]]
+from = "/mentions-l%C3%A9gales/"
+to = "/mentions-legales/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/mentions-légales/"
+to = "/mentions-legales/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/politique-de-confidentialit%C3%A9/"
+to = "/politique-de-confidentialite/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/politique-de-confidentialité/"
+to = "/politique-de-confidentialite/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "http://troilodigital.be/*"
+to = "https://troilodigital.be/:splat"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "http://www.troilodigital.be/*"
+to = "https://troilodigital.be/:splat"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/score-gratuit/merci/"
+to = "/score-gratuit/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/audit-seo-essentiel/"
+to = "/score-gratuit/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/audit-seo-essentiel"
+to = "/score-gratuit/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/agent-ia"
+to = "/agent-ia-artisan/?utm_source=cold&utm_medium=email&utm_campaign=agent-ia"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/lambermont"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=lambermont"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/lesbonstuyaux"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=lesbonstuyaux"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/vrancken"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=vrancken"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/chauffamax"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=chauffamax"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/dubois"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=dubois"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/barette"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=barette"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/htek"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=htek"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/dcsconcept"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=dcsconcept"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/debouchageliege"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=debouchageliege"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/gmservices"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=gmservices"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/chauffagesolution"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=chauffagesolution"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/chauffagiste-liege"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=chauffagiste-liege"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/depannage247"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=depannage247"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/hcenergy"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=hcenergy"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/edmpresti"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=edmpresti"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/mtcchauffage"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=mtcchauffage"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/vselec"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=vselec"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/btplus"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=btplus"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/heutz"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=heutz"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/diana"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=diana"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/d/ruwelec"
+to = "/audit-seo-complet/?utm_source=cold&utm_medium=email&utm_campaign=ruwelec"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]

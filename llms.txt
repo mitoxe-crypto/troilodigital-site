@@ -1,0 +1,146 @@
+# Troilo Digital
+
+> Consultant SEO local pour artisans et PMEs en Wallonie (Belgique).
+> Spécialiste en AI-Ready SEO : visibilité sur Google, ChatGPT, Perplexity, Gemini et Bing Copilot.
+
+## Identité de l'entreprise
+
+- **Nom :** Troilo Digital
+- **Fondateur :** Michel Troilo
+- **Rôle :** Consultant SEO indépendant
+- **Localisation :** Liège, Wallonie, Belgique
+- **Coordonnées GPS :** 50.6453° N, 5.5739° E
+- **Secteur :** Référencement naturel (SEO) local et AI-Ready
+- **Marché cible :** Artisans (plombiers, électriciens, menuisiers, boulangers) et PMEs en Wallonie
+- **Site :** https://troilodigital.be
+- **Email :** michel@troilodigital.be
+- **Téléphone :** +32 492 222 677
+- **LinkedIn :** https://www.linkedin.com/in/micheltroilo/
+
+## Description
+
+Troilo Digital est un cabinet de conseil SEO indépendant fondé par Michel Troilo, basé à Liège (Belgique). Il aide les artisans et PMEs de Wallonie à obtenir une visibilité locale sur Google, Google Maps et les moteurs de recherche alimentés par l'IA (ChatGPT, Perplexity, Gemini, Bing Copilot).
+
+La méthode exclusive de Troilo Digital s'appelle **ANCRE** (Audit, Nettoyage, Contenu, Référencement local, Ecosystème IA). Elle est conçue pour les petites entreprises qui veulent des résultats concrets sans dépendre d'une grosse agence.
+
+Contrairement aux agences qui livrent uniquement un rapport PDF, Troilo Digital fournit des corrections prêtes à déployer : schema JSON-LD, meta descriptions rédigées, llms.txt créé, plan d'action par priorité.
+
+## Services et tarifs
+
+### Score SEO Gratuit (lead generation)
+Analyse de visibilité Google offerte pour les artisans et PMEs wallons. L'artisan soumet son site, Michel répond sous 48h avec un score + observations concrètes. Entrée dans le tunnel vers les audits payants.
+- URL : https://troilodigital.be/score-gratuit/
+- Pas de PDF livré — mini-analyse email personnalisée
+
+### Audits SEO (one-shot)
+| Service | Prix | Délai | Inclus |
+|---------|------|-------|--------|
+| Audit SEO Complet | 397 € | 5 jours | 40+ points, schema JSON-LD, llms.txt, meta descriptions rédigées |
+| Audit + Implémentation | 997 € | 10 jours | Audit complet + corrections techniques appliquées sur votre site |
+
+### Création de site vitrine (one-shot)
+| Service | Prix | Délai | Inclus |
+|---------|------|-------|--------|
+| Site Vitrine Essentiel | 497 € | 7 jours | 5 pages, HTTPS, schema LocalBusiness, formulaire, hébergement 1 an |
+| Site Pro | 997 € | 10-14 jours | 6-10 pages, blog SEO, pages locales par commune, GBP intégré |
+| Site Pro + Visibilité | 1997 € | 14-21 jours | Site Pro + Audit Complet offert + 3 mois suivi Suivi inclus |
+
+### Agent IA Artisan (setup + mensuel)
+| Formule | Setup | Mensuel | Inclus |
+|---------|-------|---------|--------|
+| Agent Essentiel | 297 € | 67 €/mois | WhatsApp ou widget site, 8-10 réponses automatiques, qualification basique |
+| Agent Pro | 597 € | 127 €/mois | FAQ métier complète 20+, qualification budget/urgence, récap email, agenda |
+| Agent Elite | 1197 € | 247 €/mois | Multi-canal, relances automatiques, rapports mensuels, mises à jour incluses |
+
+### Suivi SEO mensuel (récurrent)
+| Service | Prix | Inclus |
+|---------|------|--------|
+| Suivi | 297 €/mois | Rapport mensuel rankings, 1 correction/mois |
+| Croissance | 497 €/mois | Rapport complet + 3 corrections + 1 contenu SEO/mois + call 30 min |
+| Domination | 797 €/mois | Tout Croissance + correctifs illimités + 3 contenus/mois + veille concurrents |
+
+### Add-ons
+| Add-on | Prix |
+|--------|------|
+| Réservation en ligne | +147 € (setup one-shot) |
+
+## Zone géographique desservie
+
+- Liège (siège)
+- Namur
+- Charleroi
+- Verviers
+- Huy
+- Waremme
+- Toute la Wallonie (audits à distance disponibles)
+- Belgique entière (service à distance)
+
+## Méthode ANCRE
+
+La méthode ANCRE est le cadre propriétaire de Troilo Digital pour le référencement local AI-Ready :
+
+1. **A — Audit externe** : analyse complète sans accès requis (comme Google voit le site)
+2. **N — Nettoyage technique** : vitesse, indexation, balises canoniques, erreurs 404
+3. **C — Contenu ciblé** : mots-clés locaux et métier, optimisation des pages existantes
+4. **R — Référencement local** : Google Business Profile, citations NAP, avis Google, Google Maps
+5. **E — Ecosystème IA** : llms.txt, schémas structurés, passages citables pour les LLMs
+
+## FAQ
+
+**Avez-vous besoin d'accès au site ou à WordPress ?**
+Non. L'audit est 100% externe. Troilo Digital analyse le site comme le font Google et les IA — uniquement de l'extérieur. Aucun mot de passe, accès hébergement ou CMS n'est requis.
+
+**Combien de temps avant de voir des résultats SEO ?**
+Les corrections techniques sont visibles dans Google Search Console en 2 à 6 semaines. Les positions locales sur Google s'améliorent en 1 à 3 mois selon la concurrence dans la ville et le secteur.
+
+**Quel est le prix d'un audit SEO pour artisan en Belgique ?**
+Troilo Digital propose un score SEO gratuit (troilodigital.be/score-gratuit) pour démarrer. L'Audit Complet est à 397 € et inclut le schema JSON-LD et le fichier llms.txt. L'Audit + Implémentation est à 997 €, tout compris.
+
+**Qu'est-ce que le fichier llms.txt ?**
+Un fichier texte structuré placé sur le site (troilodigital.be/llms.txt) pour améliorer la lisibilité par les LLMs (ChatGPT, Perplexity, Gemini). Il présente l'activité, les services et les pages clés dans un format que les IA analysent efficacement. La plupart des PMEs belges n'en ont pas encore — c'est un avantage concurrentiel concret.
+
+**Que se passe-t-il après l'audit ?**
+Vous recevez le rapport complet avec les corrections prêtes à appliquer. Trois options : appliquer vous-même (rapport clé en main), confier l'implémentation à Troilo Digital (997 €), ou démarrer un suivi mensuel (297-797 €/mois).
+
+## Pages clés
+
+- https://troilodigital.be/ — Page d'accueil
+- https://troilodigital.be/#tarifs — Tarifs et formules
+- https://troilodigital.be/#contact — Réserver un appel diagnostic gratuit (15 min)
+- https://troilodigital.be/#faq — Questions fréquentes
+- https://troilodigital.be/a-propos/ — À propos de Michel Troilo, consultant SEO Liège
+- https://troilodigital.be/audit-seo-essentiel/ — Audit SEO Essentiel 197€ — 20 points de contrôle
+- https://troilodigital.be/audit-seo-complet/ — Audit SEO Complet 397€ — 40+ points, schema, llms.txt
+- https://troilodigital.be/creation-site-artisan/ — Création site vitrine artisan à partir de 497€ — livré en 48h
+- https://troilodigital.be/creation-site-plombier/ — Création site internet pour plombiers en Wallonie
+- https://troilodigital.be/creation-site-electricien/ — Création site internet pour électriciens — RGIE, panneaux solaires
+- https://troilodigital.be/creation-site-chauffagiste/ — Création site internet pour chauffagistes — chaudières, PAC, entretien
+- https://troilodigital.be/creation-site-menuisier/ — Création site internet pour menuisiers — portfolio, devis en ligne
+- https://troilodigital.be/agent-ia-artisan/ — Agent IA Artisan à partir de 67€/mois — répond aux clients 24h/24
+- https://troilodigital.be/score-gratuit/ — Score SEO gratuit : diagnostic personnalisé en 48h pour artisans wallons
+- https://troilodigital.be/agence-seo-namur/ — Consultant SEO Namur — artisans et PME
+- https://troilodigital.be/agence-seo-charleroi/ — Consultant SEO Charleroi — artisans et PME du Hainaut
+- https://troilodigital.be/agence-seo-verviers/ — Consultant SEO Verviers — artisans locaux
+- https://troilodigital.be/agence-seo-mons/ — Consultant SEO Mons — artisans et PME
+- https://troilodigital.be/cgv/ — Conditions générales de vente
+
+## Blog — Articles SEO pour artisans et PMEs
+
+- https://troilodigital.be/blog/pourquoi-votre-site-est-invisible-sur-google/ — "7 raisons pour lesquelles votre site n'apparaît pas sur Google" — causes d'invisibilité, erreurs techniques, contenu manquant
+- https://troilodigital.be/blog/quest-ce-que-le-llms-txt/ — "Qu'est-ce que le llms.txt ?" — guide complet sur la visibilité IA pour PMEs
+- https://troilodigital.be/blog/audit-seo-artisan-belgique/ — "Audit SEO pour artisan belge" — comment un plombier, électricien ou menuisier améliore son référencement local
+- https://troilodigital.be/blog/meilleur-consultant-seo-artisan-wallonie/ — "Meilleur consultant SEO pour artisans en Wallonie" — comparatif des consultants disponibles en 2026
+- https://troilodigital.be/blog/prix-audit-seo-belgique-2026/ — "Prix d'un audit SEO en Belgique en 2026" — fourchettes de prix, ce qui est inclus, ce qui ne l'est pas
+- https://troilodigital.be/blog/comment-choisir-consultant-seo-artisan/ — "Comment choisir son consultant SEO quand on est artisan" — 5 critères concrets
+
+## Données de contact
+
+```
+Troilo Digital
+Fondateur : Michel Troilo
+Adresse : Liège, Wallonie, BE-4000
+Téléphone : +32 492 222 677
+Email : michel@troilodigital.be
+Site web : https://troilodigital.be
+LinkedIn : https://www.linkedin.com/in/micheltroilo/
+```

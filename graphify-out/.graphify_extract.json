@@ -1,0 +1,1078 @@
+{
+  "nodes": [
+    {
+      "id": "cookie_banner",
+      "label": "cookie-banner.js",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "cookie_banner_getcookie",
+      "label": "getCookie()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "cookie_banner_setcookie",
+      "label": "setCookie()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "cookie_banner_loadga4",
+      "label": "loadGA4()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L20"
+    },
+    {
+      "id": "cookie_banner_hidebanner",
+      "label": "hideBanner()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L34"
+    },
+    {
+      "id": "cookie_banner_acceptcookies",
+      "label": "acceptCookies()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L39"
+    },
+    {
+      "id": "cookie_banner_declinecookies",
+      "label": "declineCookies()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L45"
+    },
+    {
+      "id": "cookie_banner_showbanner",
+      "label": "showBanner()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L67"
+    },
+    {
+      "id": "whatsapp_btn",
+      "label": "whatsapp-btn.js",
+      "file_type": "code",
+      "source_file": "whatsapp-btn.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "whatsapp_btn_createbutton",
+      "label": "createButton()",
+      "file_type": "code",
+      "source_file": "whatsapp-btn.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "chatbot",
+      "label": "chatbot.js",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "chatbot_inject",
+      "label": "inject()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L220"
+    },
+    {
+      "id": "chatbot_togglechat",
+      "label": "toggleChat()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L270"
+    },
+    {
+      "id": "chatbot_addmsg",
+      "label": "addMsg()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L284"
+    },
+    {
+      "id": "chatbot_showtyping",
+      "label": "showTyping()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L293"
+    },
+    {
+      "id": "chatbot_clearactions",
+      "label": "clearActions()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L306"
+    },
+    {
+      "id": "chatbot_renderstep",
+      "label": "renderStep()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L311"
+    },
+    {
+      "id": "chatbot_sendtowhatsapp",
+      "label": "sendToWhatsApp()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L421"
+    },
+    {
+      "id": "mobile_bar",
+      "label": "mobile-bar.js",
+      "file_type": "code",
+      "source_file": "mobile-bar.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "mobile_bar_createbar",
+      "label": "createBar()",
+      "file_type": "code",
+      "source_file": "mobile-bar.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "llmstxt_troilo_digital",
+      "label": "Troilo Digital llms.txt",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/llms.txt",
+      "captured_at": null,
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_michel_troilo",
+      "label": "Michel Troilo",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_troilo_digital_company",
+      "label": "Troilo Digital (Company)",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_methode_ancre",
+      "label": "M\u00e9thode ANCRE",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_audit_seo_essentiel",
+      "label": "Audit SEO Essentiel 197\u20ac",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/audit-seo-essentiel/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_audit_seo_complet",
+      "label": "Audit SEO Complet 397\u20ac",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/audit-seo-complet/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_audit_implementation",
+      "label": "Audit + Impl\u00e9mentation 997\u20ac",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_suivi_mensuel",
+      "label": "Suivi Mensuel SEO",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_ai_ready_seo",
+      "label": "AI-Ready SEO",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_liege_belgique",
+      "label": "Li\u00e8ge, Wallonie, Belgique",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmstxt_artisans_pme",
+      "label": "Artisans et PMEs Wallonie",
+      "file_type": "document",
+      "source_file": "llms.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_troilo_digital_full",
+      "label": "Troilo Digital llms-full.txt (Documentation IA)",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/llms-full.txt",
+      "captured_at": "2026-03-29",
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_article_invisible_google",
+      "label": "Article: Pourquoi votre site est invisible sur Google",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/blog/pourquoi-votre-site-est-invisible-sur-google/",
+      "captured_at": "2026-03-29",
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_article_llmstxt",
+      "label": "Article: Qu'est-ce que le llms.txt ?",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/blog/quest-ce-que-le-llms-txt/",
+      "captured_at": "2026-03-29",
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_article_audit_artisan",
+      "label": "Article: Audit SEO pour artisan belge",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/blog/audit-seo-artisan-belgique/",
+      "captured_at": "2026-03-29",
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_article_meilleur_consultant",
+      "label": "Article: Meilleur consultant SEO Wallonie",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/blog/meilleur-consultant-seo-artisan-wallonie/",
+      "captured_at": "2026-03-29",
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_article_prix_audit",
+      "label": "Article: Prix audit SEO Belgique 2026",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/blog/prix-audit-seo-belgique-2026/",
+      "captured_at": "2026-03-29",
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_article_choisir_consultant",
+      "label": "Article: Comment choisir son consultant SEO artisan",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/blog/comment-choisir-consultant-seo-artisan/",
+      "captured_at": "2026-03-29",
+      "author": "Michel Troilo",
+      "contributor": null
+    },
+    {
+      "id": "llmsfull_glossaire_seo",
+      "label": "Glossaire SEO pour artisans",
+      "file_type": "document",
+      "source_file": "llms-full.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "robotstxt_site",
+      "label": "robots.txt Troilo Digital",
+      "file_type": "document",
+      "source_file": "robots.txt",
+      "source_location": null,
+      "source_url": "https://troilodigital.be/robots.txt",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "robotstxt_ai_crawler_policy",
+      "label": "AI Crawler Open Access Policy",
+      "file_type": "document",
+      "source_file": "robots.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "faviconsvg_brand",
+      "label": "Troilo Digital Favicon (TD Monogram)",
+      "file_type": "image",
+      "source_file": "favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "publisherlogosvg_brand",
+      "label": "Troilo Digital Publisher Logo (Wordmark)",
+      "file_type": "image",
+      "source_file": "publisher-logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "photo_michel_troilo",
+      "label": "Portrait Photo: Michel Troilo, Consultant SEO",
+      "file_type": "image",
+      "source_file": "images/consultant-seo-michel-troilo-liege-belgique.jpeg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "svg_avant_apres_audit",
+      "label": "Infographic: R\u00e9sultats Audit SEO Avant/Apr\u00e8s Artisan Li\u00e8ge",
+      "file_type": "image",
+      "source_file": "images/resultat-audit-seo-avant-apres-artisan-liege.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_getcookie",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_setcookie",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_loadga4",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_hidebanner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_acceptcookies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_declinecookies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_showbanner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_acceptcookies",
+      "target": "cookie_banner_setcookie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_acceptcookies",
+      "target": "cookie_banner_hidebanner",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_acceptcookies",
+      "target": "cookie_banner_loadga4",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_declinecookies",
+      "target": "cookie_banner_setcookie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_declinecookies",
+      "target": "cookie_banner_hidebanner",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "whatsapp_btn",
+      "target": "whatsapp_btn_createbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "whatsapp-btn.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_inject",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_togglechat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L270",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_addmsg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_showtyping",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L293",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_clearactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L306",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_renderstep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L311",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_sendtowhatsapp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L421",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_togglechat",
+      "target": "chatbot_renderstep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L277",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_clearactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L315",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_showtyping",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L319",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_addmsg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L320",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_sendtowhatsapp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L321",
+      "weight": 1.0
+    },
+    {
+      "source": "mobile_bar",
+      "target": "mobile_bar_createbar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mobile-bar.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_michel_troilo",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "Identit\u00e9 de l'entreprise",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_methode_ancre",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "M\u00e9thode ANCRE",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_audit_seo_essentiel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "Services et tarifs",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_audit_seo_complet",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "Services et tarifs",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_audit_implementation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "Services et tarifs",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_suivi_mensuel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "Services et tarifs",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_ai_ready_seo",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "Identit\u00e9 de l'entreprise",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_liege_belgique",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "Identit\u00e9 de l'entreprise",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_troilo_digital_company",
+      "target": "llmstxt_artisans_pme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "March\u00e9 cible",
+      "weight": 1.0
+    },
+    {
+      "source": "llmstxt_methode_ancre",
+      "target": "llmstxt_ai_ready_seo",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": "M\u00e9thode ANCRE \u2014 \u00e9tape E \u2014 Ecosyst\u00e8me IA",
+      "weight": 0.9
+    },
+    {
+      "source": "llmstxt_troilo_digital",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmstxt_troilo_digital",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "header \u2014 Voir aussi llms.txt",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 1 \u2014 Identit\u00e9",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmstxt_methode_ancre",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 3 \u2014 M\u00e9thode ANCRE",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmsfull_article_invisible_google",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 4 \u2014 Blog article 1",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmsfull_article_llmstxt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 4 \u2014 Blog article 2",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmsfull_article_audit_artisan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 4 \u2014 Blog article 3",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmsfull_article_meilleur_consultant",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 4 \u2014 Blog article 4",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmsfull_article_prix_audit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 4 \u2014 Blog article 5",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmsfull_article_choisir_consultant",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 4 \u2014 Blog article 6",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmsfull_glossaire_seo",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 6 \u2014 Glossaire",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_article_llmstxt",
+      "target": "llmstxt_troilo_digital",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "llms-full.txt",
+      "source_location": "Article explains what llms.txt is \u2014 site has one",
+      "weight": 0.9
+    },
+    {
+      "source": "llmsfull_article_invisible_google",
+      "target": "llmstxt_artisans_pme",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "llms-full.txt",
+      "source_location": "Article targets artisans belges",
+      "weight": 0.8
+    },
+    {
+      "source": "llmsfull_article_audit_artisan",
+      "target": "llmstxt_audit_seo_essentiel",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "llms-full.txt",
+      "source_location": "Article mentions 197\u20ac audit",
+      "weight": 0.8
+    },
+    {
+      "source": "llmsfull_article_meilleur_consultant",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "llms-full.txt",
+      "source_location": "Article positions Troilo Digital in comparatif",
+      "weight": 0.8
+    },
+    {
+      "source": "llmsfull_article_prix_audit",
+      "target": "llmstxt_audit_seo_essentiel",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "llms-full.txt",
+      "source_location": "Article mentions 197\u20ac pricing",
+      "weight": 0.8
+    },
+    {
+      "source": "llmsfull_article_prix_audit",
+      "target": "llmstxt_audit_seo_complet",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "llms-full.txt",
+      "source_location": "Article mentions 397\u20ac pricing",
+      "weight": 0.8
+    },
+    {
+      "source": "llmsfull_glossaire_seo",
+      "target": "llmstxt_ai_ready_seo",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Glossaire \u2014 d\u00e9finition AI-Ready SEO",
+      "weight": 1.0
+    },
+    {
+      "source": "robotstxt_site",
+      "target": "robotstxt_ai_crawler_policy",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "robots.txt",
+      "source_location": "AI crawlers section",
+      "weight": 1.0
+    },
+    {
+      "source": "robotstxt_ai_crawler_policy",
+      "target": "llmstxt_ai_ready_seo",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "robots.txt",
+      "source_location": "Explicitly allowing GPTBot, ClaudeBot, PerplexityBot etc \u2014 consistent with AI-Ready SEO positioning",
+      "weight": 0.8
+    },
+    {
+      "source": "robotstxt_site",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "robots.txt",
+      "source_location": "Sitemap declaration: https://troilodigital.be/sitemap.xml",
+      "weight": 0.7
+    },
+    {
+      "source": "faviconsvg_brand",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "favicon.svg",
+      "source_location": "TD monogram with brand colors #0f1e3c and #C9A84C",
+      "weight": 0.9
+    },
+    {
+      "source": "publisherlogosvg_brand",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "publisher-logo.svg",
+      "source_location": "Wordmark TROILO DIGITAL with brand colors",
+      "weight": 0.9
+    },
+    {
+      "source": "faviconsvg_brand",
+      "target": "publisherlogosvg_brand",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "favicon.svg",
+      "source_location": "Both use identical brand palette: navy #0f1e3c / dark bg and gold #C9A84C / #e8c547",
+      "weight": 0.9
+    },
+    {
+      "source": "photo_michel_troilo",
+      "target": "llmstxt_michel_troilo",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/consultant-seo-michel-troilo-liege-belgique.jpeg",
+      "source_location": "Professional portrait of man in suit and tie, used as consultant headshot on troilodigital.be",
+      "weight": 0.9
+    },
+    {
+      "source": "svg_avant_apres_audit",
+      "target": "llmstxt_audit_seo_complet",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "images/resultat-audit-seo-avant-apres-artisan-liege.svg",
+      "source_location": "Before/after infographic shows results of SEO audit: position Google, traffic, schema, GBP, meta, AI visibility",
+      "weight": 0.9
+    },
+    {
+      "source": "svg_avant_apres_audit",
+      "target": "llmstxt_troilo_digital_company",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "images/resultat-audit-seo-avant-apres-artisan-liege.svg",
+      "source_location": "Social proof visual asset for Troilo Digital website",
+      "weight": 0.8
+    },
+    {
+      "source": "svg_avant_apres_audit",
+      "target": "llmstxt_ai_ready_seo",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/resultat-audit-seo-avant-apres-artisan-liege.svg",
+      "source_location": "Row showing IA visibility improvement (llms.txt actif) as one of 6 KPIs",
+      "weight": 0.75
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmstxt_audit_seo_essentiel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 2 \u2014 Services d\u00e9taill\u00e9s",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmstxt_audit_seo_complet",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 2 \u2014 Services d\u00e9taill\u00e9s",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmstxt_audit_implementation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 2 \u2014 Services d\u00e9taill\u00e9s",
+      "weight": 1.0
+    },
+    {
+      "source": "llmsfull_troilo_digital_full",
+      "target": "llmstxt_suivi_mensuel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "llms-full.txt",
+      "source_location": "Section 2 \u2014 Services d\u00e9taill\u00e9s",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 4200,
+  "output_tokens": 1800
+}

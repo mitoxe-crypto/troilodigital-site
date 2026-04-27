@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit SEO Essentiel 197€ — 20 points | Troilo Digital</title>
+    <meta name="description" content="Audit SEO Essentiel à 197€ pour artisans et PME en Wallonie. 20 points de contrôle, rapport livré en 5 jours. Identifiez pourquoi Google ne vous trouve pas.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://troilodigital.be/audit-seo-essentiel/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- OG -->
+    <meta property="og:title" content="Audit SEO Essentiel 197€ — Troilo Digital">
+    <meta property="og:description" content="Audit SEO Essentiel à 197€ pour artisans et PME en Wallonie. 20 points de contrôle, rapport livré en 5 jours. Identifiez pourquoi Google ne vous trouve pas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://troilodigital.be/audit-seo-essentiel/">
+    <meta property="og:image" content="https://troilodigital.be/og-image.png">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:site_name" content="Troilo Digital">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Audit SEO Essentiel 197€ — 20 points | Troilo Digital">
+    <meta name="twitter:description" content="Audit SEO Essentiel à 197€ pour artisans et PMEs en Wallonie. 20 points de contrôle, rapport livré en 5 jours. Identifiez pourquoi Google ne vous trouve pas.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Audit SEO Essentiel",
+      "url": "https://troilodigital.be/audit-seo-essentiel/",
+      "description": "Audit SEO 20 points de contrôle pour artisans et PMEs en Wallonie. Livré en 5 jours ouvrables.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Troilo Digital",
+        "url": "https://troilodigital.be",
+        "telephone": "+32492222677",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Liège",
+          "postalCode": "4000",
+          "addressRegion": "Wallonie",
+          "addressCountry": "BE"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "197",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2026-12-31"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Liège"},
+        {"@type": "AdministrativeArea", "name": "Wallonie"}
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be"},
+        {"@type": "ListItem", "position": 2, "name": "Audit SEO Essentiel", "item": "https://troilodigital.be/audit-seo-essentiel/"}
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+
+    <!-- GSAP + ScrollTrigger + Lenis -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        /* NAV */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1.5rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-logo span { color: var(--accent); font-weight: 500; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease, cubic-bezier(0.4,0,0.2,1)); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        /* BREADCRUMB */
+        .breadcrumb-bar { padding: 0.85rem clamp(1.5rem,5vw,4rem); border-bottom: 1px solid var(--border); margin-top: 68px; }
+        .breadcrumb { font-size: 0.8rem; color: var(--gray); display: flex; align-items: center; gap: 0.4rem; }
+        .breadcrumb a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb .sep { color: rgba(232,197,71,0.3); }
+        .breadcrumb .current { color: var(--white); font-weight: 600; }
+
+        /* HERO */
+        .hero-service { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem) clamp(3rem,6vw,5rem); text-align: center; position: relative; overflow: hidden; }
+        .hero-service::before { content: ''; position: absolute; top: -40%; left: 50%; width: 800px; height: 800px; transform: translateX(-50%); background: radial-gradient(circle, rgba(232,197,71,0.05) 0%, transparent 70%); pointer-events: none; }
+        .hero-badge { display: inline-block; background: var(--accent-dim); border: 1px solid rgba(232,197,71,0.2); color: var(--accent); font-family: var(--font-mono); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 100px; margin-bottom: 2rem; opacity: 0; transform: translateY(10px); }
+        .hero-service h1 { font-family: var(--font-display); font-size: clamp(2.5rem,6vw,4.5rem); font-weight: 900; line-height: 1.0; letter-spacing: -0.05em; margin-bottom: 1.5rem; opacity: 0; transform: translateY(20px); }
+        .hero-service h1 .accent { color: var(--accent); }
+        .hero-subtitle { font-size: 1.05rem; color: var(--gray-light); max-width: 580px; margin: 0 auto 2.5rem; line-height: 1.7; opacity: 0; transform: translateY(15px); }
+        .hero-meta { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem; opacity: 0; transform: translateY(10px); }
+        .hero-meta-item { color: var(--gray); font-size: 0.88rem; }
+        .hero-meta-item strong { color: var(--white); }
+
+        /* BUTTONS */
+        .btn-accent, a.btn-accent:link, a.btn-accent:visited { display: inline-block; background: var(--accent); color: var(--black) !important; padding: 0.9rem 2.2rem; border-radius: 100px; text-decoration: none; font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; letter-spacing: -0.01em; transition: background 0.3s, transform 0.15s; }
+        .btn-accent:hover, a.btn-accent:hover { background: #d4b03e !important; color: var(--black) !important; transform: translateY(-2px); }
+        .btn-outline, a.btn-outline:link, a.btn-outline:visited { display: inline-block; border: 1px solid var(--border); color: var(--white) !important; padding: 0.9rem 2.2rem; border-radius: 100px; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.3s; }
+        .btn-outline:hover, a.btn-outline:hover { border-color: rgba(232,197,71,0.3) !important; color: var(--accent) !important; }
+
+        /* SECTIONS */
+        .section-pad { padding: clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,4rem); }
+        .section-pad-alt { padding: clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,4rem); background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .section-title { font-family: var(--font-display); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 900; letter-spacing: -0.04em; text-align: center; margin-bottom: 0.5rem; }
+        .section-sub { text-align: center; color: var(--gray-light); margin-bottom: 3rem; font-size: 0.95rem; line-height: 1.6; }
+        .page-wrap { max-width: 1100px; margin: 0 auto; }
+
+        /* FOR WHOM */
+        .for-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; max-width: 1100px; margin: 0 auto; }
+        .for-card { background: var(--black); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; text-align: center; transition: border-color 0.3s, transform 0.3s; }
+        .for-card:hover { border-color: rgba(232,197,71,0.15); transform: translateY(-4px); }
+        .for-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
+        .for-card h3 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; }
+
+        /* POINTS GRID */
+        .points-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; max-width: 1100px; margin: 0 auto; }
+        .point-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem 1.25rem; background: var(--black); border: 1px solid var(--border); border-left: 2px solid var(--accent); border-radius: 10px; transition: border-color 0.3s; }
+        .point-item:hover { border-color: rgba(232,197,71,0.2); }
+        .point-num { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent); min-width: 28px; padding-top: 2px; }
+        .point-text { font-size: 0.88rem; color: var(--gray-light); font-weight: 500; line-height: 1.4; }
+
+        /* LIVRABLES */
+        .livrables-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+        .livrable-card { background: var(--black); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: border-color 0.3s; }
+        .livrable-card:hover { border-color: rgba(232,197,71,0.15); }
+        .livrable-doc { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 400; color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.5rem; }
+        .livrable-card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 1rem; }
+        .livrable-list { list-style: none; }
+        .livrable-list li { font-size: 0.88rem; color: var(--gray-light); padding: 0.3rem 0; display: flex; gap: 0.6rem; line-height: 1.5; }
+        .livrable-list li::before { content: "✓"; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+        /* STEPS */
+        .steps { display: flex; flex-direction: column; gap: 1rem; max-width: 680px; margin: 0 auto; }
+        .step { display: flex; align-items: flex-start; gap: 1.25rem; background: var(--black); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; transition: border-color 0.3s, transform 0.3s; }
+        .step:hover { transform: translateX(4px); border-color: rgba(232,197,71,0.15); }
+        .step-num { min-width: 40px; height: 40px; background: var(--accent-dim); border: 1px solid rgba(232,197,71,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 0.9rem; color: var(--accent); flex-shrink: 0; }
+        .step-content h3 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
+        .step-content p { font-size: 0.88rem; color: var(--gray-light); line-height: 1.6; }
+
+        /* COMPARE TABLE */
+        .compare-wrap { max-width: 780px; margin: 0 auto; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+        .compare-wrap table { width: 100%; border-collapse: collapse; }
+        .compare-wrap th { background: var(--surface); color: var(--white); padding: 1rem 1.25rem; text-align: left; font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; letter-spacing: -0.02em; border-bottom: 1px solid var(--border); }
+        .compare-wrap th.hl { background: rgba(232,197,71,0.08); color: var(--accent); }
+        .compare-wrap td { padding: 0.85rem 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 0.85rem; color: var(--gray-light); }
+        .compare-wrap tr:last-child td { border-bottom: none; }
+        .compare-wrap td.hl { background: rgba(232,197,71,0.03); color: var(--white); font-weight: 600; }
+        .check { color: #22c55e; font-weight: 700; }
+        .cross { color: rgba(255,255,255,0.2); }
+
+        /* CTA */
+        .cta-section { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); text-align: center; position: relative; }
+        .cta-section::before { content: ''; position: absolute; top: 0; left: 50%; width: 600px; height: 600px; transform: translateX(-50%); background: radial-gradient(circle, rgba(232,197,71,0.04) 0%, transparent 70%); pointer-events: none; }
+        .price-big { font-family: var(--font-display); font-size: clamp(3rem,8vw,5rem); font-weight: 900; color: var(--accent); letter-spacing: -0.05em; margin: 1.5rem 0 0.25rem; }
+        .price-sub { font-family: var(--font-mono); color: var(--gray); font-size: 0.78rem; letter-spacing: 0.08em; margin-bottom: 2rem; }
+        .cta-section h2 { font-family: var(--font-display); font-size: clamp(1.4rem,3vw,2rem); font-weight: 900; letter-spacing: -0.04em; margin-bottom: 0.75rem; }
+        .cta-note { margin-top: 1.25rem; color: var(--gray); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em; }
+
+        /* FOOTER */
+        .footer { padding: 2rem clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .hero-meta { gap: 1rem; flex-direction: column; align-items: center; }
+            .compare-wrap { overflow-x: auto; }
+            .footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <a href="../" class="nav-logo">Troilo<span>Digital</span></a>
+    <div class="nav-right">
+        <a href="../#work" class="nav-link">Services</a>
+        <a href="../#pricing" class="nav-link">Tarifs</a>
+        <a href="../blog/" class="nav-link">Blog</a>
+        <a href="../#contact" class="nav-cta">Contact</a>
+    
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    </nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="../#work" onclick="closeMobileNav()">Services</a>
+    <a href="../#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="../blog/">Blog</a>
+    <a href="../a-propos/">A propos</a>
+    <a href="../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="../">Accueil</a>
+        <span class="sep">›</span>
+        <span class="current">Audit SEO Essentiel</span>
+    </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero-service">
+    <div class="hero-badge">197€ · One-shot</div>
+    <h1>Audit SEO <span class="accent">Essentiel</span></h1>
+    <p class="hero-subtitle">20 points de contrôle SEO analysés. Rapport livré en 5 jours ouvrables. Savoir exactement pourquoi Google ne vous trouve pas.</p>
+    <div class="hero-meta">
+        <div class="hero-meta-item"><strong>20</strong> points analysés</div>
+        <div class="hero-meta-item"><strong>5 jours</strong> ouvrables</div>
+        <div class="hero-meta-item"><strong>2 documents</strong> PDF livrés</div>
+        <div class="hero-meta-item"><strong>100%</strong> externe</div>
+    </div>
+    <a href="../#contact" class="btn-accent">Commander l'audit — 197€</a>
+</section>
+
+<main>
+
+<!-- POUR QUI -->
+<section class="section-pad-alt">
+    <div class="page-wrap">
+        <h2 class="section-title">Pour qui ?</h2>
+        <p class="section-sub">L'Audit Essentiel est fait pour vous si vous voulez un premier diagnostic clair sans investissement lourd.</p>
+    </div>
+    <div class="for-grid" style="padding:0 clamp(1.5rem,5vw,4rem);">
+        <div class="for-card">
+            <div class="for-icon">🔧</div>
+            <h3>Artisans<br>(plombier, électricien, menuisier...)</h3>
+        </div>
+        <div class="for-card">
+            <div class="for-icon">🏠</div>
+            <h3>Services à domicile<br>(aide ménagère, titres-services...)</h3>
+        </div>
+        <div class="for-card">
+            <div class="for-icon">🏪</div>
+            <h3>Commerces locaux<br>et PMEs en Wallonie</h3>
+        </div>
+        <div class="for-card">
+            <div class="for-icon">🚀</div>
+            <h3>Premiers pas SEO<br>budget maîtrisé</h3>
+        </div>
+    </div>
+</section>
+
+<!-- 20 POINTS -->
+<section class="section-pad">
+    <div class="page-wrap">
+        <h2 class="section-title">Les 20 points analysés</h2>
+        <p class="section-sub">Chaque point correspond à un facteur de positionnément Google vérifié manuellement sur votre site.</p>
+    </div>
+    <div class="points-grid" style="padding:0 clamp(1.5rem,5vw,4rem);">
+        <div class="point-item"><span class="point-num">01</span><span class="point-text">Title tag — longueur et keyword principal</span></div>
+        <div class="point-item"><span class="point-num">02</span><span class="point-text">Meta description — présence et qualité</span></div>
+        <div class="point-item"><span class="point-num">03</span><span class="point-text">H1 — unicité et pertinence</span></div>
+        <div class="point-item"><span class="point-num">04</span><span class="point-text">Structure des titres H2/H3</span></div>
+        <div class="point-item"><span class="point-num">05</span><span class="point-text">HTTPS — sécurité de la connexion</span></div>
+        <div class="point-item"><span class="point-num">06</span><span class="point-text">Vitesse de chargement — TTFB serveur</span></div>
+        <div class="point-item"><span class="point-num">07</span><span class="point-text">Compatibilité mobile (responsive)</span></div>
+        <div class="point-item"><span class="point-num">08</span><span class="point-text">robots.txt — présence et paramétrage</span></div>
+        <div class="point-item"><span class="point-num">09</span><span class="point-text">Sitemap XML — présence et déclaration</span></div>
+        <div class="point-item"><span class="point-num">10</span><span class="point-text">Google Business Profile — existence et statut</span></div>
+        <div class="point-item"><span class="point-num">11</span><span class="point-text">Cohérence NAP (Nom/Adresse/Téléphone)</span></div>
+        <div class="point-item"><span class="point-num">12</span><span class="point-text">Pages indexées par Google</span></div>
+        <div class="point-item"><span class="point-num">13</span><span class="point-text">Contenu textuel — densité et keyword</span></div>
+        <div class="point-item"><span class="point-num">14</span><span class="point-text">Images — alt texts présents</span></div>
+        <div class="point-item"><span class="point-num">15</span><span class="point-text">Liens internes — structure de navigation</span></div>
+        <div class="point-item"><span class="point-num">16</span><span class="point-text">URL — structure et lisibilité</span></div>
+        <div class="point-item"><span class="point-num">17</span><span class="point-text">Schema.org — présence (LocalBusiness minimum)</span></div>
+        <div class="point-item"><span class="point-num">18</span><span class="point-text">Erreurs 404 — pages cassées</span></div>
+        <div class="point-item"><span class="point-num">19</span><span class="point-text">Redirections — chaînes et boucles</span></div>
+        <div class="point-item"><span class="point-num">20</span><span class="point-text">Top 3 concurrents — qui vous devance et pourquoi</span></div>
+    </div>
+</section>
+
+<!-- LIVRABLES -->
+<section class="section-pad-alt">
+    <div class="page-wrap">
+        <h2 class="section-title">Ce que vous recevez</h2>
+        <p class="section-sub">Deux documents PDF professionnels livrés en 5 jours ouvrables.</p>
+    </div>
+    <div class="livrables-grid" style="padding:0 clamp(1.5rem,5vw,4rem);">
+        <div class="livrable-card">
+            <div class="livrable-doc">Document 01</div>
+            <h3>Diagnostic SEO</h3>
+            <ul class="livrable-list">
+                <li>Score global + score par catégorie</li>
+                <li>Top 3 problèmes expliqués sans jargon</li>
+                <li>Quick wins à appliquer en priorité</li>
+                <li>Résumé des 3 concurrents principaux</li>
+                <li>Plan d'action priorisé</li>
+            </ul>
+        </div>
+        <div class="livrable-card">
+            <div class="livrable-doc">Document 02</div>
+            <h3>Analyse Concurrents</h3>
+            <ul class="livrable-list">
+                <li>Top 3 concurrents identifiés sur Google</li>
+                <li>Pourquoi ils vous devancent</li>
+                <li>Leur fiche GBP vs la vôtre</li>
+                <li>Opportunité principale à saisir</li>
+                <li>Analyse comparative de contenu</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section-pad">
+    <div class="page-wrap">
+        <h2 class="section-title">Comment ça se passe</h2>
+        <p class="section-sub">De la commande à la livraison en 5 jours.</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <h3>Vous remplissez le formulaire — 3 minutes</h3>
+                    <p>URL de votre site, zone géographique, activité principale. C'est tout. Aucun accès requis.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <h3>J'analyse votre site — J+1 à J+3</h3>
+                    <p>Audit manuel des 20 points. Identification des concurrents locaux. Analyse comparative.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <h3>Vous recevez vos 2 PDFs — J+5 max</h3>
+                    <p>Diagnostic + Analyse concurrents. Rapport clair, lisible par un non-technicien.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                    <h3>Questions ? Je réponds par email</h3>
+                    <p>Pas de call obligatoire. Réponse sous 24h si vous avez des questions sur le rapport.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMPARE -->
+<section class="section-pad-alt">
+    <div class="page-wrap">
+        <h2 class="section-title">Essentiel vs Complet</h2>
+        <p class="section-sub">Quelle formule correspond à votre situation ?</p>
+        <div class="compare-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ce qui est inclus</th>
+                        <th class="hl">Essentiel — 197€</th>
+                        <th>Complet — 397€</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Points de contrôle</td><td class="hl">20 points</td><td>40+ points</td></tr>
+                    <tr><td>Diagnostic PDF</td><td class="hl"><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                    <tr><td>Analyse concurrents PDF</td><td class="hl"><span class="check">✓</span> (3 concurrents)</td><td><span class="check">✓</span> (5-6 concurrents)</td></tr>
+                    <tr><td>Volumes keyword réels (DataForSEO)</td><td class="hl"><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+                    <tr><td>Analyse backlinks</td><td class="hl"><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+                    <tr><td>Schema JSON-LD copy-paste</td><td class="hl"><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+                    <tr><td>Meta descriptions rédigées</td><td class="hl"><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+                    <tr><td>Fichier llms.txt complet</td><td class="hl"><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+                    <tr><td>Guide d'action copy-paste</td><td class="hl"><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+                    <tr><td>Délai de livraison</td><td class="hl">5 jours ouvrables</td><td>5 jours ouvrables</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="text-align:center; margin-top:1.5rem; color: var(--gray); font-size:0.9rem;">
+            Vous voulez passer directement à l'action ? <a href="../audit-seo-complet/" style="color: var(--accent); font-weight:700; text-decoration:none;">Voir l'Audit Complet →</a>
+        </p>
+    </div>
+</section>
+
+</main>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="price-big">197€</div>
+    <p class="price-sub">ONE-SHOT · LIVRÉ EN 5 JOURS · SANS ABONNEMENT</p>
+    <h2>Savoir exactement où vous en êtes</h2>
+    <p style="color:var(--gray-light); margin-bottom:2rem;">Remplissez le formulaire — audit lancé sous 24h.</p>
+    <a href="../#contact" class="btn-accent">Commencer mon audit SEO</a>
+    <p class="cta-note">Aucun accès à votre site requis · 100% externe</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <span>© 2026 Troilo Digital</span>
+    <span><a href="../cgv/">CGV</a> · <a href="../mentions-legales/">Mentions</a> · <a href="../politique-de-confidentialite/">Confidentialité</a></span>
+    <span>Liège, Belgique</span>
+</footer>
+
+<script src="/cookie-banner.js" defer></script>
+<script defer src="/mobile-bar.js"></script><script defer src="/chatbot.js"></script>
+
+<script>
+    // Lenis smooth scroll
+    const lenis = new Lenis({
+        duration: 1.6,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+    });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => lenis.raf(time * 1000));
+    gsap.ticker.lagSmoothing(0);
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero reveal
+    const heroTl = gsap.timeline({ defaults: { ease: "power4.out" } });
+    heroTl
+        .to(".hero-badge", { opacity: 1, y: 0, duration: 0.8 }, 0.15)
+        .to(".hero-service h1", { opacity: 1, y: 0, duration: 0.9 }, 0.35)
+        .to(".hero-subtitle", { opacity: 1, y: 0, duration: 0.8 }, 0.6)
+        .to(".hero-meta", { opacity: 1, y: 0, duration: 0.7 }, 0.85);
+
+    // For cards
+    gsap.set(".for-card", { opacity: 0, y: 20 });
+    gsap.to(".for-card", {
+        scrollTrigger: { trigger: ".for-grid", start: "top 80%" },
+        opacity: 1, y: 0, stagger: 0.1, duration: 0.6, ease: "power3.out"
+    });
+
+    // Points stagger
+    gsap.set(".point-item", { opacity: 0, y: 12 });
+    gsap.to(".point-item", {
+        scrollTrigger: { trigger: ".points-grid", start: "top 80%" },
+        opacity: 1, y: 0, stagger: 0.04, duration: 0.5, ease: "power3.out"
+    });
+
+    // Livrable cards
+    gsap.set(".livrable-card", { opacity: 0, y: 20 });
+    gsap.to(".livrable-card", {
+        scrollTrigger: { trigger: ".livrables-grid", start: "top 80%" },
+        opacity: 1, y: 0, stagger: 0.15, duration: 0.7, ease: "power3.out"
+    });
+
+    // Steps
+    gsap.set(".step", { opacity: 0, y: 25 });
+    gsap.to(".step", {
+        scrollTrigger: { trigger: ".steps", start: "top 80%" },
+        opacity: 1, y: 0, stagger: 0.12, duration: 0.7, ease: "power3.out"
+    });
+
+    // Compare table
+    gsap.from(".compare-wrap", {
+        scrollTrigger: { trigger: ".compare-wrap", start: "top 85%" },
+        y: 40, opacity: 0, duration: 0.8, ease: "power3.out"
+    });
+
+    // CTA
+    gsap.from(".cta-section", {
+        scrollTrigger: { trigger: ".cta-section", start: "top 85%" },
+        y: 40, opacity: 0, duration: 0.8, ease: "power3.out"
+    });
+</script>
+
+
+<script>
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+if(navBurger){navBurger.addEventListener('click',function(){navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navOverlay.classList.contains('open')?'hidden':'';});}
+function closeMobileNav(){if(navBurger){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';}}
+</script>
+</body>
+</html>

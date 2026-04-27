@@ -1,0 +1,222 @@
+{
+  "communities": {
+    "0": [
+      "cookie_banner",
+      "cookie_banner_acceptcookies",
+      "cookie_banner_declinecookies",
+      "cookie_banner_getcookie",
+      "cookie_banner_hidebanner",
+      "cookie_banner_loadga4",
+      "cookie_banner_setcookie",
+      "cookie_banner_showbanner"
+    ],
+    "1": [
+      "chatbot",
+      "chatbot_addmsg",
+      "chatbot_clearactions",
+      "chatbot_inject",
+      "chatbot_renderstep",
+      "chatbot_sendtowhatsapp",
+      "chatbot_showtyping",
+      "chatbot_togglechat"
+    ],
+    "2": [
+      "llmsfull_article_audit_artisan",
+      "llmsfull_article_choisir_consultant",
+      "llmsfull_article_meilleur_consultant",
+      "llmsfull_article_prix_audit",
+      "llmsfull_troilo_digital_full",
+      "llmstxt_audit_implementation",
+      "llmstxt_audit_seo_essentiel",
+      "llmstxt_suivi_mensuel"
+    ],
+    "3": [
+      "faviconsvg_brand",
+      "llmstxt_audit_seo_complet",
+      "llmstxt_liege_belgique",
+      "llmstxt_troilo_digital_company",
+      "publisherlogosvg_brand",
+      "svg_avant_apres_audit"
+    ],
+    "4": [
+      "llmsfull_glossaire_seo",
+      "llmstxt_ai_ready_seo",
+      "llmstxt_methode_ancre",
+      "robotstxt_ai_crawler_policy",
+      "robotstxt_site"
+    ],
+    "5": [
+      "whatsapp_btn",
+      "whatsapp_btn_createbutton"
+    ],
+    "6": [
+      "mobile_bar",
+      "mobile_bar_createbar"
+    ],
+    "7": [
+      "llmsfull_article_invisible_google",
+      "llmstxt_artisans_pme"
+    ],
+    "8": [
+      "llmsfull_article_llmstxt",
+      "llmstxt_troilo_digital"
+    ],
+    "9": [
+      "llmstxt_michel_troilo",
+      "photo_michel_troilo"
+    ]
+  },
+  "cohesion": {
+    "0": 0.43,
+    "1": 0.43,
+    "2": 0.32,
+    "3": 0.47,
+    "4": 0.4,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "llmstxt_troilo_digital_company",
+      "label": "Troilo Digital (Company)",
+      "edges": 16
+    },
+    {
+      "id": "llmsfull_troilo_digital_full",
+      "label": "Troilo Digital llms-full.txt (Documentation IA)",
+      "edges": 14
+    },
+    {
+      "id": "chatbot_renderstep",
+      "label": "renderStep()",
+      "edges": 6
+    },
+    {
+      "id": "llmstxt_ai_ready_seo",
+      "label": "AI-Ready SEO",
+      "edges": 5
+    },
+    {
+      "id": "cookie_banner_acceptcookies",
+      "label": "acceptCookies()",
+      "edges": 4
+    },
+    {
+      "id": "llmstxt_audit_seo_essentiel",
+      "label": "Audit SEO Essentiel 197\u20ac",
+      "edges": 4
+    },
+    {
+      "id": "llmstxt_audit_seo_complet",
+      "label": "Audit SEO Complet 397\u20ac",
+      "edges": 4
+    },
+    {
+      "id": "cookie_banner_setcookie",
+      "label": "setCookie()",
+      "edges": 3
+    },
+    {
+      "id": "cookie_banner_hidebanner",
+      "label": "hideBanner()",
+      "edges": 3
+    },
+    {
+      "id": "cookie_banner_declinecookies",
+      "label": "declineCookies()",
+      "edges": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Troilo Digital Favicon (TD Monogram)",
+      "target": "Troilo Digital (Company)",
+      "source_files": [
+        "favicon.svg",
+        "llms.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 image); connects across different repos/directories; peripheral node `Troilo Digital Favicon (TD Monogram)` unexpectedly reaches hub `Troilo Digital (Company)`"
+    },
+    {
+      "source": "Troilo Digital Publisher Logo (Wordmark)",
+      "target": "Troilo Digital (Company)",
+      "source_files": [
+        "publisher-logo.svg",
+        "llms.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 image); connects across different repos/directories; peripheral node `Troilo Digital Publisher Logo (Wordmark)` unexpectedly reaches hub `Troilo Digital (Company)`"
+    },
+    {
+      "source": "Infographic: R\u00e9sultats Audit SEO Avant/Apr\u00e8s Artisan Li\u00e8ge",
+      "target": "AI-Ready SEO",
+      "source_files": [
+        "images/resultat-audit-seo-avant-apres-artisan-liege.svg",
+        "llms.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 image); connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Portrait Photo: Michel Troilo, Consultant SEO",
+      "target": "Michel Troilo",
+      "source_files": [
+        "images/consultant-seo-michel-troilo-liege-belgique.jpeg",
+        "llms.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 image); connects across different repos/directories"
+    },
+    {
+      "source": "Article: Meilleur consultant SEO Wallonie",
+      "target": "Troilo Digital (Company)",
+      "source_files": [
+        "llms-full.txt",
+        "llms.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities; peripheral node `Article: Meilleur consultant SEO Wallonie` unexpectedly reaches hub `Troilo Digital (Company)`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Troilo Digital (Company)` connect `Community 3` to `Community 2`, `Community 4`, `Community 7`, `Community 8`, `Community 9`?",
+      "why": "High betweenness centrality (0.179) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Troilo Digital llms-full.txt (Documentation IA)` connect `Community 2` to `Community 8`, `Community 3`, `Community 4`, `Community 7`?",
+      "why": "High betweenness centrality (0.105) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Michel Troilo` connect `Community 9` to `Community 3`?",
+      "why": "High betweenness centrality (0.024) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `Troilo Digital (Company)` (e.g. with `Article: Meilleur consultant SEO Wallonie` and `robots.txt Troilo Digital`) actually correct?",
+      "why": "`Troilo Digital (Company)` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `AI-Ready SEO` (e.g. with `AI Crawler Open Access Policy` and `Infographic: R\u00e9sultats Audit SEO Avant/Apr\u00e8s Artisan Li\u00e8ge`) actually correct?",
+      "why": "`AI-Ready SEO` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Li\u00e8ge, Wallonie, Belgique`, `Article: Comment choisir son consultant SEO artisan`, `Portrait Photo: Michel Troilo, Consultant SEO` to the rest of the system?",
+      "why": "3 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

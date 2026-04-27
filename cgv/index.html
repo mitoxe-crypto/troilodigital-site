@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Conditions Générales de Vente — Troilo Digital</title>
+    <meta name="description" content="Conditions générales de vente et de service de Troilo Digital. Périmètre, délais, paiement, annulation, responsabilité.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://troilodigital.be/cgv/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be/"},
+        {"@type": "ListItem", "position": 2, "name": "Conditions Générales de Vente", "item": "https://troilodigital.be/cgv/"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --border-accent: rgba(232,197,71,0.12);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.8; }
+
+        /* NAV */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            padding: 1.25rem clamp(1.5rem,5vw,4rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10,10,10,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease, cubic-bezier(0.4,0,0.2,1)); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 4rem clamp(1.5rem,5vw,4rem) 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .breadcrumb {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--gray);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .breadcrumb a { color: var(--gray); text-decoration: none; transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb span { margin: 0 0.5rem; opacity: 0.4; }
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            line-height: 0.95;
+            margin-bottom: 1rem;
+        }
+        .page-hero p {
+            color: var(--gray-light);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            max-width: 560px;
+        }
+
+        /* CONTENT */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem clamp(1.5rem,5vw,4rem) 5rem;
+        }
+
+        .content h2 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 3rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            letter-spacing: -0.01em;
+        }
+        .content h2:first-child { margin-top: 0; }
+
+        .content h3 {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--white);
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+            color: var(--gray-light);
+            line-height: 1.75;
+            font-size: 0.9rem;
+        }
+
+        .content ul {
+            margin: 0.75rem 0 1rem 1.5rem;
+        }
+        .content li {
+            margin-bottom: 0.5rem;
+            color: var(--gray-light);
+            line-height: 1.65;
+            font-size: 0.9rem;
+        }
+
+        .content a { color: var(--accent); text-decoration: underline; }
+        .content strong { color: var(--white); }
+
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.85rem;
+        }
+        .content th {
+            background: var(--surface);
+            color: var(--white);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.8rem;
+            border-bottom: 1px solid var(--border-accent);
+        }
+        .content td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--gray-light);
+            vertical-align: top;
+        }
+        .content tr:last-child td { border-bottom: none; }
+
+        .notice-box {
+            background: var(--accent-dim);
+            border: 1px solid rgba(232,197,71,0.18);
+            border-left: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin: 0 0 2.5rem;
+        }
+        .notice-box p {
+            margin: 0;
+            color: var(--gray-light);
+            font-size: 0.9rem;
+        }
+
+        .last-update {
+            margin-top: 3rem;
+            color: var(--gray);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* FOOTER */
+        .footer {
+            padding: 2rem clamp(1.5rem,5vw,4rem);
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .content { padding: 2rem 1.25rem 4rem; }
+            .page-hero { padding: 3rem 1.25rem 2rem; }
+            .footer { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Conditions Générales de Vente — Troilo Digital">
+    <meta name="twitter:description" content="Conditions générales de vente et de service de Troilo Digital. Périmètre, délais, paiement, annulation, responsabilité.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <a href="../" class="nav-logo">Troilo Digital</a>
+    <div class="nav-right">
+        <a href="../#work" class="nav-link">Services</a>
+        <a href="../#pricing" class="nav-link">Tarifs</a>
+        <a href="../blog/" class="nav-link">Blog</a>
+        <a href="../#contact" class="nav-cta">Contact</a>
+    
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    </nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="../#work" onclick="closeMobileNav()">Services</a>
+    <a href="../#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="../blog/">Blog</a>
+    <a href="../a-propos/">A propos</a>
+    <a href="../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="breadcrumb">
+        <a href="../">Accueil</a><span>›</span>Conditions Générales de Vente
+    </div>
+    <h1>Conditions Générales <br>de Vente</h1>
+    <p>Valables pour toutes les prestations Troilo Digital. Lisez-les avant de commander — elles protègent les deux parties.</p>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <div class="notice-box">
+        <p><strong>Version en vigueur depuis le 29 mars 2026.</strong> En passant commande, le client reconnaît avoir lu et accepte les présentes conditions. Elles prévalent sur tout document du client sauf accord écrit contraire.</p>
+    </div>
+
+    <h2>1. Parties et champ d'application</h2>
+    <p><strong>Prestataire :</strong> Michel Troilo, exerçant sous l'enseigne commerciale <strong>Troilo Digital</strong>, Belgique — <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a> — +32 492 222 677.</p>
+    <p><strong>Client :</strong> toute personne physique ou morale qui commande une prestation auprès de Troilo Digital.</p>
+    <p>Les présentes CGV s'appliquent à l'ensemble des prestations proposées : audits SEO, implémentations techniques, suivis mensuels et toute prestation connexe.</p>
+
+    <h2>2. Prestations proposées</h2>
+
+    <table>
+        <thead>
+            <tr><th>Prestation</th><th>Description résumée</th><th>Délai de livraison</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Audit Essentiel</strong></td>
+                <td>Analyse 20 points, score SEO global, top 5 corrections prioritaires, rapport PDF</td>
+                <td>5 jours ouvrables</td>
+            </tr>
+            <tr>
+                <td><strong>Audit Complet</strong></td>
+                <td>Analyse 40+ points, score SEO, comparaison 3 concurrents, plan d'action, schema JSON-LD, meta descriptions, llms.txt, alt texts</td>
+                <td>5 jours ouvrables</td>
+            </tr>
+            <tr>
+                <td><strong>Audit + Implémentation</strong></td>
+                <td>Audit complet + application des corrections techniques + optimisation GBP + déploiement schema/metas + suivi GSC 30 jours</td>
+                <td>10 jours ouvrables</td>
+            </tr>
+            <tr>
+                <td><strong>Suivi mensuel</strong></td>
+                <td>Rapport mensuel, corrections récurrentes, contenus SEO selon formule choisie</td>
+                <td>Mensuel, à compter de la date de démarrage</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Le détail précis de chaque prestation est celui affiché sur <a href="../">troilodigital.be</a> au moment de la commande. En cas de divergence, la description du site prévaut.</p>
+
+    <h2>3. Commande et formation du contrat</h2>
+    <p>La commande est réputée ferme et définitive dès réception du paiement intégral (audits one-shot) ou du premier paiement mensuel (suivi récurrent). Aucun bon de commande signé n'est requis — le paiement vaut acceptation des présentes CGV.</p>
+    <p>Troilo Digital se réserve le droit de refuser une commande en cas de contenu illicite, de conflit d'intérêts ou d'incompatibilité technique manifeste avec les services proposés.</p>
+
+    <h2>4. Tarifs et paiement</h2>
+    <p>Les tarifs sont exprimés en euros, toutes taxes comprises (TVA non applicable tant que le seuil de franchise n'est pas atteint — mention portée sur chaque facture).</p>
+    <p>Les prix affichés sur le site sont fermes au moment de la commande. Ils peuvent être révisés à tout moment pour les nouvelles commandes.</p>
+    <h3>Modalités</h3>
+    <ul>
+        <li><strong>Audits one-shot :</strong> paiement intégral à la commande, par virement ou solution de paiement en ligne.</li>
+        <li><strong>Suivi mensuel :</strong> prélèvement mensuel automatique ou virement en début de mois. Le premier mois est dû à la souscription.</li>
+    </ul>
+    <p>Tout retard de paiement supérieur à 15 jours calendaires entraîne la suspension des prestations en cours. Des intérêts de retard au taux légal belge s'appliquent de plein droit.</p>
+
+    <h2>5. Délais de livraison</h2>
+    <p>Les délais courent à compter de la réception du paiement et, le cas échéant, des informations nécessaires fournies par le client (URL du site, nom de l'entreprise, zone géographique).</p>
+    <p>Les délais sont exprimés en jours ouvrables (lundi-vendredi, hors jours fériés belges). En cas de force majeure ou d'indisponibilité technique du site client, les délais sont suspendus et reprendront dès la résolution.</p>
+
+    <h2>6. Périmètre des prestations et limites</h2>
+
+    <h3>Ce qui est inclus</h3>
+    <p>Chaque prestation comprend uniquement ce qui est décrit dans le tableau de l'article 2 et sur la page de vente correspondante. Toute prestation additionnelle fait l'objet d'un devis séparé.</p>
+
+    <h3>Accès requis</h3>
+    <p>Les audits (Essentiel, Complet) sont réalisés sans accès au CMS, hébergement ou panneau d'administration du client. L'Audit + Implémentation nécessite un accès limité au CMS pour appliquer les corrections convenues — cet accès est demandé uniquement après validation du rapport d'audit par le client.</p>
+
+    <h3>Absence de garantie de résultat</h3>
+    <p>Le référencement naturel dépend d'algorithmes de moteurs de recherche tiers (Google, Bing) et de facteurs extérieurs au contrôle de Troilo Digital (concurrence, mises à jour d'algorithmes, comportement des utilisateurs). <strong>Troilo Digital ne garantit aucune position, aucun classement ni aucun volume de trafic.</strong> Les délais d'apparition des effets indiqués sont des estimations basées sur l'expérience, non des engagements contractuels.</p>
+
+    <h3>Visibilité sur les IA (ChatGPT, Perplexity, etc.)</h3>
+    <p>Les optimisations liées à la visibilité sur les systèmes d'intelligence artificielle (fichier llms.txt, balisage structuré, citabilité) visent à améliorer les conditions techniques de découverte du site par ces systèmes. Troilo Digital ne peut garantir qu'un site sera cité ou référencé par un système d'IA tiers, ces décisions relevant exclusivement des algorithmes propriétaires de ces systèmes.</p>
+
+    <h2>7. Obligations du client</h2>
+    <ul>
+        <li>Fournir les informations nécessaires à la réalisation de la prestation (URL, activité, zone géographique, concurrents) dans un délai raisonnable après commande.</li>
+        <li>S'assurer que le site soumis à l'audit est légal, opérationnel et accessible publiquement.</li>
+        <li>Pour l'Audit + Implémentation : fournir un accès CMS fonctionnel dans les délais convenus.</li>
+        <li>Appliquer les corrections recommandées sous sa propre responsabilité — Troilo Digital ne peut être tenu responsable des modifications effectuées par le client ou son webmaster après livraison.</li>
+    </ul>
+
+    <h2>8. Propriété intellectuelle</h2>
+    <p>Les rapports, documents, codes et contenus produits par Troilo Digital dans le cadre d'une prestation deviennent la propriété du client dès réception du paiement intégral.</p>
+    <p>Troilo Digital conserve le droit de mentionner la prestation réalisée à titre de référence commerciale, sauf opposition écrite explicite du client dans les 30 jours suivant la livraison.</p>
+    <p>Les méthodes, frameworks et processus utilisés (dont la méthode ANCRE) restent la propriété intellectuelle de Troilo Digital.</p>
+
+    <h2>9. Confidentialité</h2>
+    <p>Troilo Digital s'engage à ne pas divulguer à des tiers les informations confidentielles communiquées par le client dans le cadre de la prestation (données business, chiffres, stratégie). Cette obligation ne s'applique pas aux informations publiquement accessibles ni aux informations dont la divulgation est requise par la loi.</p>
+
+    <h2>10. Résiliation du suivi mensuel</h2>
+    <p>Le suivi mensuel est souscrit sans engagement de durée minimale. Il peut être résilié par l'une ou l'autre des parties avec un préavis de <strong>30 jours calendaires</strong>, notifié par email à <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a>.</p>
+    <p>Le mois en cours au moment de la notification reste dû intégralement. Aucun remboursement partiel n'est accordé pour un mois entamé.</p>
+    <p>En cas de non-paiement de deux mensualités consécutives, Troilo Digital peut résilier le contrat de plein droit sans préavis.</p>
+
+    <h2>11. Droit de rétractation</h2>
+    <p>Conformément au droit belge, le droit de rétractation de 14 jours s'applique aux contrats conclus à distance avec des consommateurs (personnes physiques agissant hors cadre professionnel). Cependant, <strong>en commençant la réalisation de la prestation avant l'expiration du délai de rétractation, le client reconnaît expressément renoncer à ce droit</strong> pour la partie déjà exécutée.</p>
+    <p>Pour les prestations commandées par des professionnels (artisans, commerçants, sociétés), le droit de rétractation ne s'applique pas.</p>
+
+    <h2>12. Responsabilité</h2>
+    <p>La responsabilité de Troilo Digital est limitée au montant hors taxe de la prestation concernée. Troilo Digital ne peut être tenu responsable de dommages indirects, pertes de chiffre d'affaires, pertes de données ou dommages liés à des mises à jour d'algorithmes de moteurs de recherche tiers.</p>
+    <p>Le client est seul responsable du contenu de son site, de sa légalité et de sa conformité aux réglementations applicables.</p>
+
+    <h2>13. Loi applicable et litiges</h2>
+    <p>Les présentes CGV sont soumises au droit belge. En cas de litige, les parties s'engagent à rechercher une solution amiable dans un délai de 30 jours. À défaut, les tribunaux de l'arrondissement judiciaire de Liège sont seuls compétents.</p>
+    <p>Le client peut également recourir à la plateforme européenne de règlement en ligne des litiges : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.</p>
+
+    <h2>14. Modifications des CGV</h2>
+    <p>Troilo Digital se réserve le droit de modifier les présentes CGV. Les modifications s'appliquent aux commandes passées après la date de mise à jour. Les contrats en cours restent régis par la version acceptée lors de leur conclusion.</p>
+
+    <p class="last-update">Dernière mise à jour : 29 mars 2026</p>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <span>© 2026 Troilo Digital</span>
+    <span><a href="../cgv/">CGV</a> · <a href="../mentions-legales/">Mentions</a> · <a href="../politique-de-confidentialite/">Confidentialité</a></span>
+    <span>Liège, Belgique</span>
+</footer>
+
+<script>
+    const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+</script>
+<script src="/cookie-banner.js" defer></script>
+<script defer src="/mobile-bar.js"></script><script defer src="/chatbot.js"></script>
+
+<script>
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+if(navBurger){navBurger.addEventListener('click',function(){navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navOverlay.classList.contains('open')?'hidden':'';});}
+function closeMobileNav(){if(navBurger){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';}}
+</script>
+</body>
+</html>

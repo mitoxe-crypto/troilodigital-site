@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>7 raisons d'invisibilité sur Google — Troilo Digital</title>
+    <meta name="description" content="Votre site n'apparaît pas sur Google ? Decouvrez les 7 raisons les plus fréquentes et comment les corriger. Guide pratique pour artisans et PMEs en Wallonie.">
+    <link rel="canonical" href="https://troilodigital.be/blog/pourquoi-votre-site-est-invisible-sur-google/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="7 raisons d'invisibilité sur Google — Troilo Digital">
+    <meta property="og:description" content="Votre site n'apparaît pas sur Google ? Decouvrez les 7 raisons les plus fréquentes et comment les corriger.">
+    <meta property="og:image" content="https://troilodigital.be/og-image.png">
+    <meta property="og:url" content="https://troilodigital.be/blog/pourquoi-votre-site-est-invisible-sur-google/">
+    <meta property="og:site_name" content="Troilo Digital">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="7 raisons d'invisibilité sur Google — Troilo Digital">
+    <meta name="twitter:description" content="Votre site n'apparaît pas sur Google ? Decouvrez les 7 raisons les plus fréquentes et comment les corriger. Guide pratique pour artisans et PMEs en Wallonie.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+    <meta property="article:published_time" content="2026-03-29">
+    <meta property="article:author" content="Michel Troilo">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Pourquoi votre site est invisible sur Google (et comment y remedier)",
+      "author": {
+        "@type": "Person",
+        "name": "Michel Troilo",
+        "url": "https://troilodigital.be/a-propos/",
+        "jobTitle": "Consultant SEO"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Troilo Digital",
+        "url": "https://troilodigital.be",
+        "logo": {"@type": "ImageObject", "url": "https://troilodigital.be/publisher-logo.png", "width": 600, "height": 60}
+      },
+      "datePublished": "2026-03-29",
+      "dateModified": "2026-03-29",
+      "description": "Les 7 raisons principales qui rendent votre site invisible sur Google, expliquees simplement pour les artisans et PMEs en Wallonie.",
+      "url": "https://troilodigital.be/blog/pourquoi-votre-site-est-invisible-sur-google/",
+      "image": "https://troilodigital.be/og-image.png",
+      "inLanguage": "fr-BE",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".article-intro", "h2", ".article-body"]
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://troilodigital.be/blog/pourquoi-votre-site-est-invisible-sur-google/"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://troilodigital.be/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Pourquoi votre site est invisible sur Google", "item": "https://troilodigital.be/blog/pourquoi-votre-site-est-invisible-sur-google/"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        /* NAV */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1.5rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease, cubic-bezier(0.4,0,0.2,1)); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        /* ARTICLE HEADER */
+        .article-header { padding: 8rem clamp(1.5rem,5vw,4rem) 3rem; text-align: center; }
+        .category-tag {
+            display: inline-block;
+            background: var(--accent-dim);
+            color: var(--accent);
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.85rem;
+            border-radius: 100px;
+            margin-bottom: 1.75rem;
+            border: 1px solid rgba(232,197,71,0.12);
+            opacity: 0;
+        }
+        .article-header h1 {
+            font-family: var(--font-display);
+            max-width: 760px;
+            margin: 0 auto 1.25rem;
+            font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .article-meta {
+            font-size: 0.82rem;
+            color: var(--gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            opacity: 0;
+            font-family: var(--font-mono);
+            letter-spacing: 0.03em;
+        }
+        .article-meta a { color: var(--accent); text-decoration: none; }
+
+        /* BREADCRUMB */
+        .breadcrumb-bar { padding: 0.85rem clamp(1.5rem,5vw,4rem); border-bottom: 1px solid var(--border); background: rgba(20,20,20,0.5); }
+        .breadcrumb { max-width: 720px; margin: 0 auto; font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); display: flex; align-items: center; gap: 0.4rem; letter-spacing: 0.04em; }
+        .breadcrumb a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb .sep { opacity: 0.3; }
+        .breadcrumb .current { color: var(--white); }
+
+        /* ARTICLE BODY */
+        .article-wrap { max-width: 720px; margin: 0 auto; padding: 3rem clamp(1.5rem,5vw,4rem) 5rem; }
+        .article-body p { font-size: 1rem; line-height: 1.8; color: rgba(245,245,240,0.75); margin-bottom: 1.4em; }
+        .article-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--white);
+            margin: 2.5em 0 0.8em;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+        }
+        .article-body h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--white); margin: 1.8em 0 0.6em; letter-spacing: -0.02em; }
+        .article-body strong { font-weight: 700; color: var(--white); }
+        .article-body ul, .article-body ol { margin: 0 0 1.4em 1.4em; }
+        .article-body li { margin-bottom: 0.45em; color: rgba(245,245,240,0.75); line-height: 1.7; }
+        .article-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+        .article-body a:hover { opacity: 0.8; }
+        .article-body code { background: var(--accent-dim); padding: 0.15rem 0.4rem; border-radius: 4px; font-family: var(--font-mono); font-size: 0.85em; color: var(--accent); }
+
+        /* REASON CARDS */
+        .reason-card {
+            background: var(--accent-dim);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 10px 10px 0;
+            padding: 1.25rem 1.5rem;
+            margin: 2em 0 0.5em;
+        }
+        .reason-card .reason-number {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+        }
+        .reason-card h2 { font-size: 1.15rem; margin: 0; border: none; padding: 0; }
+
+        /* TIP & WARN */
+        .tip-box { background: rgba(34,197,94,0.05); border: 1px solid rgba(34,197,94,0.15); border-radius: 10px; padding: 1rem 1.25rem; margin: 1.4em 0; font-size: 0.9rem; color: rgba(245,245,240,0.75); }
+        .tip-box strong { color: #86efac; }
+        .warn-box { background: rgba(251,191,36,0.05); border: 1px solid rgba(251,191,36,0.15); border-radius: 10px; padding: 1rem 1.25rem; margin: 1.4em 0; font-size: 0.9rem; color: rgba(245,245,240,0.75); }
+        .warn-box strong { color: #fbbf24; }
+
+        /* SUMMARY */
+        .summary-list { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem 2rem; margin: 2em 0; }
+        .summary-list h3 { color: var(--accent); margin-top: 0; margin-bottom: 0.85rem; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; }
+        .summary-list ol { margin-left: 1.2em; color: rgba(245,245,240,0.75); }
+        .summary-list li { margin-bottom: 0.4rem; }
+
+        /* CTA BOX */
+        .cta-box { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 3rem 2.5rem; margin: 3rem 0; text-align: center; }
+        .cta-box h2 { font-family: var(--font-display); color: var(--white); font-size: 1.5rem; font-weight: 900; letter-spacing: -0.04em; margin-bottom: 0.75rem; }
+        .cta-box p { color: var(--gray-light); margin-bottom: 1.75rem; font-size: 0.95rem; line-height: 1.6; }
+        .btn-accent { display: inline-block; background: var(--accent); color: var(--black); font-weight: 700; font-size: 0.9rem; padding: 0.85rem 2rem; border-radius: 100px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; }
+        .btn-accent:hover { opacity: 0.88; transform: translateY(-1px); }
+        .cta-sub { display: block; margin-top: 0.75rem; color: var(--gray); font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.05em; }
+
+        /* AUTHOR BOX */
+        .author-box { display: flex; gap: 1.25rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; margin: 3rem 0; }
+        .author-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--black); border: 2px solid rgba(232,197,71,0.2); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.1rem; font-weight: 900; color: var(--accent); flex-shrink: 0; }
+        .author-info h3 { font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 0.15rem; }
+        .author-info .author-title { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .author-info p { font-size: 0.85rem; color: var(--gray-light); line-height: 1.6; margin: 0; }
+
+        /* RELATED */
+        .related-section { margin: 0 0 3rem; }
+        .related-section h3 { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 400; color: var(--accent); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        .related-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.85rem; }
+        .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1.25rem; text-decoration: none; transition: border-color 0.3s; }
+        .related-card:hover { border-color: rgba(232,197,71,0.2); }
+        .related-card .rc-tag { font-family: var(--font-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.35rem; }
+        .related-card .rc-title { font-size: 0.875rem; font-weight: 600; color: var(--white); line-height: 1.4; font-family: var(--font-display); }
+
+        /* FOOTER */
+        .footer { padding: 2rem clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer span { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer-links-row { display: flex; gap: 1.5rem; }
+        .footer a { color: var(--gray); text-decoration: none; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.05em; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .article-header { padding: 7rem 1.5rem 2rem; }
+            .article-wrap { padding: 2rem 1.25rem 4rem; }
+            .cta-box { padding: 2rem 1.5rem; }
+            .author-box { flex-direction: column; }
+            .footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="../../" class="nav-logo">Troilo Digital</a>
+        <div class="nav-right">
+            <a href="../../#work" class="nav-link">Services</a>
+            <a href="../../#pricing" class="nav-link">Tarifs</a>
+            <a href="../" class="nav-link">Blog</a>
+            <a href="../../#contact" class="nav-cta">Contact</a>
+        
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    </nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="../../#work" onclick="closeMobileNav()">Services</a>
+    <a href="../../#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="../../blog/">Blog</a>
+    <a href="../../a-propos/">A propos</a>
+    <a href="../../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+    <!-- HEADER -->
+    <header class="article-header">
+        <div class="category-tag">Guide SEO</div>
+        <h1>Pourquoi votre site est invisible sur Google (et comment y remedier)</h1>
+        <div class="article-meta">
+            <span>Par <a href="../../a-propos/">Michel Troilo</a></span>
+            <span>&middot;</span>
+            <span>29 mars 2026</span>
+            <span>&middot;</span>
+            <span>8 min de lecture</span>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-bar">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="../../">Accueil</a>
+            <span class="sep">&rsaquo;</span>
+            <a href="../">Blog</a>
+            <span class="sep">&rsaquo;</span>
+            <span class="current">Site invisible sur Google</span>
+        </nav>
+    </div>
+
+    <!-- ARTICLE -->
+    <main>
+        <div class="article-wrap">
+            <article class="article-body">
+
+                <p>Vous avez investi quelques centaines &mdash; voire quelques milliers &mdash; d'euros dans un site internet pour votre activité. Un boulanger a Liège, un électricien a Namur, un plombier a Charleroi : peu importe le métier, la logique est la même. Vous pensiez que le site allait faire rentrer des appels. Mais le téléphone reste silencieux. Et quand vous tapez votre propre nom de métier sur Google, vous êtes introuvable.</p>
+
+                <p>Ce n'est pas une fatalite, et ce n'est pas de la malchance. Dans la grande majorité des cas, il y a une raison précise &mdash; souvent plusieurs raisons cumulees &mdash; qui expliquent pourquoi Google ignore votre site. Voici les 7 problèmes que je rencontre le plus souvent chez les artisans et PMEs en Wallonie.</p>
+
+                <div class="summary-list">
+                    <h3>Les 7 raisons passees en revue</h3>
+                    <ol>
+                        <li>Le site n'a jamais ete soumis a Google</li>
+                        <li>Le site est trop lent &mdash; Google penalise la lenteur</li>
+                        <li>Aucune optimisation pour les recherches locales</li>
+                        <li>Pas assez de contenu textuel pour Google</li>
+                        <li>Des erreurs techniques bloquent l'indexation</li>
+                        <li>Pas de fiche Google Business Profile (ou mal configuree)</li>
+                        <li>La concurrence est mieux optimisée et vole vos clics</li>
+                    </ol>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-number">Raison n&deg;1</div>
+                    <h2>Votre site n'a jamais ete soumis a Google</h2>
+                </div>
+                <p>C'est le cas le plus frequent et le plus sous-estime. Contrairement a ce que beaucoup croient, <strong>Google ne decouvre pas automatiquement votre site des qu'il est mis en ligne.</strong> Le moteur de recherche envoie des robots (appeles "crawlers") qui parcourent le web en suivant des liens. Si votre site est neuf et qu'aucun autre site ne pointe vers lui, ces robots peuvent mettre des semaines &mdash; voire des mois &mdash; a le trouver.</p>
+                <h3>Ce qu'il faut faire</h3>
+                <p>L'outil gratuit s'appelle <strong>Google Search Console</strong>. Il vous permet de declarer officiellement votre site a Google, de soumettre votre plan du site (sitemap), et de verifier quelles pages sont indexees.</p>
+                <div class="tip-box"><strong>Astuce rapide :</strong> Tapez <em>site:votredomaine.be</em> dans Google. Si aucun resultat n'apparaît, votre site n'est probablement pas indexe du tout.</div>
+
+                <div class="reason-card">
+                    <div class="reason-number">Raison n&deg;2</div>
+                    <h2>Votre site est trop lent &mdash; Google penalise la lenteur</h2>
+                </div>
+                <p>Depuis 2021, Google intégré officiellement les <strong>Core Web Vitals</strong> dans son algorithme. En clair : un site lent est un site penalise. Si votre page met plus de 3 secondes a s'afficher sur mobile, vous perdez non seulement des visiteurs mais aussi des positions dans les résultats.</p>
+                <p>Les causes les plus fréquentes : des photos non compressees, un hébergement bas de gamme a 2&euro;/mois, ou un site WordPress surcharge de plugins inutiles.</p>
+                <h3>Ce qu'il faut faire</h3>
+                <p>Testez votre site sur <strong>PageSpeed Insights</strong> (l'outil gratuit de Google). Un score en dessous de 50 sur mobile est un signal d'alarme serieux.</p>
+                <div class="warn-box"><strong>Attention :</strong> Un site "beau" n'est pas forcement un site rapide. Beaucoup de sites crees par des agences generalistes sont visuellement soignes mais catastrophiquement lents sur mobile.</div>
+
+                <div class="reason-card">
+                    <div class="reason-number">Raison n&deg;3</div>
+                    <h2>Votre site n'est pas optimise pour les recherches locales</h2>
+                </div>
+                <p>Quand quelqu'un cherche "plombier Liège" ou "boulangerie Namur", Google ne montre pas les meilleurs sites web en general. Il montre les résultats <strong>géographiquement pertinents</strong> &mdash; et en premier lieu, le fameux "pack local" avec la carte Google Maps.</p>
+                <p>Si votre site ne mentionne nulle part votre ville, votre commune, votre region, Google ne peut pas savoir que vous servez cette zone.</p>
+                <h3>Ce qu'il faut faire</h3>
+                <p>Chaque page de votre site doit inclure vos zones d'intervention. Idealement, créez une page dediee par zone géographique principale. Integrez votre adresse complète dans le footer de chaque page.</p>
+
+                <div class="reason-card">
+                    <div class="reason-number">Raison n&deg;4</div>
+                    <h2>Votre site n'a pas assez de texte &mdash; Google ne peut pas lire les images</h2>
+                </div>
+                <p>Google est un moteur de <em>texte</em>. Il lit les mots sur votre site pour comprendre de quoi vous parlez. Or, une grande partie des sites d'artisans sont constitues principalement de photos, de logos et de quelques titres. Du point de vue de Google, c'est presque vide.</p>
+                <h3>Ce qu'il faut faire</h3>
+                <p>Chaque page de service doit comporter <strong>au minimum 300 mots de texte utile</strong> qui decrivent ce que vous faites, pour qui, ou, et comment. Ajoutez une FAQ sur chaque page.</p>
+                <div class="tip-box"><strong>Exemple concret :</strong> Au lieu d'une page "Services" avec trois images et des titres courts, rédigez une page "Installation tableau électrique a Liège" avec une description complete, les types de tableaux installés, vos zones d'intervention, et 3-4 questions/réponses fréquentes.</div>
+
+                <div class="reason-card">
+                    <div class="reason-number">Raison n&deg;5</div>
+                    <h2>Des erreurs techniques bloquent l'indexation</h2>
+                </div>
+                <p>Un site peut sembler parfaitement normal a l'oeil humain et pourtant contenir des instructions qui empechent Google de l'indexer. Ce genre d'erreur arrive souvent lors du developpement.</p>
+                <h3>Les trois elements techniques a verifier</h3>
+                <ul>
+                    <li><strong>robots.txt</strong> &mdash; Verifiez qu'il n'y a pas de ligne <code>Disallow: /</code> qui bloque tout le site.</li>
+                    <li><strong>Sitemap XML</strong> &mdash; C'est le plan de votre site, soumis a Google pour lui indiquer toutes les pages a indexer.</li>
+                    <li><strong>Balise canonical</strong> &mdash; Cette balise HTML indique a Google la version "officielle" d'une page.</li>
+                </ul>
+                <div class="warn-box"><strong>Frequent après une refonte :</strong> Si vous avez change de site recemment, vérifiez que les redirections 301 sont en place pour toutes les anciennes URLs.</div>
+
+                <div class="reason-card">
+                    <div class="reason-number">Raison n&deg;6</div>
+                    <h2>Pas de fiche Google Business Profile &mdash; ou une fiche mal configuree</h2>
+                </div>
+                <p>Pour les artisans et commerçants locaux, <strong>Google Business Profile (anciennement Google My Business) est parfois plus important que le site lui-même.</strong> C'est cette fiche qui apparaît dans le "pack local" de Google Maps.</p>
+                <p>Trois situations fréquentes qui posent problème :</p>
+                <ul>
+                    <li>La fiche n'existe tout simplement pas</li>
+                    <li>La fiche existe mais n'a jamais ete reclamee</li>
+                    <li>La fiche est reclamee mais incomplète : mauvaise catégorie, pas de photos, pas d'horaires, aucun avis</li>
+                </ul>
+                <h3>Ce qu'il faut faire</h3>
+                <p>Creez ou reclamez votre fiche sur <strong>business.google.com</strong>. Choisissez la catégorie principale la plus précise possible. Ajoutez des photos de vos realisations, vos horaires complets, et demandez a vos clients satisfaits de laisser un avis.</p>
+
+                <div class="reason-card">
+                    <div class="reason-number">Raison n&deg;7</div>
+                    <h2>La concurrence est mieux optimisée &mdash; et vole vos clics</h2>
+                </div>
+                <p>Meme si votre site est techniquement sain, rapide et bien indexe, vous pouvez rester invisible si vos concurrents ont investi davantage dans leur référencement. Google n'affiche que 10 résultats par page &mdash; et <strong>les trois premiers résultats captent a eux seuls plus de 60% des clics</strong>.</p>
+                <p>Dans certains secteurs en Wallonie, le niveau de concurrence SEO est encore relativement bas &mdash; ce qui signifie qu'il est encore possible de prendre des positions fortes sans budget pharaonique.</p>
+                <h3>Ce qu'il faut faire</h3>
+                <p>Analysez ce que font vos concurrents qui apparaissent avant vous. Regardez leurs pages : combien de texte, quels mots-cles, combien d'avis Google, quelle structure de site. Quelques mois d'optimisation bien ciblee suffisent souvent a renverser la situation.</p>
+
+                <h2>Alors, par ou commencer ?</h2>
+                <p>La bonne nouvelle, c'est que ces problèmes sont tous solubles. Aucun n'est irremediable. Mais pour les resoudre efficacement, il faut d'abord les identifier précisément &mdash; parce que chaque site a son propre profil de problèmes. Un audit SEO serieux permet de faire exactement ca.</p>
+
+                <div class="cta-box">
+                    <h2>Votre site merite d'etre trouve</h2>
+                    <p>Audit SEO gratuit et sans engagement pour artisans et PMEs en Wallonie. Je vous explique en clair ce qui bloque votre visibilité sur Google.</p>
+                    <a href="../../#contact" class="btn-accent">Demander mon audit gratuit</a>
+                    <span class="cta-sub">Reponse sous 24h &middot; Pas de jargon &middot; 100% adapte à votre activité</span>
+                </div>
+
+                <div class="author-box">
+                    <div class="author-avatar">MT</div>
+                    <div class="author-info">
+                        <h3>Michel Troilo</h3>
+                        <div class="author-title">Consultant SEO &mdash; Liège, Wallonie</div>
+                        <p>Consultant SEO independant base a Liège, spécialisé dans l'accompagnement des artisans et PMEs wallonnes. <a href="../../a-propos/">En savoir plus</a>.</p>
+                    </div>
+                </div>
+
+                <div class="related-section">
+                    <h3>Sur le même sujet</h3>
+                    <div class="related-links">
+                        <a href="../audit-seo-artisan-belgique/" class="related-card"><div class="rc-tag">SEO Local</div><div class="rc-title">Audit SEO pour artisans en Belgique</div></a>
+                        <a href="../quest-ce-que-le-llms-txt/" class="related-card"><div class="rc-tag">AI-Ready</div><div class="rc-title">Qu'est-ce que le llms.txt ?</div></a>
+                        <a href="../comment-choisir-consultant-seo-artisan/" class="related-card"><div class="rc-tag">Guide</div><div class="rc-title">Comment choisir son consultant SEO artisan</div></a>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <span>&copy; 2026 Troilo Digital &mdash; SEO pour artisans wallons</span>
+        <div class="footer-links-row">
+            <a href="../../#work">Services</a>
+            <a href="../../#pricing">Tarifs</a>
+            <a href="../">Blog</a>
+            <a href="../../cgv/">CGV</a>
+            <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a>
+        </div>
+    </footer>
+
+    <script>
+        const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => lenis.raf(time * 1000));
+        gsap.ticker.lagSmoothing(0);
+        gsap.registerPlugin(ScrollTrigger);
+
+        const heroTl = gsap.timeline({ defaults: { ease: "power4.out" } });
+        heroTl
+            .to(".category-tag", { opacity: 1, duration: 0.5 }, 0.2)
+            .to(".article-header h1", { opacity: 1, y: 0, duration: 0.9 }, 0.4)
+            .to(".article-meta", { opacity: 1, duration: 0.6 }, 0.7);
+
+        gsap.utils.toArray(".reason-card, .tip-box, .warn-box, .summary-list, .cta-box, .author-box, .related-section").forEach(el => {
+            gsap.from(el, {
+                scrollTrigger: { trigger: el, start: "top 88%" },
+                y: 20, opacity: 0, duration: 0.6, ease: "power3.out"
+            });
+        });
+    </script>
+
+    <script src="/cookie-banner.js" defer></script>
+    <script defer src="/mobile-bar.js"></script><script defer src="/chatbot.js"></script>
+
+<script>
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+if(navBurger){navBurger.addEventListener('click',function(){navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navOverlay.classList.contains('open')?'hidden':'';});}
+function closeMobileNav(){if(navBurger){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';}}
+</script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Mentions Légales — Troilo Digital</title>
+    <meta name="description" content="Mentions légales de Troilo Digital — responsable éditorial, hébergeur Netlify, traitement des données personnelles et cookies selon le RGPD.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://troilodigital.be/mentions-legales/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be/"},
+        {"@type": "ListItem", "position": 2, "name": "Mentions Légales", "item": "https://troilodigital.be/mentions-legales/"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --border-accent: rgba(232,197,71,0.12);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.8; }
+
+        /* NAV */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            padding: 1.25rem clamp(1.5rem,5vw,4rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10,10,10,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease, cubic-bezier(0.4,0,0.2,1)); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 4rem clamp(1.5rem,5vw,4rem) 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .breadcrumb {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--gray);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .breadcrumb a { color: var(--gray); text-decoration: none; transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb span { margin: 0 0.5rem; opacity: 0.4; }
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            line-height: 0.95;
+            margin-bottom: 1rem;
+        }
+        .page-hero p {
+            color: var(--gray-light);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            max-width: 560px;
+        }
+
+        /* CONTENT */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem clamp(1.5rem,5vw,4rem) 5rem;
+        }
+
+        .content h2 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 3rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            letter-spacing: -0.01em;
+        }
+        .content h2:first-child { margin-top: 0; }
+
+        .content p {
+            margin-bottom: 1rem;
+            color: var(--gray-light);
+            line-height: 1.75;
+            font-size: 0.9rem;
+        }
+
+        .content ul {
+            margin: 0.75rem 0 1rem 1.5rem;
+        }
+        .content li {
+            margin-bottom: 0.5rem;
+            color: var(--gray-light);
+            line-height: 1.65;
+            font-size: 0.9rem;
+        }
+
+        .content a { color: var(--accent); text-decoration: underline; }
+        .content strong { color: var(--white); }
+
+        .info-block {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin: 1rem 0 1.5rem;
+        }
+        .info-block p {
+            margin: 0.3rem 0;
+            color: var(--gray-light);
+            font-size: 0.9rem;
+        }
+        .info-block p:last-child { margin-bottom: 0; }
+
+        .last-update {
+            margin-top: 3rem;
+            color: var(--gray);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* FOOTER */
+        .footer {
+            padding: 2rem clamp(1.5rem,5vw,4rem);
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .content { padding: 2rem 1.25rem 4rem; }
+            .page-hero { padding: 3rem 1.25rem 2rem; }
+            .footer { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mentions Légales — Troilo Digital">
+    <meta name="twitter:description" content="Mentions légales de Troilo Digital — responsable éditorial, hébergeur Netlify, traitement des données personnelles et cookies selon le RGPD.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <a href="../" class="nav-logo">Troilo Digital</a>
+    <div class="nav-right">
+        <a href="../#work" class="nav-link">Services</a>
+        <a href="../#pricing" class="nav-link">Tarifs</a>
+        <a href="../blog/" class="nav-link">Blog</a>
+        <a href="../#contact" class="nav-cta">Contact</a>
+    
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    </nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="../#work" onclick="closeMobileNav()">Services</a>
+    <a href="../#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="../blog/">Blog</a>
+    <a href="../a-propos/">A propos</a>
+    <a href="../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="breadcrumb">
+        <a href="../">Accueil</a><span>›</span>Mentions Légales
+    </div>
+    <h1>Mentions Légales</h1>
+    <p>Conformément au Code de droit économique belge (art. XII.6) et au RGPD (règlement UE 2016/679).</p>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <h2>1. Responsable éditorial</h2>
+    <div class="info-block">
+        <p><strong>Nom :</strong> Michel Troilo</p>
+        <p><strong>Activité :</strong> Troilo Digital — Conseil en référencement naturel (SEO)</p>
+        <p><strong>Statut :</strong> Personne physique exerçant une activité indépendante en Belgique</p>
+        <p><strong>Email :</strong> <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a></p>
+        <p><strong>Téléphone :</strong> <a href="tel:+32492222677">+32 492 222 677</a></p>
+        <p><strong>Pays :</strong> Belgique</p>
+    </div>
+    <p>Le numéro BCE (Banque-Carrefour des Entreprises) et le numéro de TVA seront communiqués dès l'enregistrement officiel de l'activité.</p>
+
+    <h2>2. Hébergement</h2>
+    <div class="info-block">
+        <p><strong>Hébergeur :</strong> Netlify, Inc.</p>
+        <p><strong>Adresse :</strong> 44 Montgomery Street, Suite 300, San Francisco, CA 94104, États-Unis</p>
+        <p><strong>Site :</strong> <a href="https://www.netlify.com" target="_blank" rel="noopener">netlify.com</a></p>
+    </div>
+    <p>Les serveurs utilisés pour la Belgique et l'Europe sont localisés dans des datacentres conformes aux exigences du RGPD. Netlify dispose de clauses contractuelles types (CCT) approuvées par la Commission européenne pour les transferts de données hors UE.</p>
+
+    <h2>3. Traitement des données personnelles</h2>
+    <p>Troilo Digital collecte des données personnelles dans deux contextes :</p>
+    <ul>
+        <li><strong>Formulaire de contact</strong> : nom, email, téléphone, message. Ces données sont utilisées uniquement pour répondre à votre demande et ne sont jamais revendues.</li>
+        <li><strong>Statistiques de visite</strong> : via Google Analytics 4 (GA4), uniquement après votre consentement explicite via la bannière cookies.</li>
+    </ul>
+    <p>Pour toute question relative à vos données : <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a>.</p>
+    <p>Consultez notre <a href="../politique-de-confidentialite/">Politique de confidentialité</a> pour le détail complet de vos droits et des traitements effectués.</p>
+
+    <h2>4. Propriété intellectuelle</h2>
+    <p>L'ensemble des contenus publiés sur troilodigital.be (textes, images, schémas, code) est la propriété exclusive de Michel Troilo, sauf mention contraire. Toute reproduction, même partielle, est soumise à autorisation préalable écrite.</p>
+
+    <h2>5. Cookies</h2>
+    <p>Ce site utilise des cookies de mesure d'audience (Google Analytics) uniquement après votre consentement. Vous pouvez modifier vos préférences à tout moment via le lien "Gérer les cookies" en bas de page ou via notre <a href="../politique-de-confidentialite/">Politique de confidentialité</a>.</p>
+
+    <h2>6. Liens hypertextes</h2>
+    <p>Le site peut contenir des liens vers des sites tiers. Troilo Digital n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou leur politique de confidentialité.</p>
+
+    <h2>7. Loi applicable</h2>
+    <p>Les présentes mentions légales sont soumises au droit belge. En cas de litige, les tribunaux de l'arrondissement judiciaire de Liège sont seuls compétents.</p>
+
+    <p class="last-update">Dernière mise à jour : 29 mars 2026</p>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <span>© 2026 Troilo Digital</span>
+    <span><a href="../cgv/">CGV</a> · <a href="../mentions-legales/">Mentions</a> · <a href="../politique-de-confidentialite/">Confidentialité</a></span>
+    <span>Liège, Belgique</span>
+</footer>
+
+<script>
+    const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+</script>
+<script src="/cookie-banner.js" defer></script>
+<script defer src="/mobile-bar.js"></script><script defer src="/chatbot.js"></script>
+
+<script>
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+if(navBurger){navBurger.addEventListener('click',function(){navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navOverlay.classList.contains('open')?'hidden':'';});}
+function closeMobileNav(){if(navBurger){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';}}
+</script>
+</body>
+</html>

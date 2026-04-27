@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Agents IA pour artisans : chatbot de vente — Troilo Digital</title>
+    <meta name="description" content="Comment un agent IA peut qualifier vos prospects 24/7, répondre à vos questions fréquentes et transformer des enquêtes en commandes fermées pour artisans.">
+    <link rel="canonical" href="https://troilodigital.be/blog/agents-ia-artisans-chatbot-ferme-ventes/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Agents IA pour artisans : chatbot de vente — Troilo Digital">
+    <meta property="og:description" content="Comment un agent IA peut qualifier vos prospects 24/7, répondre à vos questions fréquentes et transformer des enquêtes en commandes fermées pour artisans.">
+    <meta property="og:image" content="https://troilodigital.be/og-image.png">
+    <meta property="og:url" content="https://troilodigital.be/blog/agents-ia-artisans-chatbot-ferme-ventes/">
+    <meta property="og:site_name" content="Troilo Digital">
+    <meta property="og:locale" content="fr_BE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agents IA pour Artisans : chatbot qui ferme — Troilo Digital">
+    <meta name="twitter:description" content="Comment un agent IA peut qualifier vos prospects 24/7, répondre à vos questions fréquentes et transformer des enquêtes en commandes fermées pour artisans.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+    <meta property="article:published_time" content="2026-04-20T09:00:00+02:00">
+    <meta property="article:author" content="Michel Troilo">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Agents IA pour artisans : comment votre chatbot peut fermer les ventes",
+      "description": "Découvrez comment un agent IA peut qualifier vos prospects 24/7, répondre à vos questions les plus fréquentes et transformer des enquêtes en commandes fermées.",
+      "url": "https://troilodigital.be/blog/agents-ia-artisans-chatbot-ferme-ventes/",
+      "image": "https://troilodigital.be/og-image.png",
+      "datePublished": "2026-04-20T09:00:00+02:00",
+      "dateModified": "2026-04-20T09:00:00+02:00",
+      "author": {
+        "@type": "Person",
+        "name": "Michel Troilo",
+        "jobTitle": "Consultant SEO",
+        "url": "https://troilodigital.be/a-propos/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Troilo Digital",
+        "url": "https://troilodigital.be",
+        "logo": {"@type": "ImageObject", "url": "https://troilodigital.be/publisher-logo.png", "width": 600, "height": 60}
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://troilodigital.be/blog/agents-ia-artisans-chatbot-ferme-ventes/"
+      },
+      "keywords": ["agent IA artisan", "chatbot ventes", "qualification prospects", "automatisation artisans"],
+      "inLanguage": "fr-BE"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://troilodigital.be/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Agents IA pour artisans", "item": "https://troilodigital.be/blog/agents-ia-artisans-chatbot-ferme-ventes/"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1.5rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s; }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        .article-hero {
+            padding: 8rem clamp(1.5rem,5vw,4rem) 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .article-hero::before {
+            content: '';
+            position: absolute;
+            top: -100px; left: 50%;
+            width: 500px; height: 300px;
+            transform: translateX(-50%);
+            background: radial-gradient(circle, rgba(232,197,71,0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .breadcrumb-inline {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+        }
+        .breadcrumb-inline a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .breadcrumb-inline a:hover { color: var(--accent); }
+        .article-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .article-hero .meta {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--gray);
+            letter-spacing: 0.05em;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .article-hero p {
+            font-size: 1.05rem;
+            color: var(--gray-light);
+            line-height: 1.8;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .article-body {
+            padding: 0 clamp(1.5rem,5vw,4rem) 5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .article-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin: 3rem 0 1rem;
+            line-height: 1.2;
+        }
+        .article-body h3 {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem;
+            line-height: 1.3;
+        }
+        .article-body p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--gray-light);
+        }
+        .article-body ul, .article-body ol {
+            margin: 1.5rem 0 1.5rem 2rem;
+            line-height: 1.8;
+        }
+        .article-body li {
+            margin-bottom: 0.8rem;
+            color: var(--gray-light);
+        }
+        .article-body strong { color: var(--white); font-weight: 600; }
+        .article-body em { font-style: italic; color: var(--accent); }
+
+        .highlight-box {
+            background: rgba(232,197,71,0.05);
+            border-left: 3px solid var(--accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        .highlight-box p { margin: 0; }
+
+        .cta-article {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin: 4rem 0;
+            text-align: center;
+        }
+        .cta-article h3 { margin-top: 0; }
+        .cta-article .btn-accent {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--black);
+            padding: 0.85rem 2rem;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.02em;
+            transition: opacity 0.2s, transform 0.15s;
+            margin-top: 1rem;
+        }
+        .cta-article .btn-accent:hover { opacity: 0.88; transform: translateY(-1px); }
+
+        .footer {
+            padding: 2rem clamp(1.5rem,5vw,4rem);
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer span { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer-links-row { display: flex; gap: 1.5rem; }
+        .footer a { color: var(--gray); text-decoration: none; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.05em; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .article-hero { padding: 7rem 1.5rem 2rem; }
+            .article-hero h1 { font-size: 1.6rem; }
+            .article-body { padding: 0 1.5rem 4rem; }
+            .article-body h2 { font-size: 1.4rem; }
+            .footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="../../" class="nav-logo">Troilo Digital</a>
+        <div class="nav-right">
+            <a href="../../#work" class="nav-link">Services</a>
+            <a href="../../#pricing" class="nav-link">Tarifs</a>
+            <a href="../" class="nav-link">Blog</a>
+            <a href="../../#contact" class="nav-cta">Contact</a>
+        </div>
+        <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="nav-mobile-overlay" id="navOverlay">
+        <a href="../../#work" onclick="closeMobileNav()">Services</a>
+        <a href="../../#pricing" onclick="closeMobileNav()">Tarifs</a>
+        <a href="../">Blog</a>
+        <a href="../../a-propos/">A propos</a>
+        <a href="../../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+    </div>
+
+    <article>
+        <header class="article-hero">
+            <div class="breadcrumb-inline">
+                <a href="../../">Accueil</a> &rsaquo; <a href="../">Blog</a> &rsaquo; Agents IA
+            </div>
+            <h1>Agents IA pour artisans : comment votre chatbot peut fermer les ventes</h1>
+            <div class="meta">20 avril 2026 &middot; 9 min</div>
+            <p>Découvrez comment un agent IA peut répondre à vos prospects 24/7, qualifier automatiquement vos appels entrants et transformer des enquêtes vagues en commandes fermées — sans vous coûter du temps de gestion.</p>
+        </header>
+
+        <section class="article-body">
+            <h2>Le problème des artisans wallons en 2026</h2>
+            <p>Vous avez un site web, une fiche Google Business Profile bien optimisée, et vous commencez à recevoir des demandes de devis. Mais voilà : vous êtes débordé. Entre les appels, les emails, les messages WhatsApp, et le travail sur le terrain, il est impossible de répondre en moins de 24h.</p>
+            <p>Résultat ? Vos prospects appellent votre concurrent qui décroche immédiatement. Même si votre travail est meilleur, vous avez déjà perdu le contrat.</p>
+            <p>En 2026, il existe une solution simple : un <strong>agent IA</strong> qui fait le travail pour vous.</p>
+
+            <h2>Qu'est-ce qu'un agent IA, concrètement ?</h2>
+            <p>Un agent IA n'est pas un chatbot banal qui répond "Merci pour votre message, nous vous rappellerons demain". C'est un vrai assistant :</p>
+            <ul>
+                <li><strong>Il qualifie vos prospects</strong> — type de chantier, budget estimé, urgence, zone géographique</li>
+                <li><strong>Il répond à vos FAQs</strong> — délais, prix indicatifs, primes possibles, garanties</li>
+                <li><strong>Il propose des créneaux RDV</strong> — connecté à votre agenda, il offre des horaires libres</li>
+                <li><strong>Il envoie des relances</strong> — un prospect silencieux depuis 48h reçoit un message de suivi</li>
+                <li><strong>Il est actif 24/7</strong> — pas de dimanche ni de congés</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Exemple concret :</strong> Un prospect contacte votre agent IA pour une fuite de tuyau. L'agent lui pose les bonnes questions : où est la fuite, quelle est l'urgence (ce soir ou demain), dans quel quartier. Il qualifie le lead en 3 minutes, propose un rendez-vous sur votre agenda libre, et vous envoie un résumé : "Fuite rue des Alpes, urgent, ~€150 estimé, prêt demain 10h."</p>
+            </div>
+
+            <h2>Impact réel : les chiffres</h2>
+            <p>Temps de réponse moyen pour un artisan seul : <strong>6 à 24 heures</strong>. Avec un agent IA : <strong>moins d'une minute</strong>.</p>
+            <p>Résultat observé chez les artisans wallons ayant adopté un agent IA :</p>
+            <ul>
+                <li><strong>+15 à 25 %</strong> de taux de conversion (plus vite répondu = plus de devis signés)</li>
+                <li><strong>-3 heures/jour</strong> d'administration (pas besoin de répondre aux mêmes questions 10 fois)</li>
+                <li><strong>+40 %</strong> de prospects qualifiés (l'agent pose les bonnes questions, vous ne perdez plus d'infos)</li>
+            </ul>
+
+            <h2>Trois niveaux d'agent IA : lequel pour vous ?</h2>
+            <h3>🥉 Agent Essentiel — 67€/mois</h3>
+            <p>Pour artisans solo avec peu de demandes. L'agent répond sur votre site ou WhatsApp, gère les horaires et transferts.</p>
+            <ul>
+                <li>8-10 réponses automatiques configurées</li>
+                <li>Transfert vers vous si hors de ses compétences</li>
+                <li>Pas de qualification complète — juste les infos clés</li>
+            </ul>
+            <p><em>Idéal si :</em> vous avez moins de 3-5 demandes/jour.</p>
+
+            <h3>🥈 Agent Pro — 127€/mois</h3>
+            <p>Pour artisans avec demandes régulières. L'agent qualifie vos prospects, propose des créneaux, envoie des résumés par email.</p>
+            <ul>
+                <li>FAQ métier complète (20+ questions)</li>
+                <li>Qualification structurée : budget, urgence, type de chantier</li>
+                <li>Récapitulatif email après chaque conversation</li>
+                <li>Intégration agenda — propose vos créneaux libres</li>
+            </ul>
+            <p><em>Idéal si :</em> vous avez 5-15 demandes/jour et voulez moins d'administratif.</p>
+
+            <h3>🥇 Agent Elite — 247€/mois</h3>
+            <p>Pour artisans qui veulent vraiment déléguer. Multi-canal (site, WhatsApp, SMS), relances automatiques, rapport mensuel.</p>
+            <ul>
+                <li>Tout le Pro +</li>
+                <li>Multi-canal : site + WhatsApp + SMS</li>
+                <li>Relances auto 48h si silence</li>
+                <li>Rapport mensuel : conversations, leads qualifiés, taux conversion</li>
+                <li>Mises à jour contenu incluses (nouveau service, promo, zone)</li>
+            </ul>
+            <p><em>Idéal si :</em> vous avez 15+ demandes/jour et vous voulez des vraies métriques.</p>
+
+            <h2>Combien ça coûte vraiment ?</h2>
+            <p>L'agent Pro (127€/mois) revient à <strong>~€1,50 par prospect qualifié</strong> (si vous en avez 4-5 par jour). C'est sans commune mesure avec un salaire de secrétaire (€1800+/mois) ou une agence de qualification (€500+/mois).</p>
+            <p>Et vous ne payez que quand votre agent est actif — pas d'engagement long terme.</p>
+
+            <div class="highlight-box">
+                <p><strong>Calcul ROI :</strong> Si votre agent Pro ferme 2 devis supplémentaires par mois à €800 l'un = €1600 de CA additionnel contre €127 d'invest. ROI = 1160%. Ça paie en un mois.</p>
+            </div>
+
+            <h2>Les obstacles (et comment les dépasser)</h2>
+            <h3>❌ "L'IA ne comprendra pas les nuances de mon métier"</h3>
+            <p>Faux. Chaque agent IA est configuré avec vos FAQ exactes, vos tarifs, vos zones de service, vos primes possibles. Il répond comme vous le feriez — parce qu'il dit exactement ce que vous lui dites.</p>
+
+            <h3>❌ "Les prospects voudront parler à une vraie personne"</h3>
+            <p>Oui, et c'est prévu. Après 2-3 échanges, l'agent transfère au vrai artisan ou propose un appel vidéo avec vous. L'agent fait juste le filtrage et la qualification — pas de vente final.</p>
+
+            <h3>❌ "C'est trop compliqué à mettre en place"</h3>
+            <p>Vous fournissez une liste de vos FAQ + vos horaires + votre agenda Google. C'est tout. L'agent est live en 48h. Zéro coding, zéro config technique.</p>
+
+            <h2>Comment ça marche en pratique</h2>
+            <ol>
+                <li><strong>Jour 1 :</strong> Vous envoyez vos FAQ, horaires, tarifs indicatifs, zones de service.</li>
+                <li><strong>Jour 2 :</strong> L'agent IA est configuré et testé sur votre site/WhatsApp.</li>
+                <li><strong>Jour 3 :</strong> Premier prospect est automatiquement qualifié pendant que vous êtes sur chantier.</li>
+                <li><strong>Semaine 1 :</strong> Vous recevez des résumés pour chaque prospect (pas de surprises).</li>
+                <li><strong>Mois 2 onwards :</strong> Votre agent qualifie en moyenne 3-5 prospects/jour. Vous n'avez plus besoin de répondre aux mêmes questions 10 fois.</li>
+            </ol>
+
+            <h2>Les vraies questions avant de vous engager</h2>
+            <ul>
+                <li><strong>Avez-vous au moins 2-3 demandes par jour ?</strong> Si vous en avez 1, un agent Pro n'est pas rentable encore.</li>
+                <li><strong>Vos prospects posent-ils 3+ fois les mêmes questions ?</strong> Si oui, c'est du temps récupérable.</li>
+                <li><strong>Répondez-vous souvent après 24h ?</strong> Si oui, vous perdez déjà des contrats à cause du délai.</li>
+                <li><strong>Accepteriez-vous de partager vos FAQ et votre agenda ?</strong> Oui ? Alors l'agent Pro est pour vous.</li>
+            </ul>
+
+            <div class="cta-article">
+                <h3>Prêt à automatiser votre gestion de prospects ?</h3>
+                <p>L'agent IA Pro coûte 127€/mois. Configuré en 48h. Qualifie vos prospects pendant que vous travaillez.</p>
+                <a href="../../agent-ia-artisan/" class="btn-accent">Explorer les agents IA →</a>
+            </div>
+
+            <h2>Et votre SEO dans tout ça ?</h2>
+            <p>Un agent IA qui qualifie mieux vos prospects = plus d'appels entrants = plus d'avis Google = meilleur classement local. C'est une boucle vertueuse : le référencement attire les clients, l'agent IA les qualifie, les avis reçoivent plus de clients.</p>
+            <p>À Liège, les artisans qui combinent un bon site SEO + un agent IA ferment en moyenne <strong>28% plus de devis</strong> que ceux qui ont juste un site.</p>
+
+            <h2>Résumé</h2>
+            <ul>
+                <li>Un agent IA = réponse instantanée 24/7 + qualification automatique</li>
+                <li>ROI en 1 mois si vous avez 4-5 prospects/jour (très probable pour un artisan visible)</li>
+                <li>Trois niveaux : Essentiel (67€), Pro (127€), Elite (247€)</li>
+                <li>Configuration en 48h, zéro code technique</li>
+                <li>Combiné avec un bon SEO, ça ferme 28% plus de devis</li>
+            </ul>
+
+            <p><strong>Votre agent IA vous attend.</strong> Les concurrents sans automatisation perdent déjà des clients à cause des délais. À Wallonie en 2026, c'est un avantage concurrentiel qui coûte moins cher qu'une annonce Facebook.</p>
+        </section>
+    </article>
+
+    <footer class="footer">
+        <span>&copy; 2026 Troilo Digital &mdash; SEO pour artisans wallons</span>
+        <div class="footer-links-row">
+            <a href="../../#work">Services</a>
+            <a href="../../#pricing">Tarifs</a>
+            <a href="../../cgv/">CGV</a>
+            <a href="../../mentions-legales/">Mentions légales</a>
+            <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a>
+        </div>
+    </footer>
+
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
+        });
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => lenis.raf(time * 1000));
+        gsap.ticker.lagSmoothing(0);
+        gsap.registerPlugin(ScrollTrigger);
+
+        const heroTl = gsap.timeline({ defaults: { ease: "power4.out" } });
+        heroTl
+            .to(".article-hero h1", { opacity: 1, y: 0, duration: 1 }, 0.2)
+            .to(".article-hero .meta", { opacity: 1, y: 0, duration: 0.8 }, 0.5)
+            .to(".article-hero p", { opacity: 1, y: 0, duration: 0.8 }, 0.6);
+    </script>
+
+    <script src="/cookie-banner.js" defer></script>
+    <script defer src="/mobile-bar.js"></script>
+    <script defer src="/chatbot.js"></script>
+
+    <script>
+        const navBurger = document.getElementById('navBurger');
+        const navOverlay = document.getElementById('navOverlay');
+        if(navBurger) {
+            navBurger.addEventListener('click', function() {
+                navBurger.classList.toggle('open');
+                navOverlay.classList.toggle('open');
+                document.body.style.overflow = navOverlay.classList.contains('open') ? 'hidden' : '';
+            });
+        }
+        function closeMobileNav() {
+            if(navBurger) {
+                navBurger.classList.remove('open');
+                navOverlay.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        }
+    </script>
+</body>
+</html>

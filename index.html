@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troilo Digital — Agence SEO Liège | Artisans Wallonie</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Consultant SEO pour artisans et PME wallons. Audit SEO, création de site, visibilité locale. Michel Troilo — résultats mesurables dès 197€.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="google-site-verification" content="KvdXlbG7c22qXZDyiEQhPewOi4QpZg7M2Y93mL3mr5c">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://troilodigital.be/">
+<link rel="alternate" hreflang="fr" href="https://troilodigital.be/">
+<link rel="alternate" hreflang="x-default" href="https://troilodigital.be/">
+<meta property="og:title" content="Troilo Digital — Agence SEO Liège | Artisans Wallonie">
+<meta property="og:description" content="Consultant SEO pour artisans et PME wallons. Audit SEO, création de site, visibilité locale. Michel Troilo — résultats mesurables dès 197€.">
+<meta property="og:image" content="https://troilodigital.be/og-image.png">
+<meta property="og:url" content="https://troilodigital.be/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Troilo Digital">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Troilo Digital — Agence SEO Liège">
+<meta name="twitter:description" content="Audit SEO pour artisans et PME wallons. Résultats mesurables.">
+<meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <style>
+        @font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Medium.woff2') format('woff2'); font-weight: 500; font-display: swap; font-style: normal; }
+        @font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Bold.woff2') format('woff2'); font-weight: 700; font-display: swap; font-style: normal; }
+        @font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Black.woff2') format('woff2'); font-weight: 900; font-display: swap; font-style: normal; }
+        @font-face { font-family: 'Instrument Sans'; src: url('/fonts/InstrumentSans-latin.woff2') format('woff2'), url('/fonts/InstrumentSans-latin-ext.woff2') format('woff2'); font-weight: 400 700; font-display: swap; font-style: normal; }
+        @font-face { font-family: 'GeistMono'; src: url('/fonts/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; cursor: none; -webkit-font-smoothing: antialiased; }
+
+        /* ===== CURSOR ===== */
+        .cur { width: 12px; height: 12px; background: var(--accent); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; transform: translate(-50%,-50%); mix-blend-mode: difference; transition: transform 0.15s; }
+        .cur-t { width: 44px; height: 44px; border: 1px solid rgba(232,197,71,0.25); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); transition: all 0.2s ease-out; }
+        .cur.big { transform: translate(-50%,-50%) scale(5); }
+        .cur-t.big { width: 80px; height: 80px; border-color: rgba(232,197,71,0.08); }
+
+        /* ===== LOADER ===== */
+        .loader { position: fixed; inset: 0; background: var(--black); z-index: 20000; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .loader-line { width: 0; height: 1px; background: var(--accent); margin-bottom: 2rem; }
+        .loader-word { font-family: var(--font-display); font-size: clamp(2rem,5vw,4rem); font-weight: 900; letter-spacing: -0.05em; overflow: hidden; }
+        .loader-word span { display: inline-block; transform: translateY(110%); }
+        .loader-pct { font-family: var(--font-mono); font-size: 0.75rem; color: var(--gray); margin-top: 1.5rem; letter-spacing: 0.1em; }
+
+        /* ===== NAV ===== */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1.5rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; mix-blend-mode: difference; opacity: 0; }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s var(--ease); }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: var(--accent); border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: var(--radius-sm); }
+
+        /* ===== HERO ===== */
+        .hero { height: 280vh; position: relative; }
+        .hero-pin { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 clamp(1.5rem,5vw,4rem); overflow: hidden; }
+        .hero-tag { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 2rem; opacity: 0; transform: translateY(20px); }
+        .hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem,9vw,9rem); font-weight: 900; letter-spacing: -0.06em; line-height: 0.95; }
+        .hero h1 .char { display: inline-block; opacity: 0; transform: translateY(100%) rotateX(90deg); }
+        .hero h1 .accent { color: var(--accent); }
+        .hero-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 50vh; display: flex; align-items: flex-end; padding: 0 clamp(1.5rem,5vw,4rem) 3rem; }
+        .hero-sub { font-size: clamp(0.95rem,1.5vw,1.1rem); color: var(--gray-light); max-width: 420px; line-height: 1.65; opacity: 0; }
+        .hero-scroll { font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray); letter-spacing: 0.2em; text-transform: uppercase; margin-left: auto; opacity: 0; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+        .hero-scroll-line { width: 1px; height: 30px; background: linear-gradient(to bottom, var(--accent), transparent); animation: pulse 2s infinite; }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.2; } }
+        .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; opacity: 0; }
+        .hero-btn-main { display: inline-block; padding: 0.9rem 2rem; background: var(--accent); color: var(--black); font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; text-decoration: none; border-radius: 100px; transition: all 0.3s; white-space: nowrap; }
+        .hero-btn-main:hover { background: #fff; transform: translateY(-2px); }
+        .hero-btn-sec { display: inline-block; padding: 0.9rem 1.75rem; border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.6); font-size: 0.85rem; text-decoration: none; border-radius: 100px; transition: all 0.3s; white-space: nowrap; }
+        .hero-btn-sec:hover { border-color: var(--accent); color: var(--accent); }
+        .hero-reassurance { font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray); letter-spacing: 0.05em; margin-top: 0.75rem; opacity: 0; }
+
+        /* ===== TICKER ===== */
+        .ticker { padding: 1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: hidden; }
+        .ticker-track { display: flex; gap: 3rem; animation: tick 25s linear infinite; width: max-content; }
+        .ticker-item { font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; color: rgba(255,255,255,0.12); }
+        @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        /* ===== SERVICES — horizontal scroll ===== */
+        .hscroll { padding: clamp(3rem,6vw,5rem) 0; overflow: hidden; }
+        .hscroll-header { padding: 0 clamp(1.5rem,5vw,4rem); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: flex-end; }
+        .hscroll-header h2 { font-family: var(--font-display); font-size: clamp(2rem,5vw,3.5rem); font-weight: 900; letter-spacing: -0.05em; line-height: 0.95; }
+        .hscroll-header p { color: var(--gray); font-size: 0.85rem; max-width: 280px; text-align: right; line-height: 1.5; }
+        .cards-track { display: flex; gap: 1.25rem; padding: 0 clamp(1.5rem,5vw,4rem); width: max-content; }
+        .card { width: clamp(300px,28vw,380px); background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; flex-shrink: 0; transition: transform 0.5s cubic-bezier(.4,0,.2,1), border-color 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: rgba(232,197,71,0.15); }
+        .card-top { height: 160px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .card-gradient { width: 100%; height: 100%; transition: transform 0.7s cubic-bezier(.4,0,.2,1); position: absolute; inset: 0; }
+        .card-icon { position: relative; z-index: 1; opacity: 0.6; }
+        .card-visual { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+        .card-visual .card-stat { font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: #fff; opacity: 0.9; letter-spacing: -0.03em; }
+        .card-visual .card-stat-label { font-family: var(--font-mono); font-size: 0.6rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.1em; text-align: center; }
+        .card:hover .card-gradient { transform: scale(1.08); }
+        .card-number { position: absolute; top: 1rem; left: 1.25rem; font-family: var(--font-mono); font-size: 0.7rem; color: rgba(255,255,255,0.3); }
+        .card-body { padding: 1.5rem; }
+        .card-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .card-body p { color: var(--gray); font-size: 0.85rem; line-height: 1.55; }
+        .cg1 { background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%); }
+        .cg2 { background: linear-gradient(135deg, #1a0a0a 0%, #4a1010 100%); }
+        .cg3 { background: linear-gradient(135deg, #0a1a0a 0%, #1a4a1a 100%); }
+        .cg4 { background: linear-gradient(135deg, #1a1a0a 0%, #4a3a0a 100%); }
+
+        /* ===== SPLIT — who ===== */
+        .split { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,6vw,6rem); align-items: center; }
+        .split-text h2 { font-family: var(--font-display); font-size: clamp(2rem,4vw,3.5rem); font-weight: 900; letter-spacing: -0.05em; line-height: 0.95; margin-bottom: 1.5rem; }
+        .split-text p { color: var(--gray-light); font-size: 1rem; line-height: 1.7; margin-bottom: 1rem; }
+        .split-text .wave { text-decoration: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='6'%3E%3Cpath d='M0 3Q5 0 10 3Q15 6 20 3Q25 0 30 3Q35 6 40 3' fill='none' stroke='%23e8c547' stroke-width='2'/%3E%3C/svg%3E"); background-repeat: repeat-x; background-position: 0 100%; background-size: 40px 6px; padding-bottom: 4px; animation: wv 1.5s linear infinite; }
+        @keyframes wv { from { background-position: 0 100%; } to { background-position: 40px 100%; } }
+        .split-photo { border-radius: 16px; overflow: hidden; aspect-ratio: 4/5; }
+        .split-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(30%) contrast(1.1); transition: filter 0.5s; }
+        .split-photo:hover img { filter: grayscale(0%) contrast(1); }
+        .split-avatar { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .split-avatar img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-dim); }
+        .split-avatar-name { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; }
+        .split-avatar-role { font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray); letter-spacing: 0.05em; }
+        .split-phone-hook { font-family: var(--font-display); font-size: clamp(1.5rem,3vw,2.5rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1; color: var(--gray); margin-top: 2rem; }
+        .split-phone-hook strong { color: var(--accent); }
+
+        /* ===== SCRAMBLE STATS ===== */
+        .scramble-row { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .scramble-cell { padding: clamp(2rem,4vw,4rem) clamp(1rem,3vw,3rem); text-align: center; border-right: 1px solid var(--border); }
+        .scramble-cell:last-child { border-right: none; }
+        .scramble-num { font-family: var(--font-display); font-size: clamp(2.5rem,6vw,4.5rem); font-weight: 900; letter-spacing: -0.04em; margin-bottom: 0.5rem; color: var(--accent); }
+        .scramble-label { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; }
+
+        /* ===== AVANT/APRÈS ===== */
+        .ba-section { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); }
+        .ba-section .section-header { text-align: center; margin-bottom: 3rem; }
+        .ba-section h2 { font-family: var(--font-display); font-size: clamp(2rem,5vw,3.5rem); font-weight: 900; letter-spacing: -0.05em; }
+        .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+        .ba-col { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; }
+        .ba-tag { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 100px; display: inline-block; margin-bottom: 1.5rem; }
+        .ba-tag.red { background: rgba(239,68,68,0.1); color: #ef4444; }
+        .ba-tag.green { background: rgba(34,197,94,0.1); color: #22c55e; }
+        .ba-row { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+        .ba-row:last-child { border-bottom: none; }
+        .ba-row span:first-child { color: var(--gray); }
+        .ba-row .red { color: #ef4444; font-weight: 600; }
+        .ba-row .green { color: #22c55e; font-weight: 600; }
+        .ba-note { text-align: center; font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray); margin-top: 1.5rem; letter-spacing: 0.05em; }
+
+        /* ===== PRICING ===== */
+        .pricing { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); }
+        .pricing .section-header { text-align: center; margin-bottom: 3rem; }
+        .pricing h2 { font-family: var(--font-display); font-size: clamp(2rem,5vw,3.5rem); font-weight: 900; letter-spacing: -0.05em; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; max-width: 1300px; margin: 0 auto; }
+        .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; display: flex; flex-direction: column; transition: border-color 0.3s; }
+        .price-card.feat { border-color: rgba(232,197,71,0.3); position: relative; }
+        .price-card.feat::before { content: 'Populaire'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; background: var(--accent); color: var(--black); padding: 0.2rem 0.8rem; border-radius: 100px; }
+        .price-card:hover { border-color: rgba(232,197,71,0.2); }
+        .price-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .price-amount { font-family: var(--font-display); font-size: 2.5rem; font-weight: 900; color: var(--accent); letter-spacing: -0.03em; }
+        .price-period { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); margin-bottom: 1.5rem; }
+        .price-list { list-style: none; flex: 1; margin-bottom: 1.5rem; }
+        .price-list li { font-size: 0.85rem; color: var(--gray-light); padding: 0.35rem 0; padding-left: 1rem; position: relative; }
+        .price-list li::before { content: ''; position: absolute; left: 0; top: 0.65rem; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); opacity: 0.5; }
+        .price-btn, a.price-btn, a.price-btn:link, a.price-btn:visited { display: block; text-align: center; padding: 0.8rem; border: 1px solid var(--border); border-radius: 100px; color: var(--white) !important; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.3s; }
+        .price-btn:hover, a.price-btn:hover { background: var(--accent) !important; color: var(--black) !important; border-color: var(--accent) !important; }
+        .price-card.feat .price-btn, .price-card.feat a.price-btn:link, .price-card.feat a.price-btn:visited { background: var(--accent); color: var(--black) !important; border-color: var(--accent); }
+        .price-card.feat .price-btn:hover, .price-card.feat a.price-btn:hover { background: #fff !important; color: var(--black) !important; border-color: #fff !important; }
+
+        /* ===== CONTACT + CALENDAR ===== */
+        .contact-section { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); }
+        .contact-section .section-header { text-align: center; margin-bottom: 1rem; }
+        .contact-section h2 { font-family: var(--font-display); font-size: clamp(2rem,5vw,3.5rem); font-weight: 900; letter-spacing: -0.05em; }
+        .contact-sub { text-align: center; color: var(--gray); font-size: 0.95rem; max-width: 500px; margin: 0 auto 3rem; line-height: 1.6; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto; align-items: start; }
+        .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+        .contact-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; transition: border-color 0.3s; }
+        .contact-card:hover { border-color: rgba(232,197,71,0.15); }
+        .contact-card-label { font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .contact-card a { color: var(--white); text-decoration: none; font-size: 1rem; font-weight: 500; transition: color 0.3s; }
+        .contact-card a:hover { color: var(--accent); }
+        .contact-cal { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; min-height: 400px; }
+        .contact-cal-header { font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
+        .cal-embed { width: 100%; min-height: 350px; border: none; border-radius: 8px; }
+        .contact-phone-hook { font-family: var(--font-display); font-size: clamp(1.2rem,2.5vw,1.8rem); font-weight: 900; letter-spacing: -0.03em; color: var(--gray); text-align: center; margin-top: 2rem; }
+        .contact-phone-hook strong { color: var(--accent); }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+        /* ===== FOOTER ===== */
+        .footer { padding: 2rem clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .footer span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .split { grid-template-columns: 1fr; }
+            .scramble-row { grid-template-columns: 1fr; }
+            .scramble-cell { border-right: none; border-bottom: 1px solid var(--border); }
+            .scramble-cell:last-child { border-bottom: none; }
+            .ba-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr 1fr; max-width: 700px; }
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .cur, .cur-t { display: none; }
+            body { cursor: auto; }
+            .hscroll-header { flex-direction: column; gap: 1rem; }
+            .hscroll-header p { text-align: left; }
+            .hero-bottom { flex-direction: column; gap: 2rem; }
+            .hero-scroll { margin-left: 0; }
+            #blogCards { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 480px) {
+            .pricing-grid { grid-template-columns: 1fr; max-width: 460px; }
+        }
+        .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: border-color 0.3s; }
+        .faq-item:hover { border-color: rgba(232,197,71,0.15); }
+        .faq-q { width: 100%; background: none; border: none; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; color: var(--white); font-family: var(--font-body); font-size: 0.9rem; font-weight: 500; text-align: left; }
+        .faq-icon { color: var(--accent); font-size: 1.2rem; transition: transform 0.3s; }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-a-inner { padding: 0 1.25rem 1rem; color: var(--gray-light); font-size: 0.85rem; line-height: 1.6; }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Avez-vous besoin de mes accès WordPress pour l'audit SEO ?","acceptedAnswer":{"@type":"Answer","text":"Non. L'audit est 100% externe. On analyse votre site comme le fait Google — de l'extérieur. Aucun mot de passe requis."}},
+    {"@type":"Question","name":"Combien de temps avant de voir des résultats SEO ?","acceptedAnswer":{"@type":"Answer","text":"Les corrections techniques sont visibles en 2 à 6 semaines. Pour les rankings locaux, comptez 1 à 3 mois selon la concurrence."}},
+    {"@type":"Question","name":"Quel est le tarif d'un audit SEO pour artisan en Belgique ?","acceptedAnswer":{"@type":"Answer","text":"L'Audit Essentiel est à 197€, livré en 5 jours. L'Audit Complet à 397€ inclut schema JSON-LD et llms.txt. L'Audit + Implémentation est à 997€. Le suivi mensuel est disponible à partir de 297€/mois (sans engagement)."}},
+    {"@type":"Question","name":"Proposez-vous un suivi mensuel après l'audit SEO ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Trois formules sans engagement : Suivi à 297€/mois (rapport + 1 correction), Croissance à 497€/mois (3 corrections + 1 contenu SEO rédigé + call mensuel), Domination à 797€/mois (correctifs illimités + 3 contenus/mois + veille concurrents)."}},
+    {"@type":"Question","name":"Qu'est-ce que le référencement local ?","acceptedAnswer":{"@type":"Answer","text":"C'est apparaître sur Google quand quelqu'un tape 'plombier Liège' ou 'électricien Namur'. Le type de recherche le plus rentable pour un artisan."}},
+    {"@type":"Question","name":"Vous couvrez quelle zone en Belgique ?","acceptedAnswer":{"@type":"Answer","text":"Principalement la Wallonie — Liège, Namur, Charleroi, Verviers, Mons. L'audit étant à distance, on travaille aussi avec Bruxelles et le Luxembourg."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": "https://troilodigital.be/#organization",
+  "name": "Troilo Digital",
+  "url": "https://troilodigital.be",
+  "email": "michel@troilodigital.be",
+  "telephone": "+32492222677",
+  "priceRange": "$$",
+  "sameAs": ["https://www.linkedin.com/in/micheltroilo/"],
+  "image": "https://troilodigital.be/og-image.png",
+  "founder": {"@type": "Person", "@id": "https://troilodigital.be/#person", "name": "Michel Troilo", "jobTitle": "Consultant SEO"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Liège", "postalCode": "4000", "addressRegion": "Wallonie", "addressCountry": "BE"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 50.64530, "longitude": 5.57390},
+  "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00"},
+  "areaServed": [
+    {"@type": "City", "name": "Liège"},
+    {"@type": "City", "name": "Namur"},
+    {"@type": "City", "name": "Charleroi"},
+    {"@type": "City", "name": "Verviers"},
+    {"@type": "State", "name": "Wallonie"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://troilodigital.be/#webpage",
+  "name": "Troilo Digital — Agence SEO Liège",
+  "isPartOf": {"@id": "https://troilodigital.be/#website"},
+  "about": {"@id": "https://troilodigital.be/#organization"},
+  "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero h1", ".hero-sub", ".split-text"]},
+  "offers": [
+    {"@type": "Offer", "name": "Audit SEO Essentiel", "price": "197", "priceCurrency": "EUR", "description": "Audit 20 points, 2 documents PDF, top 3 concurrents — livré en 5 jours ouvrables."},
+    {"@type": "Offer", "name": "Audit SEO Complet", "price": "397", "priceCurrency": "EUR", "description": "Audit 40+ points, schema JSON-LD, llms.txt, volumes keyword DataForSEO — 3 documents copy-paste."},
+    {"@type": "Offer", "name": "Audit + Implémentation", "price": "997", "priceCurrency": "EUR", "description": "Audit complet + corrections WordPress appliquées + suivi GSC 30 jours."},
+    {"@type": "Offer", "name": "Suivi SEO Mensuel", "price": "297", "priceCurrency": "EUR", "description": "Rapport mensuel positions, 1 correction/mois, support email.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "297", "priceCurrency": "EUR", "billingDuration": "P1M"}},
+    {"@type": "Offer", "name": "Suivi SEO Croissance", "price": "497", "priceCurrency": "EUR", "description": "Rapport complet GSC, 3 corrections/mois, 1 contenu SEO rédigé, call 30 min.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "497", "priceCurrency": "EUR", "billingDuration": "P1M"}},
+    {"@type": "Offer", "name": "Suivi SEO Domination", "price": "797", "priceCurrency": "EUR", "description": "Correctifs illimités 48h, 3 contenus SEO/mois, veille concurrents mensuelle.", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "797", "priceCurrency": "EUR", "billingDuration": "P1M"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://troilodigital.be/#website",
+  "name": "Troilo Digital",
+  "url": "https://troilodigital.be",
+  "description": "Agence SEO spécialisée artisans et PMEs en Wallonie",
+  "inLanguage": "fr-BE",
+  "publisher": {"@id": "https://troilodigital.be/#organization"}
+}
+</script>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w3tmcesoy0");
+  </script>
+  <!-- Meta Pixel — Troilo Digital Event Data (ID: 2207782226698486) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','2207782226698486');
+    fbq('track','PageView');
+
+    // ── Meta CAPI — tracking côté serveur (déduplication via event_id) ──
+    // Envoie le même PageView à notre Netlify Function qui relaie vers Meta CAPI.
+    // L'event_id identique assure que Meta ne compte pas le même event deux fois.
+    (function sendCAPIPageView() {
+      var eventId = 'pv-' + Date.now() + '-' + Math.random().toString(36).slice(2, 9);
+
+      // Lire les cookies Meta si présents (améliorent la correspondance)
+      function getCookie(name) {
+        var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return m ? m.pop() : undefined;
+      }
+
+      var userData = {};
+      var fbp = getCookie('_fbp');
+      var fbc = getCookie('_fbc');
+      if (fbp) userData.fbp = fbp;
+      if (fbc) userData.fbc = fbc;
+
+      fetch('/.netlify/functions/meta-capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          event_name: 'PageView',
+          event_id: eventId,
+          event_source_url: window.location.href,
+          user_data: Object.keys(userData).length ? userData : undefined,
+        }),
+      }).catch(function() { /* silencieux — le Pixel navigateur reste le fallback */ });
+
+      // Stocker l'eventId pour déduplication si fbq supporte setExtraInfo
+      // (non bloquant si l'API n'existe pas)
+      try { fbq('set', 'agent', eventId, '2207782226698486'); } catch(e) {}
+    })();
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2207782226698486&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel -->
+</head>
+<body>
+
+<div class="cur" id="cur"></div>
+<div class="cur-t" id="curT"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+    <div class="loader-line" id="loaderLine"></div>
+    <div class="loader-word"><span>T</span><span>R</span><span>O</span><span>I</span><span>L</span><span>O</span><span>&nbsp;</span><span>D</span><span>I</span><span>G</span><span>I</span><span>T</span><span>A</span><span>L</span></div>
+    <div class="loader-pct" id="loaderPct">000</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <a href="/" class="nav-logo">Troilo Digital</a>
+    <div class="nav-right">
+        <a href="#work" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Tarifs</a>
+        <a href="/creation-site-artisan/" class="nav-link">Cr&eacute;ation site</a>
+        <a href="/agent-ia-artisan/" class="nav-link">Réceptionniste IA</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="#work" onclick="closeMobileNav()">Services</a>
+    <a href="#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="/creation-site-artisan/" onclick="closeMobileNav()">Cr&eacute;ation site</a>
+    <a href="/agent-ia-artisan/" onclick="closeMobileNav()">Réceptionniste IA</a>
+    <a href="#faq" onclick="closeMobileNav()">FAQ</a>
+    <a href="/blog/">Blog</a>
+    <a href="/a-propos/">A propos</a>
+    <a href="#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-pin">
+        <div class="hero-tag">Agence SEO &middot; Li&egrave;ge &middot; artisans &amp; PME Wallonie</div>
+        <h1 id="heroTitle">Votre t&eacute;l&eacute;phone devrait sonner <span class="accent">plus</span>.</h1>
+    </div>
+    <div class="hero-bottom">
+        <div>
+            <p class="hero-sub">480 personnes cherchent un plombier &agrave; Li&egrave;ge chaque mois. Combien vous appellent&nbsp;? On vous dit o&ugrave; vous en &ecirc;tes &mdash; gratuitement, en 48h.</p>
+            <div class="hero-ctas">
+                <a href="https://audits.troilodigital.be/analyser/" class="hero-btn-main">Analyser mon site gratuitement</a>
+                <a href="#pricing" class="hero-btn-sec">Voir les formules &darr;</a>
+            </div>
+            <div class="hero-reassurance">Gratuit &middot; Aucun acc&egrave;s requis &middot; R&eacute;ponse sous 48h &middot; <span id="siteAuditCount">10</span> audits réalisés</div>
+        </div>
+        <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
+    </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker"><div class="ticker-track">
+    <span class="ticker-item">480/mois · plombier Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">260/mois · menuisier Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">210/mois · chauffagiste Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">320/mois · agence SEO Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">170/mois · &eacute;lectricien Namur</span><span class="ticker-item">—</span><span class="ticker-item">combien vous captez&nbsp;?</span><span class="ticker-item">—</span>
+    <span class="ticker-item">480/mois · plombier Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">260/mois · menuisier Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">210/mois · chauffagiste Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">320/mois · agence SEO Li&egrave;ge</span><span class="ticker-item">—</span><span class="ticker-item">170/mois · &eacute;lectricien Namur</span><span class="ticker-item">—</span><span class="ticker-item">combien vous captez&nbsp;?</span><span class="ticker-item">—</span>
+</div></div>
+
+<!-- SERVICES -->
+<section class="hscroll" id="work">
+    <div class="hscroll-header">
+        <h2>Pourquoi votre<br>téléphone ne<br>sonne pas</h2>
+        <p>Les 4 problèmes qu'on trouve chez 9 artisans sur 10.</p>
+    </div>
+    <div class="cards-track" id="cardsTrack">
+        <div class="card"><div class="card-top"><div class="card-gradient cg1"></div><span class="card-number">01</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg><div class="card-stat">3</div><div class="card-stat-label">places visibles<br>sur la carte</div></div></div><div class="card-body"><h3>Google Maps</h3><p>La carte avec 3 résultats : si vous n'y êtes pas, le client appelle quelqu'un d'autre. On vérifie et on corrige.</p></div></div>
+        <div class="card"><div class="card-top"><div class="card-gradient cg2"></div><span class="card-number">02</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div class="card-stat">3s</div><div class="card-stat-label">et Google vous<br>fait disparaitre</div></div></div><div class="card-body"><h3>Votre site est lent</h3><p>Plus de 3 secondes sur mobile = Google vous cache. On mesure la vitesse, les erreurs, tout ce que Google regarde.</p></div></div>
+        <div class="card"><div class="card-top"><div class="card-gradient cg3"></div><span class="card-number">03</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><line x1="1" y1="1" x2="23" y2="23" stroke-width="2"/></svg><div class="card-stat">0</div><div class="card-stat-label">mot-clé trouvé<br>par Google</div></div></div><div class="card-body"><h3>Contenu invisible</h3><p>Votre site dit "bienvenue" au lieu de "plombier à Liège". Google ne devine pas — on écrit ce que vos clients cherchent.</p></div></div>
+        <div class="card"><div class="card-top"><div class="card-gradient cg4"></div><span class="card-number">04</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg><div class="card-stat">#1</div><div class="card-stat-label">vs votre position<br>actuelle</div></div></div><div class="card-body"><h3>Le concurrent fait mieux</h3><p>Pas plus beau — juste mieux organisé pour Google. On analyse ce qu'il fait et comment le rattraper.</p></div></div>
+    </div>
+</section>
+
+<!-- WHO -->
+<section class="split">
+    <div class="split-text">
+        <div class="split-avatar">
+            <img src="images/consultant-seo-michel-troilo-liege-belgique.jpeg" alt="Michel Troilo" loading="lazy" width="48" height="48">
+            <div><div class="split-avatar-name">Michel Troilo</div><div class="split-avatar-role">Consultant SEO — Liège</div></div>
+        </div>
+        <h2>On ne promet<br>pas. On <span class="wave">mesure</span>.</h2>
+        <p>Je travaille avec des plombiers, des électriciens, des menuisiers, des boulangers — des artisans et des PME en Wallonie. C'est le seul marché sur lequel je travaille.</p>
+        <p>Ma méthode <strong style="color:var(--accent)">ANCRE</strong> : cinq étapes, dans l'ordre, sans raccourci.</p>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;margin:1rem 0;font-size:0.82rem;color:var(--gray-light);line-height:1.5;">
+            <div><span style="color:var(--accent);font-weight:700;font-family:var(--font-mono);">A</span> — <strong style="color:var(--white)">Analyse</strong> : audit technique complet, les mots que vos clients tapent, qui parle de vous sur internet</div>
+            <div><span style="color:var(--accent);font-weight:700;font-family:var(--font-mono);">N</span> — <strong style="color:var(--white)">NAP</strong> : cohérence Nom / Adresse / Téléphone sur Google, votre site, les annuaires</div>
+            <div><span style="color:var(--accent);font-weight:700;font-family:var(--font-mono);">C</span> — <strong style="color:var(--white)">Concurrents</strong> : qui apparaît avant vous, pourquoi, comment les rattraper</div>
+            <div><span style="color:var(--accent);font-weight:700;font-family:var(--font-mono);">R</span> — <strong style="color:var(--white)">Recommandations</strong> : corrections prêtes à déployer, classées par priorité</div>
+            <div><span style="color:var(--accent);font-weight:700;font-family:var(--font-mono);">E</span> — <strong style="color:var(--white)">Exécution</strong> : corrections appliquées ou guidées, suivi Google Search Console 30 jours</div>
+        </div>
+        <div class="split-phone-hook">Votre téléphone devrait<br>sonner <strong>plus</strong>.</div>
+    </div>
+    <div class="split-photo">
+        <div style="width:100%;height:100%;background:var(--surface);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;padding:2rem;">
+            <div style="font-family:var(--font-display);font-size:clamp(4rem,10vw,7rem);font-weight:900;color:var(--accent);letter-spacing:-0.06em;line-height:0.85;">950+</div>
+            <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--gray);letter-spacing:0.1em;text-transform:uppercase;text-align:center;">recherches mensuelles<br>pour des artisans<br>à liège</div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS SCRAMBLE -->
+<div class="scramble-row">
+    <div class="scramble-cell"><div class="scramble-num" data-scramble="480">000</div><div class="scramble-label">plombier liège</div></div>
+    <div class="scramble-cell"><div class="scramble-num" data-scramble="260">000</div><div class="scramble-label">menuisier liège</div></div>
+    <div class="scramble-cell"><div class="scramble-num" data-scramble="210">000</div><div class="scramble-label">chauffagiste liège</div></div>
+</div>
+
+<!-- DIFFÉRENCIATEURS -->
+<section style="padding:3rem clamp(1.5rem,5vw,4rem);border-top:1px solid var(--border);">
+    <div style="max-width:800px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:2rem;">
+            <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem;">Pourquoi pas une agence classique ?</div>
+            <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:900;letter-spacing:-0.04em;">Ce qui change<br>quand c'est un expert solo.</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:14px;overflow:hidden;">
+            <div style="padding:0.6rem 1.25rem;background:rgba(255,255,255,0.02);font-family:var(--font-mono);font-size:0.6rem;color:var(--gray);letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid var(--border);">Grosse agence</div>
+            <div style="padding:0.6rem 1.25rem;background:rgba(232,197,71,0.04);font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid var(--border);border-left:1px solid var(--border);">Troilo Digital</div>
+
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--gray);border-bottom:1px solid var(--border);">Prix cachés — devis sur mesure, souvent 600€+/mois</div>
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--white);border-bottom:1px solid var(--border);border-left:1px solid var(--border);">Tarifs affichés. 397€ one-shot, sans surprise.</div>
+
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--gray);border-bottom:1px solid var(--border);">Un junior gère votre dossier après le closing</div>
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--white);border-bottom:1px solid var(--border);border-left:1px solid var(--border);">Michel analyse et livre. Personne d'autre.</div>
+
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--gray);border-bottom:1px solid var(--border);">Stratégie généraliste — e-commerce, SaaS, artisans, tout</div>
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--white);border-bottom:1px solid var(--border);border-left:1px solid var(--border);">Artisans et PME wallons uniquement. 0 autre marché.</div>
+
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--gray);">Rapport de 50 pages. Vous devez tout faire</div>
+            <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--white);border-left:1px solid var(--border);">3 PDF. Blocs copy-paste. Matrice impact/effort.</div>
+        </div>
+    </div>
+</section>
+
+<!-- AVANT / APRÈS -->
+<section class="ba-section">
+    <div class="section-header"><h2>Résultats réels</h2></div>
+    <div class="ba-grid">
+        <div class="ba-col">
+            <span class="ba-tag red">Avant audit</span>
+            <div class="ba-row"><span>Position Google</span><span class="red">Page 4–5</span></div>
+            <div class="ba-row"><span>Trafic mensuel</span><span class="red">~20 visites</span></div>
+            <div class="ba-row"><span>Schema structuré</span><span class="red">Absent</span></div>
+            <div class="ba-row"><span>Fiche Google</span><span class="red">Incomplète</span></div>
+            <div class="ba-row"><span>Annuaires locaux</span><span class="red">0 citation active</span></div>
+        </div>
+        <div class="ba-col">
+            <span class="ba-tag green">Après corrections</span>
+            <div class="ba-row"><span>Position Google</span><span class="green">Top 3–5</span></div>
+            <div class="ba-row"><span>Trafic mensuel</span><span class="green">~200–345 visites</span></div>
+            <div class="ba-row"><span>Schema structuré</span><span class="green">LocalBusiness actif</span></div>
+            <div class="ba-row"><span>Fiche Google</span><span class="green">Optimisée</span></div>
+            <div class="ba-row"><span>Annuaires locaux</span><span class="green">3+ citations NAP</span></div>
+        </div>
+    </div>
+    <p class="ba-note">Exemple concret — secteur alimentaire, province de Liège — résultats variables selon secteur et niveau de concurrence. Nom masqué par confidentialité.</p>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+    <div class="section-header">
+        <h2>Par o&ugrave; commencer&nbsp;?</h2>
+        <p style="color:var(--gray);font-size:0.9rem;margin-top:0.75rem;">Pas d'engagement cach&eacute;. Pas de jargon. Juste ce qu'il faut pour que votre t&eacute;l&eacute;phone sonne plus.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+        <!-- Score Gratuit -->
+        <div class="price-card" style="border-color:rgba(34,197,94,0.2);background:linear-gradient(160deg,#0a150d 0%,var(--surface) 100%);">
+            <div style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;background:rgba(34,197,94,0.1);color:#22c55e;border:1px solid rgba(34,197,94,0.2);padding:0.2rem 0.7rem;border-radius:100px;display:inline-block;margin-bottom:0.75rem;">D&eacute;marrer ici</div>
+            <div class="price-name">Score Gratuit</div>
+            <div class="price-amount" style="color:#22c55e;">0€</div>
+            <div class="price-period">R&eacute;ponse sous 48h &middot; Aucun acc&egrave;s requis</div>
+            <ul class="price-list">
+                <li>Votre position Google r&eacute;elle vs concurrents</li>
+                <li>Les 3 probl&egrave;mes qui bloquent vos appels</li>
+                <li>Les chiffres de votre zone (volumes r&eacute;els)</li>
+                <li>1 quick win applicable imm&eacute;diatement</li>
+            </ul>
+            <a href="https://audits.troilodigital.be/analyser/" class="price-btn" style="background:#22c55e;color:var(--black);border-color:#22c55e;font-weight:700;">Analyser mon site gratuitement &rarr;</a>
+        </div>
+
+        <!-- Audit Essentiel -->
+        <div class="price-card">
+            <div style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;background:rgba(232,197,71,0.08);color:var(--accent);border:1px solid rgba(232,197,71,0.2);padding:0.2rem 0.7rem;border-radius:100px;display:inline-block;margin-bottom:0.75rem;">Bilan complet</div>
+            <div class="price-name">Audit Essentiel</div>
+            <div class="price-amount">197€</div>
+            <div class="price-period">One-shot &middot; Livr&eacute; en 5 jours ouvrables</div>
+            <ul class="price-list">
+                <li>20 points analys&eacute;s</li>
+                <li>Score de visibilit&eacute; sur 100</li>
+                <li>Top 3 concurrents d&eacute;cortiqu&eacute;s</li>
+                <li>Plan d'action clair et prioris&eacute;</li>
+                <li>2 documents PDF livr&eacute;s</li>
+            </ul>
+            <a href="/audit-seo-essentiel/" class="price-btn">Voir le d&eacute;tail &rarr;</a>
+        </div>
+
+        <!-- Plan de Domination -->
+        <div class="price-card feat">
+            <div class="price-name">Plan de Domination</div>
+            <div class="price-amount">397€</div>
+            <div class="price-period">One-shot &middot; Livr&eacute; en 5 jours ouvrables</div>
+            <ul class="price-list">
+                <li>40+ points analys&eacute;s <span style="color:var(--gray);font-size:0.78rem;">(technique, contenu, signaux de confiance)</span></li>
+                <li>Mots-cl&eacute;s que vos concurrents captent &mdash; et pas vous</li>
+                <li>Cit&eacute; dans le r&eacute;sum&eacute; IA de Google&nbsp;? On v&eacute;rifie.</li>
+                <li>Volumes de recherche r&eacute;els par mot-cl&eacute;</li>
+                <li>Fiche Google optimis&eacute;e <span style="color:var(--gray);font-size:0.78rem;">(carte de visite Maps)</span></li>
+                <li>Code SEO ready-to-paste <span style="color:var(--gray);font-size:0.78rem;">(rien &agrave; comprendre, juste coller)</span></li>
+                <li>3 documents PDF livr&eacute;s</li>
+            </ul>
+            <a href="/audit-seo-complet/" class="price-btn">Voir le d&eacute;tail &rarr;</a>
+        </div>
+
+        <!-- Mise en Orbite -->
+        <div class="price-card">
+            <div class="price-name">Mise en Orbite</div>
+            <div class="price-amount">997€</div>
+            <div class="price-period">Audit complet + corrections + suivi 30j</div>
+            <ul class="price-list">
+                <li>Tout le Plan de Domination inclus</li>
+                <li>Corrections appliqu&eacute;es &agrave; votre place</li>
+                <li>Schema + technique d&eacute;ploy&eacute;s</li>
+                <li>Suivi GSC J+7 et J+30</li>
+                <li>Vous ne faites rien c&ocirc;t&eacute; technique</li>
+            </ul>
+            <a href="https://wa.me/32492222677?text=Bonjour%20Michel%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20Mise%20en%20Orbite." class="price-btn">Parler &agrave; Michel &rarr;</a>
+        </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem;padding:1.5rem;background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto;">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;">Suivi mensuel disponible apr&egrave;s l'audit</div>
+        <div style="font-size:0.85rem;color:var(--gray-light);">Suivi 297€/mois &middot; Croissance 497€/mois &middot; Domination 797€/mois — sans engagement &middot; <a href="#contact" style="color:var(--accent);text-decoration:none;">En parler &rarr;</a></div>
+    </div>
+</section>
+
+<!-- AUTRES SERVICES -->
+<section style="padding:3rem clamp(1.5rem,5vw,4rem);border-top:1px solid var(--border);">
+    <div style="text-align:center;margin-bottom:2rem;">
+        <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem;">Au-delà de l'audit</div>
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:900;letter-spacing:-0.04em;">Besoin d'aller plus loin&nbsp;?</h2>
+        <p style="color:var(--gray);font-size:0.9rem;margin-top:0.5rem;max-width:520px;margin-left:auto;margin-right:auto;">L'audit révèle les problèmes. Ces services les règlent — ou vous évitent d'en avoir.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;max-width:900px;margin:0 auto;">
+        <a href="/creation-site-artisan/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.75rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.25)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+            <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">Site web</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:800;color:var(--white);margin-bottom:0.4rem;">Création de site artisan</div>
+            <div style="font-size:0.82rem;color:var(--gray);line-height:1.5;margin-bottom:1rem;">Responsive, rapide, optimisé dès le départ. Hébergement inclus 1 an. Livré en 7 jours.</div>
+            <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--accent);">dès 497€</div>
+            <div style="font-size:0.75rem;color:var(--gray);margin-top:0.25rem;">one-shot, sans abonnement</div>
+        </a>
+        <a href="/agent-ia-artisan/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.75rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.25)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+            <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">Réceptionniste IA</div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:800;color:var(--white);margin-bottom:0.4rem;">Réceptionniste IA pour artisans</div>
+            <div style="font-size:0.82rem;color:var(--gray);line-height:1.5;margin-bottom:1rem;">Répond à vos prospects 24h/24 — WhatsApp ou site. Qualifie, organise, vous envoie un récap.</div>
+            <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--accent);">dès 67€<span style="font-size:0.9rem;font-weight:400;color:var(--gray);">/mois</span></div>
+            <div style="font-size:0.75rem;color:var(--gray);margin-top:0.25rem;">setup à partir de 297€</div>
+        </a>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:3rem clamp(1.5rem,5vw,4rem);" id="faq">
+    <div style="text-align:center;margin-bottom:2rem;">
+        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:900;letter-spacing:-0.05em;">Questions fréquentes</h2>
+    </div>
+    <div style="max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:0.5rem;" id="faqList">
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Avez-vous besoin de mes accès WordPress ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Non. L'audit est 100% externe. On analyse votre site comme le fait Google — de l'extérieur. Aucun mot de passe, aucun accès requis.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Combien de temps avant de voir des résultats ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Les corrections techniques sont visibles en 2 à 6 semaines dans Google Search Console. Pour les rankings locaux, comptez 1 à 3 mois selon la concurrence.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Quelle différence entre l'Audit Essentiel et le Plan de Domination ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">L'<a href="/audit-seo-essentiel/" style="color:var(--accent)">Audit Essentiel (197€)</a> analyse 20 points critiques et vous remet un plan d'action clair. Le <strong>Plan de Domination (397€)</strong> couvre 40+ points, inclut l'analyse concurrentielle complète, les volumes keyword réels (DataForSEO), le schema JSON-LD et les meta descriptions prêtes à déployer. Avec le Complet, vous n'avez plus qu'à copier-coller.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Mon site est déjà sur Google — pourquoi un audit ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Être "sur Google" et être trouvé par vos clients, c'est différent. Si votre site apparaît en page 3 ou 4, vos concurrents captent vos clients à votre place. L'audit identifié exactement pourquoi.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Vous travaillez avec WordPress, Wix, site sur mesure ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Oui. L'audit analyse n'importe quel site web. Pour l'implémentation, on s'adapte à votre CMS. Si vous n'avez pas accès technique, on explique comment transmettre les instructions à votre webmaster.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Proposez-vous un suivi mensuel après l'audit ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Oui. Trois formules sans engagement : Suivi (297€/mois) pour un rapport mensuel + 1 correction, Croissance (497€/mois) pour 3 corrections + 1 contenu SEO rédigé, Domination (797€/mois) pour des correctifs illimités + 3 contenus/mois. L'audit n'est pas obligatoire pour démarrer un suivi, mais fortement recommandé pour avoir une baseline.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Vous couvrez quelle zone en Belgique ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Principalement la Wallonie — Liège, Namur, Charleroi, Verviers, Mons. L'audit étant 100% à distance, on travaille aussi avec Bruxelles, le Luxembourg et la France.</div></div></div>
+    </div>
+</section>
+
+<!-- BLOG -->
+<section style="padding:3rem clamp(1.5rem,5vw,4rem);">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);font-weight:900;letter-spacing:-0.04em;">Derniers articles</h2>
+        <a href="/blog/" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent);text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;">Voir tout →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;" id="blogCards">
+        <a href="/blog/pourquoi-votre-site-est-invisible-sur-google/" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.15)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+            <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;">Guide SEO</div>
+            <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:0.5rem;">7 raisons pour lesquelles votre site est invisible sur Google</div>
+            <div style="font-size:0.8rem;color:var(--gray);line-height:1.5;">Les erreurs techniques qui empêchent Google de trouver votre site.</div>
+        </a>
+        <a href="/blog/quest-ce-que-le-llms-txt/" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.15)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+            <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;">IA & SEO</div>
+            <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:0.5rem;">Qu'est-ce que le llms.txt ?</div>
+            <div style="font-size:0.8rem;color:var(--gray);line-height:1.5;">Le fichier qui rend votre site lisible par ChatGPT et Perplexity.</div>
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT + CALENDAR -->
+<section class="contact-section" id="contact">
+    <div class="section-header"><h2>Votre t&eacute;l&eacute;phone devrait sonner plus &mdash; <span style="color:var(--accent)">on s'en occupe.</span></h2></div>
+    <p class="contact-sub">Commencez par le score gratuit, ou appelez directement. 15 minutes pour savoir o&ugrave; vous en &ecirc;tes et ce qui bloque vos appels.</p>
+    <div class="contact-grid">
+        <div class="contact-info">
+            <div class="contact-card">
+                <div class="contact-card-label">Email</div>
+                <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-label">Téléphone</div>
+                <a href="tel:+32492222677">+32 492 222 677</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-label">WhatsApp</div>
+                <a href="https://wa.me/32492222677?text=Bonjour%2C%20je%20souhaite%20un%20audit%20SEO." target="_blank" rel="noopener">Réponse rapide →</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-label">Localisation</div>
+                <span style="color:var(--white);font-size:1rem;">Liège, Belgique</span>
+            </div>
+        </div>
+        <div class="contact-cal">
+            <div class="contact-cal-header">Envoyez un message</div>
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;flex-direction:column;gap:1rem;">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
+                <input type="text" name="prenom" required placeholder="Votre prénom" style="padding:0.75rem 1rem;background:var(--black);border:1px solid var(--border);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:0.9rem;outline:none;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+                <input type="email" name="email" required placeholder="votre@email.be" style="padding:0.75rem 1rem;background:var(--black);border:1px solid var(--border);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:0.9rem;outline:none;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+                <input type="url" name="site" placeholder="https://votre-site.be" style="padding:0.75rem 1rem;background:var(--black);border:1px solid var(--border);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:0.9rem;outline:none;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+                <input type="text" name="metier" placeholder="Votre métier (plombier, électricien...)" style="padding:0.75rem 1rem;background:var(--black);border:1px solid var(--border);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:0.9rem;outline:none;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+                <select name="formule" style="padding:0.75rem 1rem;background:var(--black);border:1px solid var(--border);border-radius:8px;color:var(--gray);font-family:var(--font-body);font-size:0.9rem;outline:none;appearance:none;cursor:pointer;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+                    <option value="">Formule (optionnel)</option>
+                    <optgroup label="── Audits one-shot ──">
+                    <option value="essentiel">Essentiel — 197€</option>
+                    <option value="complet">Complet — 397€</option>
+                    <option value="implémentation">Implémentation — 997€</option>
+                    </optgroup>
+                    <optgroup label="── Suivi mensuel ──">
+                    <option value="suivi-mensuel">Suivi — 297€/mois</option>
+                    <option value="suivi-croissance">Croissance — 497€/mois</option>
+                    <option value="suivi-domination">Domination — 797€/mois</option>
+                    </optgroup>
+                    <option value="question">Juste une question</option>
+                </select>
+                <textarea name="message" placeholder="Décrivez votre situation..." rows="3" style="padding:0.75rem 1rem;background:var(--black);border:1px solid var(--border);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:0.9rem;outline:none;resize:vertical;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+                <button type="submit" style="padding:0.85rem;background:var(--accent);color:var(--black);border:none;border-radius:100px;font-family:var(--font-body);font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.3s;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 0 30px rgba(232,197,71,0.3)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='none'">Envoyer →</button>
+            </form>
+        </div>
+    </div>
+    <p class="contact-phone-hook">Des centaines de clients cherchent votre métier sur Google. <strong>Chaque mois.</strong></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <span>© 2026 Troilo Digital</span>
+    <span><a href="/agence-seo-namur/">Namur</a> · <a href="/agence-seo-charleroi/">Charleroi</a> · <a href="/agence-seo-verviers/">Verviers</a> · <a href="/agence-seo-mons/">Mons</a> · <a href="/visibilite/chauffagiste-liege/">Chauffagiste Liège</a></span>
+    <span><a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions</a> · <a href="/politique-de-confidentialite/">Confidentialité</a></span>
+    <span>Liège, Belgique</span>
+</footer>
+
+<script>
+function initSite(){
+const lenis = new Lenis({ duration: 1.6, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+lenis.on('scroll', ScrollTrigger.update);
+gsap.ticker.add((time) => lenis.raf(time * 1000));
+gsap.ticker.lagSmoothing(0);
+gsap.registerPlugin(ScrollTrigger);
+
+// Cursor
+const cur = document.getElementById("cur"), curT = document.getElementById("curT");
+let mx=0,my=0,tx=0,ty=0;
+document.addEventListener("mousemove",e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+"px";cur.style.top=my+"px";});
+(function trail(){tx+=(mx-tx)*0.1;ty+=(my-ty)*0.1;curT.style.left=tx+"px";curT.style.top=ty+"px";requestAnimationFrame(trail);})();
+document.querySelectorAll("a,button,.card,.price-card").forEach(el=>{el.addEventListener("mouseenter",()=>{cur.classList.add("big");curT.classList.add("big");});el.addEventListener("mouseleave",()=>{cur.classList.remove("big");curT.classList.remove("big");});});
+
+// Hero char split — must run before sessionStorage check so heroAnim() always finds .char spans
+const heroText="Votre téléphone\ndevrait sonner\nplus.";
+const heroAccentStart=heroText.indexOf("plus.");
+const h1=document.getElementById("heroTitle");
+h1.innerHTML='';
+heroText.split('').forEach((c,i)=>{if(c==='\n'){h1.appendChild(document.createElement("br"));return;}const s=document.createElement("span");s.className="char"+(i>=heroAccentStart?" accent":"");s.textContent=c===' '?'\u00A0':c;h1.appendChild(s);});
+
+// Loader — skip on return visits (improves LCP)
+if (sessionStorage.getItem('td_visited')) {
+  document.getElementById("loader").style.display = "none";
+  heroAnim();
+} else {
+  sessionStorage.setItem('td_visited', '1');
+  const loaderTl = gsap.timeline({onComplete:()=>{gsap.to("#loader",{yPercent:-100,duration:0.7,ease:"power4.inOut",onComplete:()=>{document.getElementById("loader").style.display="none";heroAnim();}});}});
+  loaderTl.to(".loader-line",{width:"60%",duration:1.5,ease:"power2.inOut"},0)
+  .to(".loader-word span",{y:0,duration:0.5,stagger:0.03,ease:"power4.out"},0.4)
+  .to({v:0},{v:100,duration:1.5,ease:"power2.inOut",onUpdate:function(){document.getElementById("loaderPct").textContent=String(Math.round(this.targets()[0].v)).padStart(3,'0');}},0)
+  .to(".loader-word span",{y:-120,duration:0.35,stagger:0.02,ease:"power3.in"},"+=0.2");
+}
+
+function heroAnim(){
+gsap.to(".hero-tag",{opacity:1,y:0,duration:0.7,ease:"power3.out"});
+gsap.to(".char",{opacity:1,y:0,rotateX:0,duration:0.9,stagger:0.025,ease:"power4.out",delay:0.2});
+gsap.to(".hero-sub",{opacity:1,duration:0.7,delay:1.2});
+gsap.to(".hero-ctas",{opacity:1,y:0,duration:0.6,delay:1.5,ease:"power3.out"});
+gsap.to(".hero-reassurance",{opacity:1,duration:0.5,delay:1.9});
+gsap.to(".hero-scroll",{opacity:0.5,duration:0.5,delay:1.5});
+gsap.to("#nav",{opacity:1,duration:0.5,delay:1});
+}
+
+// Hero scroll effects
+gsap.to(".hero-pin",{scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:1},scale:0.85,filter:"blur(8px)",opacity:0});
+
+// Horizontal scroll
+const track=document.getElementById("cardsTrack");
+gsap.to(track,{x:()=>-(track.scrollWidth-window.innerWidth+80),ease:"none",scrollTrigger:{trigger:".hscroll",start:"top 10%",end:()=>"+="+(track.scrollWidth-window.innerWidth+200),scrub:1,pin:true}});
+
+// Split parallax
+gsap.from(".split-text > *",{scrollTrigger:{trigger:".split",start:"top 70%"},opacity:0,y:40,duration:0.7,stagger:0.12,ease:"power3.out"});
+gsap.from(".split-photo",{scrollTrigger:{trigger:".split",start:"top 70%",end:"bottom bottom",scrub:1},y:80,scale:0.95,opacity:0});
+
+// Scramble numbers
+const chars="0123456789";
+document.querySelectorAll("[data-scramble]").forEach(el=>{
+const target=el.dataset.scramble;
+ScrollTrigger.create({trigger:el,start:"top 85%",once:true,onEnter:()=>{let iter=0;const iv=setInterval(()=>{el.textContent=target.split("").map((c,i)=>i<iter?target[i]:chars[Math.floor(Math.random()*10)]).join("");iter++;if(iter>target.length)clearInterval(iv);},40);}});
+});
+
+// BA reveal
+gsap.from(".ba-col",{scrollTrigger:{trigger:".ba-grid",start:"top 80%"},opacity:0,y:40,duration:0.7,stagger:0.15,ease:"power3.out"});
+
+// Pricing stagger
+gsap.from(".price-card",{scrollTrigger:{trigger:".pricing-grid",start:"top 80%"},opacity:0,y:40,duration:0.7,stagger:0.12,ease:"power3.out"});
+
+// Contact reveal
+gsap.from(".contact-card",{scrollTrigger:{trigger:".contact-grid",start:"top 80%"},opacity:0,y:30,duration:0.6,stagger:0.1,ease:"power3.out"});
+gsap.from(".contact-cal",{scrollTrigger:{trigger:".contact-grid",start:"top 80%"},opacity:0,y:30,duration:0.8,delay:0.3,ease:"power3.out"});
+
+gsap.from(".faq-item",{scrollTrigger:{trigger:"#faqList",start:"top 85%"},opacity:0,y:20,duration:0.5,stagger:0.08,ease:"power3.out"});
+gsap.from("#blogCards > *",{scrollTrigger:{trigger:"#blogCards",start:"top 85%"},opacity:0,y:20,duration:0.5,stagger:0.1,ease:"power3.out"});
+}
+function toggleFaq(btn){const item=btn.parentElement;const a=item.querySelector('.faq-a');const inner=item.querySelector('.faq-a-inner');if(item.classList.contains('open')){a.style.maxHeight='0';item.classList.remove('open');}else{document.querySelectorAll('.faq-item.open').forEach(i=>{i.querySelector('.faq-a').style.maxHeight='0';i.classList.remove('open');});a.style.maxHeight=inner.scrollHeight+'px';item.classList.add('open');}}
+// Wait for deferred scripts to load
+if(typeof gsap!=='undefined'){initSite();}else{window.addEventListener('DOMContentLoaded',function(){const check=setInterval(function(){if(typeof gsap!=='undefined'&&typeof Lenis!=='undefined'){clearInterval(check);initSite();}},50);});}
+
+// Mobile nav
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+const navEl=document.getElementById('nav');
+navBurger.addEventListener('click',function(){const opening=!navOverlay.classList.contains('open');navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=opening?'hidden':'';if(navEl){navEl.style.mixBlendMode=opening?'normal':'';}});
+function closeMobileNav(){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';if(navEl){navEl.style.mixBlendMode='';}}
+</script>
+<script defer src="/mobile-bar.js"></script>
+<script defer src="/chatbot.js?v=20260422"></script>
+<!-- Facebook Customer Chat Plugin — connecté à ManyChat -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js">
+</script>
+<div class="fb-customerchat"
+  attribution="biz_inbox"
+  page_id="1085206458007435"
+  logged_in_greeting="Bonjour ! Une question sur votre visibilité Google ?"
+  logged_out_greeting="Bonjour ! Envoyez-nous un message via Messenger.">
+</div>
+<script>
+  fetch('https://audits.troilodigital.be/stats.json')
+    .then(r => r.json())
+    .then(d => {
+      var el = document.getElementById('siteAuditCount');
+      if (el && d.audits_delivered) el.textContent = d.audits_delivered;
+    }).catch(() => {});
+</script>
+</body>
+</html>

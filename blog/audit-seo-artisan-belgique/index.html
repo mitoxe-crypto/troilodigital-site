@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Audit SEO pour artisans en Belgique — Troilo Digital</title>
+    <meta name="description" content="Plombier, électricien, menuisier : apparaissez sur Google quand vos clients cherchent. Audit SEO spécialisé artisans dès 197€. Liège, Namur, Charleroi.">
+    <link rel="canonical" href="https://troilodigital.be/blog/audit-seo-artisan-belgique/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Audit SEO pour artisans en Belgique — Troilo Digital">
+    <meta property="og:description" content="Plombier, électricien, menuisier : apparaissez sur Google quand vos clients cherchent. Audit SEO spécialisé artisans dès 197€. Liège, Namur, Charleroi.">
+    <meta property="og:image" content="https://troilodigital.be/og-image.png">
+    <meta property="og:url" content="https://troilodigital.be/blog/audit-seo-artisan-belgique/">
+    <meta property="og:site_name" content="Troilo Digital">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Audit SEO pour artisans en Belgique — Troilo Digital Liège">
+    <meta name="twitter:description" content="Plombier, électricien, menuisier : apparaissez sur Google quand vos clients cherchent. Audit SEO spécialisé artisans dès 197€. Liège, Namur, Charleroi.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+    <meta property="article:published_time" content="2026-03-29">
+    <meta property="article:author" content="Michel Troilo">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Audit SEO pour artisans en Belgique : comment apparaître en premier sur Google",
+      "author": {"@type": "Person", "name": "Michel Troilo", "url": "https://troilodigital.be/a-propos/", "jobTitle": "Consultant SEO"},
+      "publisher": {"@type": "Organization", "name": "Troilo Digital", "url": "https://troilodigital.be", "logo": {"@type": "ImageObject", "url": "https://troilodigital.be/publisher-logo.png", "width": 600, "height": 60}},
+      "datePublished": "2026-03-29",
+      "dateModified": "2026-03-29",
+      "description": "Guide complet pour les artisans wallons sur l'importance du SEO local et comment un audit revele les corrections prioritaires.",
+      "url": "https://troilodigital.be/blog/audit-seo-artisan-belgique/",
+      "image": "https://troilodigital.be/og-image.png",
+      "inLanguage": "fr-BE",
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".article-intro", "h2", ".article-body"]},
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://troilodigital.be/blog/audit-seo-artisan-belgique/"}
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://troilodigital.be/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Audit SEO pour artisans en Belgique", "item": "https://troilodigital.be/blog/audit-seo-artisan-belgique/"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+        :root { --black:#0a0a0a; --white:#f5f5f0; --gray:#666; --gray-light:#999; --accent:#e8c547; --accent-dim:rgba(232,197,71,0.08); --surface:#141414; --border:rgba(255,255,255,0.06); --font-display:'Satoshi',sans-serif; --font-body:'Instrument Sans',sans-serif; --font-mono:'GeistMono',monospace; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior:auto; } html.lenis, html.lenis body { height:auto; }
+        body { font-family:var(--font-body); background:var(--black); color:var(--white); overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+
+        .nav { position:fixed; top:0; left:0; right:0; z-index:200; padding:1.5rem clamp(1.5rem,5vw,4rem); display:flex; justify-content:space-between; align-items:center; background:rgba(10,10,10,0.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-bottom:1px solid var(--border); }
+        .nav-logo { font-family:var(--font-display); font-size:1rem; font-weight:900; color:var(--white); text-decoration:none; letter-spacing:-0.03em; }
+        .nav-right { display:flex; gap:2.5rem; align-items:center; }
+        .nav-link { color:var(--white); text-decoration:none; font-size:0.8rem; font-weight:500; letter-spacing:0.02em; opacity:0.7; transition:opacity 0.3s; }
+        .nav-link:hover { opacity:1; }
+        .nav-cta { color:var(--accent); font-size:0.8rem; font-weight:600; text-decoration:none; letter-spacing:0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease, cubic-bezier(0.4,0,0.2,1)); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        .article-header { padding:8rem clamp(1.5rem,5vw,4rem) 3rem; text-align:center; }
+        .category-tag { display:inline-block; background:var(--accent-dim); color:var(--accent); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.85rem; border-radius:100px; margin-bottom:1.75rem; border:1px solid rgba(232,197,71,0.12); opacity:0; }
+        .article-header h1 { font-family:var(--font-display); max-width:760px; margin:0 auto 1.25rem; font-size:clamp(1.8rem,4.5vw,2.8rem); font-weight:900; line-height:1.1; letter-spacing:-0.04em; opacity:0; transform:translateY(20px); }
+        .article-meta { font-size:0.82rem; color:var(--gray); display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap; opacity:0; font-family:var(--font-mono); letter-spacing:0.03em; }
+        .article-meta a { color:var(--accent); text-decoration:none; }
+
+        .breadcrumb-bar { padding:0.85rem clamp(1.5rem,5vw,4rem); border-bottom:1px solid var(--border); background:rgba(20,20,20,0.5); }
+        .breadcrumb { max-width:720px; margin:0 auto; font-family:var(--font-mono); font-size:0.7rem; color:var(--gray); display:flex; align-items:center; gap:0.4rem; letter-spacing:0.04em; }
+        .breadcrumb a { color:var(--gray); text-decoration:none; transition:color 0.3s; }
+        .breadcrumb a:hover { color:var(--accent); }
+        .breadcrumb .sep { opacity:0.3; }
+        .breadcrumb .current { color:var(--white); }
+
+        .article-wrap { max-width:720px; margin:0 auto; padding:3rem clamp(1.5rem,5vw,4rem) 5rem; }
+        .article-intro { font-size:1.05rem; line-height:1.8; color:rgba(245,245,240,0.7); margin-bottom:2.5rem; padding-bottom:2.5rem; border-bottom:1px solid var(--border); }
+        .article-body p { font-size:1rem; line-height:1.8; color:rgba(245,245,240,0.75); margin-bottom:1.4em; }
+        .article-body h2 { font-family:var(--font-display); font-size:1.35rem; font-weight:700; color:var(--white); margin:2.5em 0 0.8em; letter-spacing:-0.03em; line-height:1.2; }
+        .article-body h3 { font-family:var(--font-display); font-size:1.05rem; font-weight:700; color:var(--white); margin:1.8em 0 0.6em; letter-spacing:-0.02em; }
+        .article-body strong { font-weight:700; color:var(--white); }
+        .article-body ul, .article-body ol { margin:0 0 1.4em 1.4em; }
+        .article-body li { margin-bottom:0.45em; color:rgba(245,245,240,0.75); line-height:1.7; }
+        .article-body a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+        .article-body a:hover { opacity:0.8; }
+
+        .stat-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:2em 0; }
+        .stat-box { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem 1rem; text-align:center; }
+        .stat-number { font-family:var(--font-display); font-size:2rem; font-weight:900; color:var(--accent); display:block; line-height:1; margin-bottom:0.35rem; }
+        .stat-label { font-family:var(--font-mono); font-size:0.68rem; color:var(--gray-light); line-height:1.4; letter-spacing:0.03em; }
+
+        .highlight-box { background:var(--accent-dim); border-left:3px solid var(--accent); border-radius:0 10px 10px 0; padding:1.25rem 1.5rem; margin:1.8em 0; }
+        .highlight-box p { margin:0; }
+
+        .problem-list { display:flex; flex-direction:column; gap:1rem; margin:1.5em 0; }
+        .problem-card { display:flex; gap:1rem; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem 1.5rem; align-items:flex-start; transition:border-color 0.3s; }
+        .problem-card:hover { border-color:rgba(232,197,71,0.15); }
+        .problem-num { background:var(--accent); color:var(--black); font-weight:900; font-size:0.8rem; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-family:var(--font-display); }
+        .problem-content h3 { font-family:var(--font-display); margin:0 0 0.35rem; font-size:0.95rem; font-weight:700; color:var(--white); }
+        .problem-content p { margin:0; font-size:0.9rem; color:var(--gray-light); line-height:1.6; }
+
+        .checklist { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.75rem 2rem; margin:2em 0; }
+        .checklist h3 { font-family:var(--font-mono); font-size:0.68rem; font-weight:400; color:var(--accent); margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.1em; }
+        .checklist-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.6rem; }
+        .checklist-item { display:flex; align-items:flex-start; gap:0.5rem; font-size:0.875rem; color:rgba(245,245,240,0.75); line-height:1.5; }
+        .check-icon { color:var(--accent); font-weight:900; flex-shrink:0; }
+
+        .roi-box { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:2rem 2.25rem; margin:2em 0; }
+        .roi-box h3 { font-family:var(--font-display); font-size:1rem; font-weight:700; color:var(--accent); margin-bottom:1rem; letter-spacing:-0.02em; }
+        .roi-calc { display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.25rem; }
+        .roi-row { display:flex; justify-content:space-between; align-items:baseline; font-size:0.9rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem; }
+        .roi-row:last-child { border-bottom:none; padding-bottom:0; }
+        .roi-label { color:var(--gray-light); }
+        .roi-value { font-weight:700; color:var(--white); font-family:var(--font-display); }
+        .roi-total { background:var(--accent-dim); border:1px solid rgba(232,197,71,0.15); border-radius:8px; padding:0.9rem 1.25rem; display:flex; justify-content:space-between; align-items:center; margin-top:1rem; }
+        .roi-total-label { font-size:0.875rem; font-weight:600; color:rgba(245,245,240,0.85); }
+        .roi-total-value { font-family:var(--font-display); font-size:1.4rem; font-weight:900; color:var(--accent); letter-spacing:-0.03em; }
+
+        .table-wrap { overflow-x:auto; margin:2em 0; border-radius:12px; border:1px solid var(--border); }
+        table { width:100%; border-collapse:collapse; font-size:0.9rem; min-width:500px; }
+        thead tr { background:var(--surface); }
+        thead th { padding:1rem 1.25rem; text-align:left; font-weight:700; font-size:0.85rem; color:var(--white); font-family:var(--font-display); }
+        thead th:not(:first-child) { text-align:center; }
+        thead th.col-highlight { background:var(--accent-dim); color:var(--accent); }
+        tbody tr { border-bottom:1px solid var(--border); }
+        tbody tr:last-child { border-bottom:none; }
+        tbody td { padding:0.85rem 1.25rem; color:rgba(245,245,240,0.75); }
+        tbody td:not(:first-child) { text-align:center; }
+        tbody td.col-highlight { background:rgba(232,197,71,0.04); font-weight:600; color:var(--white); }
+        .check-yes { color:#86efac; font-weight:700; }
+        .check-no { color:#f87171; font-weight:700; }
+        .check-partial { color:#fbbf24; font-weight:600; font-size:0.82rem; }
+
+        .process-steps { display:flex; flex-direction:column; gap:0; margin:1.75em 0; position:relative; }
+        .process-steps::before { content:""; position:absolute; left:20px; top:40px; bottom:40px; width:1px; background:linear-gradient(to bottom, var(--accent), rgba(232,197,71,0.1)); }
+        .process-step { display:flex; gap:1.25rem; padding:1rem 0; align-items:flex-start; position:relative; }
+        .step-circle { width:42px; height:42px; background:var(--black); border:2px solid var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:0.85rem; color:var(--accent); flex-shrink:0; position:relative; z-index:1; font-family:var(--font-display); }
+        .step-content h3 { font-family:var(--font-display); font-size:0.95rem; font-weight:700; color:var(--white); margin:0 0 0.3rem; }
+        .step-content p { font-size:0.875rem; color:var(--gray-light); margin:0; line-height:1.6; }
+
+        .pricing-box { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:2.25rem 2.5rem; margin:2.5em 0; }
+        .pricing-box-title { font-family:var(--font-mono); font-size:0.68rem; font-weight:400; text-transform:uppercase; letter-spacing:0.1em; color:var(--gray); margin-bottom:1.5rem; }
+        .pricing-tiers { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+        .pricing-tier { background:rgba(255,255,255,0.02); border:1px solid var(--border); border-radius:10px; padding:1.25rem 1rem; text-align:center; }
+        .pricing-tier.featured-tier { background:var(--accent-dim); border-color:rgba(232,197,71,0.2); }
+        .tier-name { font-family:var(--font-mono); font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--gray); margin-bottom:0.5rem; }
+        .featured-tier .tier-name { color:var(--accent); }
+        .tier-price { font-family:var(--font-display); font-size:1.9rem; font-weight:900; color:var(--white); line-height:1; margin-bottom:0.6rem; letter-spacing:-0.04em; }
+        .featured-tier .tier-price { color:var(--accent); }
+        .tier-desc { font-size:0.75rem; color:var(--gray-light); line-height:1.5; }
+        .pricing-box-note { margin-top:1.5rem; text-align:center; font-family:var(--font-mono); font-size:0.68rem; color:var(--gray); letter-spacing:0.03em; }
+
+        .cta-box { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:3rem 2.5rem; margin:3rem 0; text-align:center; }
+        .cta-box h2 { font-family:var(--font-display); color:var(--white); font-size:1.5rem; font-weight:900; letter-spacing:-0.04em; margin-bottom:0.75rem; }
+        .cta-box h2 span { color:var(--accent); }
+        .cta-box p { color:var(--gray-light); margin-bottom:1.75rem; font-size:0.95rem; line-height:1.6; }
+        .btn-accent { display:inline-block; background:var(--accent); color:var(--black); font-weight:700; font-size:0.9rem; padding:0.85rem 2rem; border-radius:100px; text-decoration:none; transition:opacity 0.2s, transform 0.15s; }
+        .btn-accent:hover { opacity:0.88; transform:translateY(-1px); }
+        .cta-sub { display:block; margin-top:0.75rem; color:var(--gray); font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.05em; }
+
+        .author-box { display:flex; gap:1.25rem; align-items:flex-start; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.75rem; margin:3rem 0; }
+        .author-avatar { width:52px; height:52px; border-radius:50%; background:var(--black); border:2px solid rgba(232,197,71,0.2); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:1.1rem; font-weight:900; color:var(--accent); flex-shrink:0; }
+        .author-info h3 { font-family:var(--font-display); font-size:0.9rem; font-weight:700; color:var(--white); margin-bottom:0.15rem; }
+        .author-info .author-title { font-family:var(--font-mono); font-size:0.68rem; color:var(--accent); letter-spacing:0.05em; margin-bottom:0.5rem; }
+        .author-info p { font-size:0.85rem; color:var(--gray-light); line-height:1.6; margin:0; }
+
+        .related-section { margin:0 0 3rem; }
+        .related-section h3 { font-family:var(--font-mono); font-size:0.68rem; font-weight:400; color:var(--accent); margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.1em; }
+        .related-links { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.85rem; }
+        .related-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:1.1rem 1.25rem; text-decoration:none; transition:border-color 0.3s; }
+        .related-card:hover { border-color:rgba(232,197,71,0.2); }
+        .related-card .rc-tag { font-family:var(--font-mono); font-size:0.62rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); margin-bottom:0.35rem; }
+        .related-card .rc-title { font-size:0.875rem; font-weight:600; color:var(--white); line-height:1.4; font-family:var(--font-display); }
+
+        .footer { padding:2rem clamp(1.5rem,5vw,4rem); border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+        .footer span { font-family:var(--font-mono); font-size:0.68rem; color:var(--gray); letter-spacing:0.05em; }
+        .footer-links-row { display:flex; gap:1.5rem; }
+        .footer a { color:var(--gray); text-decoration:none; font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.05em; transition:color 0.3s; }
+        .footer a:hover { color:var(--accent); }
+
+        @media(max-width:768px) {
+            .nav-right { display:none; }
+            .article-header { padding:7rem 1.5rem 2rem; }
+            .article-wrap { padding:2rem 1.25rem 4rem; }
+            .stat-strip { grid-template-columns:1fr; }
+            .checklist-grid { grid-template-columns:1fr; }
+            .pricing-tiers { grid-template-columns:1fr; }
+            .process-steps::before { display:none; }
+            .cta-box { padding:2rem 1.5rem; }
+            .author-box { flex-direction:column; }
+            .footer { flex-direction:column; text-align:center; }
+        }
+    </style>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="../../" class="nav-logo">Troilo Digital</a>
+        <div class="nav-right">
+            <a href="../../#work" class="nav-link">Services</a>
+            <a href="../../#pricing" class="nav-link">Tarifs</a>
+            <a href="../" class="nav-link">Blog</a>
+            <a href="../../#contact" class="nav-cta">Contact</a>
+        
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    </nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="../../#work" onclick="closeMobileNav()">Services</a>
+    <a href="../../#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="../../blog/">Blog</a>
+    <a href="../../a-propos/">A propos</a>
+    <a href="../../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+    <header class="article-header">
+        <div class="category-tag">SEO Local &middot; Artisans</div>
+        <h1>Audit SEO pour artisans en Belgique : comment apparaître en premier sur Google</h1>
+        <div class="article-meta">
+            <span>Par <a href="../../a-propos/">Michel Troilo</a></span>
+            <span>&middot;</span>
+            <span>29 mars 2026</span>
+            <span>&middot;</span>
+            <span>7 min de lecture</span>
+        </div>
+    </header>
+
+    <div class="breadcrumb-bar">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="../../">Accueil</a>
+            <span class="sep">&rsaquo;</span>
+            <a href="../">Blog</a>
+            <span class="sep">&rsaquo;</span>
+            <span class="current">Audit SEO artisans Belgique</span>
+        </nav>
+    </div>
+
+    <main>
+        <div class="article-wrap">
+            <article class="article-body">
+
+                <p class="article-intro">Quand quelqu'un casse une canalisation a 22h a Liège, il ne demande pas a ses voisins. Il tape "plombier urgence Liège" sur Google. Si vous n'apparaissez pas dans les premiers résultats, ce client appellera votre concurrent &mdash; pas vous.</p>
+
+                <h2>La réalité : votre client est déjà sur Google</h2>
+
+                <p>En 2026, <strong>76 % des recherches locales se font sur mobile</strong> &mdash; dans le bus, au boulot, ou assis dans la salle d'attente. Quand un proprietaire de maison a Namur remarque que son chauffe-eau fuit, il deverrouille son téléphone et tape "chauffe-eau panne Namur" ou "chauffagiste Namur urgent".</p>
+
+                <p>Ce qui se passe ensuite est decisif : <strong>plus de 60 % des clics vont aux 3 premiers résultats</strong>. Le quatrieme resultat existe a peine. Ceux qui sont en dessous de la page 1 ? Pratiquement invisibles.</p>
+
+                <div class="stat-strip">
+                    <div class="stat-box"><span class="stat-number">76%</span><span class="stat-label">des recherches locales sur mobile</span></div>
+                    <div class="stat-box"><span class="stat-number">#1&ndash;3</span><span class="stat-label">captent plus de 60 % des clics</span></div>
+                    <div class="stat-box"><span class="stat-number">89%</span><span class="stat-label">des consommateurs locaux cherchent en ligne avant d'appeler</span></div>
+                </div>
+
+                <p>Ce n'est pas une tendance qui va s'inverser. C'est le comportement normal de vos futurs clients, aujourd'hui, en Wallonie.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Cas concret :</strong> Un électricien a Charleroi reçoit actuellement 3 a 4 appels par semaine depuis Google. Son concurrent direct, a deux rues de la, en reçoit 12 &mdash; simplement parce qu'il a optimise sa fiche Google Business Profile et son site il y a 18 mois.</p>
+                </div>
+
+                <h2>Le SEO pour artisans, ce n'est pas complique &mdash; c'est 5 corrections precises</h2>
+
+                <p>Quand on parle de "référencement" a un plombier ou a un menuisier, la reaction est souvent la même : "C'est trop technique pour moi" ou "Ca coûte une fortune". Les deux idees sont fausses.</p>
+
+                <p>Le SEO local pour un artisan, ce n'est pas comme optimiser un site e-commerce international. C'est un ensemble de corrections tres ciblees qui font apparaître votre nom quand quelqu'un dans votre zone géographique cherche exactement ce que vous faites.</p>
+
+                <p>Un audit SEO bien fait revele en quelques jours exactement ou sont ces blocages &mdash; et dans quel ordre les corriger pour un impact maximal.</p>
+
+                <h2>Les 5 problèmes les plus frequents chez les artisans belges</h2>
+
+                <p>Après avoir audité des dizaines de sites d'artisans en province de Liège, Namur et Hainaut, voici ce qu'on trouve systématiquement :</p>
+
+                <div class="problem-list">
+                    <div class="problem-card"><div class="problem-num">1</div><div class="problem-content"><h3>Fiche Google Business Profile absente ou mal configuree</h3><p>C'est le cas le plus frequent et le plus couteux. Soit la fiche n'existe pas, soit la catégorie principale est trop generique, l'horaire est faux, ou l'adresse ne correspond pas au site.</p></div></div>
+                    <div class="problem-card"><div class="problem-num">2</div><div class="problem-content"><h3>Site non adapte au mobile</h3><p>Depuis 2021, Google indexe les sites en "mobile-first". Si votre site s'affiche mal sur smartphone &mdash; texte trop petit, boutons qui se chevauchent, chargement lent &mdash; Google le sanctionne dans les résultats.</p></div></div>
+                    <div class="problem-card"><div class="problem-num">3</div><div class="problem-content"><h3>Zero avis Google ou avis non geres</h3><p>Google Maps affiche en priorité les fiches avec des avis recents et nombreux. Un électricien avec 2 avis de 2021 est systématiquement depasse par un concurrent qui en a 18 recents.</p></div></div>
+                    <div class="problem-card"><div class="problem-num">4</div><div class="problem-content"><h3>Mots-cles trop vagues, non geo-cibles</h3><p>Votre site mentionne "artisan qualifie avec 20 ans d'experience" mais jamais "plombier Verviers" ou "menuisier province de Liège". Google ne peut pas deviner votre zone de chalandise.</p></div></div>
+                    <div class="problem-card"><div class="problem-num">5</div><div class="problem-content"><h3>Votre concurrent a 50 photos sur Google Maps &mdash; vous en avez 0</h3><p>Google favorise les fiches actives et riches en contenu visuel. Les fiches avec des photos recoivent en moyenne 35 % plus de clics. Une fiche vide en 2026, c'est une fiche fantome.</p></div></div>
+                </div>
+
+                <h2>Ce qu'un audit SEO revele concretement pour un artisan belge</h2>
+
+                <p>Un audit SEO pour artisan ne dure pas 3 mois. En 5 jours ouvrables, on peut dresser un tableau complet et actionnable de votre situation :</p>
+
+                <div class="checklist">
+                    <h3>Checklist d'audit SEO &mdash; artisan belge</h3>
+                    <div class="checklist-grid">
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Fiche GBP : catégorie, horaires, photos</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Coherence NAP sur le web</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Vitesse mobile (Core Web Vitals)</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Mots-cles geo-cibles dans H1/H2</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Meta-titres et descriptions</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Profil d'avis Google</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Schema LocalBusiness</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Backlinks locaux</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Pages par ville ou type de travaux</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Téléphone cliquable sur mobile</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Analyse des 3 concurrents directs</span></div>
+                        <div class="checklist-item"><span class="check-icon">&#10003;</span><span>Visibilité ChatGPT / Perplexity</span></div>
+                    </div>
+                </div>
+
+                <p>Le resultat : un rapport clair avec les problèmes classes par priorité d'impact. Pas une liste de 200 taches impossibles &mdash; une feuille de route de 10 a 15 corrections applicables en quelques semaines.</p>
+
+                <h2>Le calcul est simple : combien vous coûte l'invisibilité ?</h2>
+
+                <p>Prenons l'exemple d'un plombier a Liège qui travaille seul. Aujourd'hui, il génère la plupart de ses clients par bouche-a-oreille. C'est bien. Mais c'est fragile &mdash; et ca plafonne.</p>
+
+                <div class="roi-box">
+                    <h3>Exemple concret : plombier a Liège, après audit + corrections</h3>
+                    <div class="roi-calc">
+                        <div class="roi-row"><span class="roi-label">Appels supplementaires depuis Google / semaine</span><span class="roi-value">+2 appels</span></div>
+                        <div class="roi-row"><span class="roi-label">Taux de conversion appel &rarr; chantier</span><span class="roi-value">~70 %</span></div>
+                        <div class="roi-row"><span class="roi-label">Chantiers supplementaires / mois</span><span class="roi-value">~5 chantiers</span></div>
+                        <div class="roi-row"><span class="roi-label">Valeur moyenne d'un chantier</span><span class="roi-value">200 a 350&euro;</span></div>
+                    </div>
+                    <div class="roi-total">
+                        <span class="roi-total-label">CA supplementaire annuel</span>
+                        <span class="roi-total-value">8 000 &ndash; 12 000&euro;/an</span>
+                    </div>
+                </div>
+
+                <p>Pour un investissement de 197 a 397&euro; dans un audit, le retour sur investissement est visible en quelques semaines. Et contrairement a la publicite payante, les effets du SEO local s'accumulent dans le temps.</p>
+
+                <h2>Comparatif : ne rien faire vs. DIY vs. Troilo Digital</h2>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Critere</th><th>Ne rien faire</th><th>DIY (seul)</th><th class="col-highlight">Troilo Digital</th></tr></thead>
+                        <tbody>
+                            <tr><td>Temps investi</td><td>0h</td><td class="check-partial">20&ndash;40h</td><td class="col-highlight">15 min (votre cote)</td></tr>
+                            <tr><td>Diagnostic complet</td><td><span class="check-no">&#10007;</span></td><td><span class="check-partial">Partiel</span></td><td class="col-highlight"><span class="check-yes">&#10003;</span></td></tr>
+                            <tr><td>Analyse concurrents</td><td><span class="check-no">&#10007;</span></td><td><span class="check-no">&#10007;</span></td><td class="col-highlight"><span class="check-yes">&#10003;</span></td></tr>
+                            <tr><td>Plan d'action priorisé</td><td><span class="check-no">&#10007;</span></td><td><span class="check-partial">Risque d'erreurs</span></td><td class="col-highlight"><span class="check-yes">&#10003;</span></td></tr>
+                            <tr><td>Schema + Visibilité IA</td><td><span class="check-no">&#10007;</span></td><td><span class="check-no">&#10007;</span></td><td class="col-highlight"><span class="check-yes">&#10003;</span></td></tr>
+                            <tr><td>Résultats en</td><td class="check-partial">Jamais</td><td class="check-partial">3&ndash;6 mois</td><td class="col-highlight"><span class="check-yes">2&ndash;6 semaines</span></td></tr>
+                            <tr><td>Investissement</td><td>0&euro;</td><td class="check-partial">Votre temps</td><td class="col-highlight"><span class="check-yes">Des 197&euro;</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>Notre processus : simple, rapide, concret</h2>
+
+                <div class="process-steps">
+                    <div class="process-step"><div class="step-circle">1</div><div class="step-content"><h3>Appel diagnostic gratuit &mdash; 15 minutes</h3><p>On echange sur votre métier, votre zone de travail, vos concurrents. Pas de technique a ce stade &mdash; juste comprendre votre situation.</p></div></div>
+                    <div class="process-step"><div class="step-circle">2</div><div class="step-content"><h3>Audit complet livre en 5 jours ouvrables</h3><p>On analyse votre site, votre fiche Google Business Profile, vos concurrents locaux et votre visibilité IA. Aucun acces requis.</p></div></div>
+                    <div class="process-step"><div class="step-circle">3</div><div class="step-content"><h3>Rapport avec corrections prêtes a appliquer</h3><p>Rapport PDF clair, sans jargon, problèmes classes par impact. Chaque correction est expliquee avec des instructions concretes.</p></div></div>
+                </div>
+
+                <h2>Tarifs : quel audit pour votre situation ?</h2>
+
+                <div class="pricing-box">
+                    <div class="pricing-box-title">Tarifs Audit SEO &mdash; Artisans &amp; PME Wallonie</div>
+                    <div class="pricing-tiers">
+                        <div class="pricing-tier"><div class="tier-name">Essentiel</div><div class="tier-price">197&euro;</div><div class="tier-desc">20 points &middot; Google Maps + site &middot; PDF &middot; 5 jours</div></div>
+                        <div class="pricing-tier featured-tier"><div class="tier-name">Complet &#9733;</div><div class="tier-price">397&euro;</div><div class="tier-desc">40+ points &middot; Concurrents &middot; Schema &middot; llms.txt &middot; Plan d'action</div></div>
+                        <div class="pricing-tier"><div class="tier-name">Audit + Implémentation</div><div class="tier-price">997&euro;</div><div class="tier-desc">Audit complet + corrections appliquees par notre equipe</div></div>
+                    </div>
+                    <div class="pricing-box-note">Appel de restitution 30 min inclus &middot; Paiement securise &middot; Satisfaction garantie</div>
+                </div>
+
+                <div class="cta-box">
+                    <h2>Pret a savoir pourquoi vos concurrents <span>vous devancent sur Google</span> ?</h2>
+                    <p>Reservez un appel diagnostic gratuit de 15 minutes. On analyse votre situation en direct et vous repartez avec au moins 3 pistes concretes.</p>
+                    <a href="../../#contact" class="btn-accent">Reserver mon appel diagnostic gratuit</a>
+                    <span class="cta-sub">Sans engagement &middot; Aucun acces requis &middot; Reponse sous 24h</span>
+                </div>
+
+                <div class="author-box">
+                    <div class="author-avatar">MT</div>
+                    <div class="author-info">
+                        <h3>Michel Troilo</h3>
+                        <div class="author-title">Consultant SEO &mdash; Troilo Digital, Liège</div>
+                        <p>Spécialiste en référencement local pour artisans et PME en Wallonie. Audits livres en 5 jours, sans acces requis, prix fixes affiches. <a href="../../a-propos/">En savoir plus</a>.</p>
+                    </div>
+                </div>
+
+                <div class="related-section">
+                    <h3>Sur le même sujet</h3>
+                    <div class="related-links">
+                        <a href="../prix-audit-seo-belgique-2026/" class="related-card"><div class="rc-tag">Tarifs</div><div class="rc-title">Prix d'un Audit SEO en Belgique en 2026</div></a>
+                        <a href="../comment-choisir-consultant-seo-artisan/" class="related-card"><div class="rc-tag">Guide</div><div class="rc-title">Comment choisir son consultant SEO artisan</div></a>
+                        <a href="../meilleur-consultant-seo-artisan-wallonie/" class="related-card"><div class="rc-tag">Comparatif</div><div class="rc-title">Top 5 Consultants SEO Artisans Wallonie</div></a>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span>&copy; 2026 Troilo Digital &mdash; SEO pour artisans wallons</span>
+        <div class="footer-links-row">
+            <a href="../../#work">Services</a>
+            <a href="../../#pricing">Tarifs</a>
+            <a href="../">Blog</a>
+            <a href="../../cgv/">CGV</a>
+            <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a>
+        </div>
+    </footer>
+
+    <script>
+        const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => lenis.raf(time * 1000));
+        gsap.ticker.lagSmoothing(0);
+        gsap.registerPlugin(ScrollTrigger);
+        const heroTl = gsap.timeline({ defaults: { ease: "power4.out" } });
+        heroTl.to(".category-tag", { opacity: 1, duration: 0.5 }, 0.2).to(".article-header h1", { opacity: 1, y: 0, duration: 0.9 }, 0.4).to(".article-meta", { opacity: 1, duration: 0.6 }, 0.7);
+        gsap.utils.toArray(".problem-card, .highlight-box, .stat-strip, .checklist, .roi-box, .table-wrap, .process-step, .pricing-box, .cta-box, .author-box").forEach(el => {
+            gsap.from(el, { scrollTrigger: { trigger: el, start: "top 88%" }, y: 20, opacity: 0, duration: 0.6, ease: "power3.out" });
+        });
+    </script>
+
+    <script src="/cookie-banner.js" defer></script>
+    <script defer src="/mobile-bar.js"></script><script defer src="/chatbot.js"></script>
+
+<script>
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+if(navBurger){navBurger.addEventListener('click',function(){navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navOverlay.classList.contains('open')?'hidden':'';});}
+function closeMobileNav(){if(navBurger){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';}}
+</script>
+</body>
+</html>

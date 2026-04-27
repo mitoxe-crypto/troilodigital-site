@@ -1,0 +1,382 @@
+{
+  "nodes": [
+    {
+      "id": "cookie_banner",
+      "label": "cookie-banner.js",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "cookie_banner_getcookie",
+      "label": "getCookie()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "cookie_banner_setcookie",
+      "label": "setCookie()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "cookie_banner_loadga4",
+      "label": "loadGA4()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L20"
+    },
+    {
+      "id": "cookie_banner_hidebanner",
+      "label": "hideBanner()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L34"
+    },
+    {
+      "id": "cookie_banner_acceptcookies",
+      "label": "acceptCookies()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L39"
+    },
+    {
+      "id": "cookie_banner_declinecookies",
+      "label": "declineCookies()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L45"
+    },
+    {
+      "id": "cookie_banner_showbanner",
+      "label": "showBanner()",
+      "file_type": "code",
+      "source_file": "cookie-banner.js",
+      "source_location": "L67"
+    },
+    {
+      "id": "whatsapp_btn",
+      "label": "whatsapp-btn.js",
+      "file_type": "code",
+      "source_file": "whatsapp-btn.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "whatsapp_btn_createbutton",
+      "label": "createButton()",
+      "file_type": "code",
+      "source_file": "whatsapp-btn.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "chatbot",
+      "label": "chatbot.js",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "chatbot_inject",
+      "label": "inject()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L220"
+    },
+    {
+      "id": "chatbot_togglechat",
+      "label": "toggleChat()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L270"
+    },
+    {
+      "id": "chatbot_addmsg",
+      "label": "addMsg()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L284"
+    },
+    {
+      "id": "chatbot_showtyping",
+      "label": "showTyping()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L293"
+    },
+    {
+      "id": "chatbot_clearactions",
+      "label": "clearActions()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L306"
+    },
+    {
+      "id": "chatbot_renderstep",
+      "label": "renderStep()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L311"
+    },
+    {
+      "id": "chatbot_sendtowhatsapp",
+      "label": "sendToWhatsApp()",
+      "file_type": "code",
+      "source_file": "chatbot.js",
+      "source_location": "L421"
+    },
+    {
+      "id": "mobile_bar",
+      "label": "mobile-bar.js",
+      "file_type": "code",
+      "source_file": "mobile-bar.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "mobile_bar_createbar",
+      "label": "createBar()",
+      "file_type": "code",
+      "source_file": "mobile-bar.js",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_getcookie",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_setcookie",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_loadga4",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_hidebanner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_acceptcookies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_declinecookies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner",
+      "target": "cookie_banner_showbanner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_acceptcookies",
+      "target": "cookie_banner_setcookie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_acceptcookies",
+      "target": "cookie_banner_hidebanner",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_acceptcookies",
+      "target": "cookie_banner_loadga4",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_declinecookies",
+      "target": "cookie_banner_setcookie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "cookie_banner_declinecookies",
+      "target": "cookie_banner_hidebanner",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "cookie-banner.js",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "whatsapp_btn",
+      "target": "whatsapp_btn_createbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "whatsapp-btn.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_inject",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_togglechat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L270",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_addmsg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_showtyping",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L293",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_clearactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L306",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_renderstep",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L311",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot",
+      "target": "chatbot_sendtowhatsapp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L421",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_togglechat",
+      "target": "chatbot_renderstep",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L277",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_clearactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L315",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_showtyping",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L319",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_addmsg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L320",
+      "weight": 1.0
+    },
+    {
+      "source": "chatbot_renderstep",
+      "target": "chatbot_sendtowhatsapp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "chatbot.js",
+      "source_location": "L321",
+      "weight": 1.0
+    },
+    {
+      "source": "mobile_bar",
+      "target": "mobile_bar_createbar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mobile-bar.js",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

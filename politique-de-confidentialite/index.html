@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Politique de Confidentialité — Troilo Digital</title>
+    <meta name="description" content="Politique de confidentialité de Troilo Digital. Comment vos données sont collectées, utilisées, et vos droits RGPD en tant qu'utilisateur du site.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://troilodigital.be/politique-de-confidentialite/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://troilodigital.be/"},
+        {"@type": "ListItem", "position": 2, "name": "Politique de Confidentialité", "item": "https://troilodigital.be/politique-de-confidentialite/"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <style>
+        @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --border-accent: rgba(232,197,71,0.12);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        html.lenis, html.lenis body { height: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.8; }
+
+        /* NAV */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            padding: 1.25rem clamp(1.5rem,5vw,4rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10,10,10,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; }
+        .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 200; }
+        .nav-burger span { display: block; width: 20px; height: 2px; background: var(--white); margin: 4px 0; transition: all 0.3s var(--ease, cubic-bezier(0.4,0,0.2,1)); }
+        .nav-burger.open span:nth-child(1) { transform: rotate(45deg) translate(3px, 4px); }
+        .nav-burger.open span:nth-child(2) { opacity: 0; }
+        .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
+        .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a:hover { opacity: 1; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 4rem clamp(1.5rem,5vw,4rem) 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .breadcrumb {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--gray);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .breadcrumb a { color: var(--gray); text-decoration: none; transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb span { margin: 0 0.5rem; opacity: 0.4; }
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            line-height: 0.95;
+            margin-bottom: 1rem;
+        }
+        .page-hero p {
+            color: var(--gray-light);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            max-width: 560px;
+        }
+
+        /* CONTENT */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem clamp(1.5rem,5vw,4rem) 5rem;
+        }
+
+        .content h2 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 3rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            letter-spacing: -0.01em;
+        }
+        .content h2:first-child { margin-top: 0; }
+
+        .content h3 {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--white);
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+            color: var(--gray-light);
+            line-height: 1.75;
+            font-size: 0.9rem;
+        }
+
+        .content ul {
+            margin: 0.75rem 0 1rem 1.5rem;
+        }
+        .content li {
+            margin-bottom: 0.5rem;
+            color: var(--gray-light);
+            line-height: 1.65;
+            font-size: 0.9rem;
+        }
+
+        .content a { color: var(--accent); text-decoration: underline; }
+        .content strong { color: var(--white); }
+
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.85rem;
+        }
+        .content th {
+            background: var(--surface);
+            color: var(--white);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.8rem;
+            border-bottom: 1px solid var(--border-accent);
+        }
+        .content td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--gray-light);
+            vertical-align: top;
+        }
+        .content tr:last-child td { border-bottom: none; }
+
+        .content code {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            background: var(--surface);
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            color: var(--accent);
+        }
+
+        /* Rights grid */
+        .rights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+        .right-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            transition: border-color 0.3s;
+        }
+        .right-card:hover { border-color: var(--border-accent); }
+        .right-card strong {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.35rem;
+        }
+        .right-card p {
+            font-size: 0.82rem;
+            color: var(--gray);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Cookie button */
+        .cookie-btn {
+            display: inline-block;
+            margin: 0.5rem 0 1rem;
+            padding: 0.6rem 1.25rem;
+            background: transparent;
+            border: 1px solid var(--border-accent);
+            border-radius: 100px;
+            color: var(--accent);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .cookie-btn:hover { background: var(--accent-dim); border-color: rgba(232,197,71,0.3); }
+
+        .last-update {
+            margin-top: 3rem;
+            color: var(--gray);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* FOOTER */
+        .footer {
+            padding: 2rem clamp(1.5rem,5vw,4rem);
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.05em; }
+        .footer a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+        .footer a:hover { color: var(--accent); }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .nav-burger { display: block; }
+            .content { padding: 2rem 1.25rem 4rem; }
+            .page-hero { padding: 3rem 1.25rem 2rem; }
+            .footer { flex-direction: column; align-items: flex-start; }
+            .rights-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
+  </script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Politique de Confidentialité — Troilo Digital">
+    <meta name="twitter:description" content="Politique de confidentialité de Troilo Digital. Comment vos données sont collectées, utilisées, et vos droits RGPD en tant qu'utilisateur du site.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <a href="../" class="nav-logo">Troilo Digital</a>
+    <div class="nav-right">
+        <a href="../#work" class="nav-link">Services</a>
+        <a href="../#pricing" class="nav-link">Tarifs</a>
+        <a href="../blog/" class="nav-link">Blog</a>
+        <a href="../#contact" class="nav-cta">Contact</a>
+    
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    </nav>
+<div class="nav-mobile-overlay" id="navOverlay">
+    <a href="../#work" onclick="closeMobileNav()">Services</a>
+    <a href="../#pricing" onclick="closeMobileNav()">Tarifs</a>
+    <a href="../blog/">Blog</a>
+    <a href="../a-propos/">A propos</a>
+    <a href="../#contact" class="nav-cta" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="breadcrumb">
+        <a href="../">Accueil</a><span>›</span>Politique de Confidentialité
+    </div>
+    <h1>Politique de <br>Confidentialité</h1>
+    <p>Vos données, comment elles sont utilisées, vos droits. En clair, sans jargon juridique inutile.</p>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <h2>1. Responsable du traitement</h2>
+    <p><strong>Michel Troilo</strong> — Troilo Digital<br>
+    Email : <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a><br>
+    Téléphone : <a href="tel:+32492222677">+32 492 222 677</a><br>
+    Pays : Belgique</p>
+
+    <h2>2. Données collectées</h2>
+
+    <h3>Via le formulaire de contact</h3>
+    <p>Lorsque vous remplissez le formulaire de contact ou réservez un appel, nous collectons :</p>
+    <ul>
+        <li>Prénom et nom</li>
+        <li>Adresse email</li>
+        <li>Numéro de téléphone (optionnel)</li>
+        <li>Message libre / description de votre activité</li>
+        <li>URL de votre site web (optionnel)</li>
+    </ul>
+    <p><strong>Finalité :</strong> répondre à votre demande et assurer le suivi commercial.<br>
+    <strong>Base légale :</strong> intérêt légitime (art. 6.1.f RGPD) + exécution d'un contrat en cours de formation.<br>
+    <strong>Conservation :</strong> 3 ans à compter du dernier contact.<br>
+    <strong>Sous-traitant :</strong> Go High Level (CRM) — <a href="https://www.gohighlevel.com/privacy-policy" target="_blank" rel="noopener">politique de confidentialité GHL</a>. Données hébergées aux États-Unis avec clauses contractuelles types UE.</p>
+
+    <h3>Via Google Analytics 4 (GA4)</h3>
+    <p>Uniquement si vous avez <strong>accepté les cookies d'analyse</strong> via la bannière de consentement. GA4 collecte :</p>
+    <ul>
+        <li>Pages visitées et durée des visites</li>
+        <li>Source de trafic (Google, direct, réseaux sociaux…)</li>
+        <li>Type d'appareil et pays approximatif</li>
+        <li>Interactions (clics sur les CTAs)</li>
+    </ul>
+    <p><strong>Finalité :</strong> mesure d'audience et amélioration du site.<br>
+    <strong>Base légale :</strong> consentement (art. 6.1.a RGPD).<br>
+    <strong>Conservation :</strong> 14 mois (paramètre GA4 configuré).<br>
+    <strong>Sous-traitant :</strong> Google Ireland Ltd — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique Google</a>. L'anonymisation IP est activée.</p>
+
+    <h2 id="cookies">3. Cookies</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cookie</th>
+                <th>Type</th>
+                <th>Durée</th>
+                <th>Finalité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>td_cookie_consent</code></td>
+                <td>Fonctionnel</td>
+                <td>12 mois</td>
+                <td>Mémorise votre choix de consentement</td>
+            </tr>
+            <tr>
+                <td><code>_ga</code>, <code>_ga_*</code></td>
+                <td>Analytique</td>
+                <td>14 mois</td>
+                <td>Google Analytics 4 — statistiques de visite</td>
+            </tr>
+            <tr>
+                <td><code>_gid</code></td>
+                <td>Analytique</td>
+                <td>24 heures</td>
+                <td>Google Analytics — session utilisateur</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Les cookies analytiques ne sont déposés qu'après votre consentement explicite.</p>
+
+    <button class="cookie-btn" onclick="if(window.tdResetConsent) window.tdResetConsent(); else { document.cookie='td_cookie_consent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; location.reload(); }">
+        Modifier mes préférences cookies
+    </button>
+
+    <h2>4. Vos droits</h2>
+    <p>Conformément au RGPD (règlement UE 2016/679), vous disposez des droits suivants :</p>
+
+    <div class="rights-grid">
+        <div class="right-card">
+            <strong>Accès</strong>
+            <p>Obtenir une copie de vos données personnelles détenues</p>
+        </div>
+        <div class="right-card">
+            <strong>Rectification</strong>
+            <p>Corriger des données inexactes ou incomplètes</p>
+        </div>
+        <div class="right-card">
+            <strong>Effacement</strong>
+            <p>Demander la suppression de vos données ("droit à l'oubli")</p>
+        </div>
+        <div class="right-card">
+            <strong>Portabilité</strong>
+            <p>Recevoir vos données dans un format structuré et lisible</p>
+        </div>
+        <div class="right-card">
+            <strong>Opposition</strong>
+            <p>Vous opposer à un traitement fondé sur l'intérêt légitime</p>
+        </div>
+        <div class="right-card">
+            <strong>Limitation</strong>
+            <p>Demander la limitation du traitement dans certains cas</p>
+        </div>
+    </div>
+
+    <p>Pour exercer vos droits : <a href="mailto:michel@troilodigital.be">michel@troilodigital.be</a> — réponse sous 30 jours maximum.</p>
+    <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de l'<strong>Autorité de protection des données (APD)</strong> belge : <a href="https://www.dataauthority.be" target="_blank" rel="noopener">dataauthority.be</a> — Rue de la Presse 35, 1000 Bruxelles.</p>
+
+    <h2>5. Sécurité</h2>
+    <p>Le site est servi exclusivement en HTTPS (TLS 1.3). Les données de contact sont stockées dans Go High Level, plateforme certifiée SOC 2 Type II. Aucune donnée de paiement n'est collectée sur ce site.</p>
+
+    <h2>6. Modifications</h2>
+    <p>Cette politique peut être mise à jour en cas d'évolution réglementaire ou technique. La date de dernière modification est indiquée ci-dessous. En cas de modification substantielle, un avis sera affiché sur le site.</p>
+
+    <p class="last-update">Dernière mise à jour : 29 mars 2026</p>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <span>© 2026 Troilo Digital</span>
+    <span><a href="../cgv/">CGV</a> · <a href="../mentions-legales/">Mentions</a> · <a href="../politique-de-confidentialite/">Confidentialité</a></span>
+    <span>Liège, Belgique</span>
+</footer>
+
+<script>
+    const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+</script>
+<script src="/cookie-banner.js" defer></script>
+<script defer src="/mobile-bar.js"></script><script defer src="/chatbot.js"></script>
+
+<script>
+const navBurger=document.getElementById('navBurger');
+const navOverlay=document.getElementById('navOverlay');
+if(navBurger){navBurger.addEventListener('click',function(){navBurger.classList.toggle('open');navOverlay.classList.toggle('open');document.body.style.overflow=navOverlay.classList.contains('open')?'hidden':'';});}
+function closeMobileNav(){if(navBurger){navBurger.classList.remove('open');navOverlay.classList.remove('open');document.body.style.overflow='';}}
+</script>
+</body>
+</html>

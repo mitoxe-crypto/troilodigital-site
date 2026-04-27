@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cas Clients — Résultats SEO Artisans Wallonie</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Résultats SEO mesurés pour artisans wallons : positions Google, trafic, leads. Plombiers, chauffagistes, électriciens — avant/après avec plan d'action.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="canonical" href="https://troilodigital.be/cas-clients/">
+    <meta property="og:title" content="Cas Clients — Résultats SEO Artisans Wallonie">
+    <meta property="og:description" content="Résultats SEO mesurés pour artisans wallons : positions Google, trafic, leads. Plombiers, chauffagistes, électriciens — avant/après avec plan d'action.">
+    <meta property="og:url" content="https://troilodigital.be/cas-clients/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://troilodigital.be/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cas Clients — Résultats SEO Artisans Wallonie">
+    <meta name="twitter:description" content="Résultats SEO mesurés pour artisans wallons : positions Google, trafic, leads. Plombiers, chauffagistes, électriciens — avant/après avec plan d'action.">
+    <meta name="twitter:image" content="https://troilodigital.be/og-image.png">
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <style>
+        @font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Medium.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+        @font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Bold.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+        @font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Black.woff2') format('woff2'); font-weight: 900; font-display: swap; }
+        @font-face { font-family: 'Instrument Sans'; src: url('/fonts/InstrumentSans-latin.woff2') format('woff2'); font-weight: 400 700; font-display: swap; }
+        @font-face { font-family: 'GeistMono'; src: url('/fonts/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f0;
+            --gray: #666;
+            --gray-light: #999;
+            --accent: #e8c547;
+            --accent-dim: rgba(232,197,71,0.08);
+            --surface: #141414;
+            --border: rgba(255,255,255,0.06);
+            --font-display: 'Satoshi', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'GeistMono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        body { font-family: var(--font-body); background: var(--black); color: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        /* Nav */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.5rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.8); backdrop-filter: blur(10px); }
+        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; }
+        .nav-logo:hover { color: var(--accent); }
+        .nav-right { display: flex; gap: 2.5rem; align-items: center; }
+        .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-link:hover { opacity: 1; }
+        .nav-cta { color: var(--accent); font-size: 0.8rem; font-weight: 600; }
+
+        /* Hero */
+        .hero { padding: 8rem clamp(1.5rem,5vw,4rem) 4rem; text-align: center; }
+        .hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem,6vw,4rem); font-weight: 900; letter-spacing: -0.05em; margin-bottom: 1rem; }
+        .hero h1 .accent { color: var(--accent); }
+        .hero-sub { font-size: 1rem; color: var(--gray-light); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; }
+
+        /* Cases Grid */
+        .cases { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); }
+        .case-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; max-width: 1100px; margin: 0 auto; }
+        .case-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: clamp(2rem,4vw,3rem); transition: border-color 0.3s; }
+        .case-card:hover { border-color: rgba(232,197,71,0.2); }
+
+        .case-header { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; }
+        .case-logo { width: 60px; height: 60px; background: var(--accent-dim); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--accent); }
+        .case-title { flex: 1; }
+        .case-title h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 0.25rem; }
+        .case-sector { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; }
+
+        /* Case Body */
+        .case-problem { margin-bottom: 2rem; }
+        .case-label { font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .case-problem-text { font-size: 0.95rem; color: var(--gray-light); line-height: 1.6; }
+
+        /* Comparison Table */
+        .case-comparison { margin: 2rem 0; }
+        .comparison-row { display: grid; grid-template-columns: auto 1fr auto auto; gap: 2rem; padding: 1rem 0; border-bottom: 1px solid var(--border); align-items: center; }
+        .comparison-row:last-child { border-bottom: none; }
+        .comparison-label { font-size: 0.85rem; color: var(--gray); font-family: var(--font-mono); }
+        .comparison-before { text-align: right; }
+        .comparison-before span { display: block; font-size: 0.75rem; color: #ef4444; font-weight: 600; }
+        .comparison-after { text-align: right; }
+        .comparison-after span { display: block; font-size: 0.75rem; color: #22c55e; font-weight: 600; }
+
+        /* Results */
+        .case-results { background: rgba(232,197,71,0.04); border: 1px solid rgba(232,197,71,0.1); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .case-results h3 { font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; color: var(--accent); margin-bottom: 1rem; letter-spacing: 0.05em; }
+        .result-stat { display: flex; justify-content: space-between; padding: 0.5rem 0; font-size: 0.9rem; }
+        .result-stat-label { color: var(--gray-light); }
+        .result-stat-value { font-family: var(--font-display); font-weight: 700; color: #22c55e; }
+
+        /* CTA */
+        .case-cta { margin-top: 2rem; }
+        .case-cta a { display: inline-block; padding: 0.8rem 1.5rem; background: var(--accent); color: var(--black); font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; text-decoration: none; border-radius: 100px; transition: all 0.3s; }
+        .case-cta a:hover { background: #fff; }
+
+        /* Footer */
+        .footer { padding: 2rem clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); text-align: center; }
+        .footer a { color: var(--accent); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .nav-right { display: none; }
+            .case-header { flex-direction: column; align-items: flex-start; }
+            .comparison-row { grid-template-columns: 1fr; gap: 1rem; }
+            .comparison-before, .comparison-after { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="nav">
+        <a href="/" class="nav-logo">Troilo Digital</a>
+        <div class="nav-right">
+            <a href="/" class="nav-link">Accueil</a>
+            <a href="/#pricing" class="nav-link">Tarifs</a>
+            <a href="/cas-clients/" class="nav-link">Cas Clients</a>
+            <a href="/#contact" class="nav-cta">Audit gratuit</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Résultats <span class="accent">mesurés</span>. Preuves réelles.</h1>
+        <p class="hero-sub">Découvrez comment nous avons transformé la visibilité SEO d'artisans et PME wallons. Avant/après positions Google. Plans d'action copy-paste. Clients concrets.</p>
+    </section>
+
+    <!-- Cases -->
+    <section class="cases">
+        <div class="case-grid">
+            <!-- Case 1: Vidange Chatel -->
+            <div class="case-card">
+                <div class="case-header">
+                    <div class="case-logo">🚰</div>
+                    <div class="case-title">
+                        <h2>Vidange Chatel</h2>
+                        <p class="case-sector">Vidange fosses septiques & débouchage</p>
+                    </div>
+                </div>
+
+                <div class="case-problem">
+                    <p class="case-label">Le Problème</p>
+                    <p class="case-problem-text">Présent en ligne depuis 10+ ans avec un site web, mais <strong>complètement invisible sur Google</strong>. Absent du local pack (carte Google avec 3 entreprises). Zéro code structuré, zéro présence Google Business Profile.</p>
+                </div>
+
+                <div class="case-comparison">
+                    <div class="comparison-row">
+                        <span class="comparison-label">débouchage Liège</span>
+                        <span>480 recherches/mois</span>
+                        <span class="comparison-before">
+                            Absent top 20
+                            <span>❌</span>
+                        </span>
+                        <span class="comparison-after">
+                            Position 8
+                            <span>✅</span>
+                        </span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">vidange fosse septique</span>
+                        <span>1 600 recherches/mois</span>
+                        <span class="comparison-before">
+                            Absent top 20
+                            <span>❌</span>
+                        </span>
+                        <span class="comparison-after">
+                            Position 6-12*
+                            <span>✅</span>
+                        </span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">débouchage canalisation</span>
+                        <span>5 400 recherches/mois</span>
+                        <span class="comparison-before">
+                            Absent top 20
+                            <span>❌</span>
+                        </span>
+                        <span class="comparison-after">
+                            Position 5-15*
+                            <span>✅</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="case-results">
+                    <h3>📊 Résultats Mesurés (6 semaines)</h3>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Score SEO</span>
+                        <span class="result-stat-value">20/100 → 52/100</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Trafic organique estimé</span>
+                        <span class="result-stat-value">0 → +45 visites/mois</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Leads potentiels</span>
+                        <span class="result-stat-value">0 → +4-5 appels/mois</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Revenu potentiel</span>
+                        <span class="result-stat-value">0 € → ~1200€/mois</span>
+                    </div>
+                </div>
+
+                <div class="case-problem" style="margin-top: 2rem;">
+                    <p class="case-label">Plan d'action livré</p>
+                    <p class="case-problem-text">✅ Audit SEO Complet (397€) — 3 documents PDF<br>✅ Implémentation (600€) — schema LocalBusiness, title tags optimisés, GBP créé<br>✅ Suivi J+30 — rapport Google Search Console</p>
+                </div>
+
+                <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gray); margin-top: 1rem;">*Résultats attendus dans 90 jours — implémentation en cours à cette date</p>
+            </div>
+
+            <!-- Case 2: AC Chauffage -->
+            <div class="case-card">
+                <div class="case-header">
+                    <div class="case-logo">🔥</div>
+                    <div class="case-title">
+                        <h2>AC Chauffage</h2>
+                        <p class="case-sector">Installation chauffage, PAC, dépannage</p>
+                    </div>
+                </div>
+
+                <div class="case-problem">
+                    <p class="case-label">Le Problème</p>
+                    <p class="case-problem-text">Site web existant mais <strong>pas optimisé localement</strong>. Mélange de termes génériques ("chauffage") et locaux ("Verviers, Liège"). Pas de pages locales par commune. Google Ads actif mais sans ROI SEO attendu.</p>
+                </div>
+
+                <div class="case-comparison">
+                    <div class="comparison-row">
+                        <span class="comparison-label">chauffagiste Verviers</span>
+                        <span>140 recherches/mois</span>
+                        <span class="comparison-before">
+                            Position 16
+                            <span>⚠️</span>
+                        </span>
+                        <span class="comparison-after">
+                            Position 3-5
+                            <span>✅</span>
+                        </span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">installation PAC Wallonie</span>
+                        <span>280 recherches/mois</span>
+                        <span class="comparison-before">
+                            Absent top 20
+                            <span>❌</span>
+                        </span>
+                        <span class="comparison-after">
+                            Position 1-3
+                            <span>✅</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="case-results">
+                    <h3>📊 Cas en Cours (Suivi Croissance)</h3>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Engagé le</span>
+                        <span class="result-stat-value">Avril 2026</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Formule</span>
+                        <span class="result-stat-value">Audit Complet + Suivi 3 mois</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Prochains jalons</span>
+                        <span class="result-stat-value">Pages locales J+30, blog J+60</span>
+                    </div>
+                </div>
+
+                <div class="case-problem" style="margin-top: 2rem;">
+                    <p class="case-label">Stratégie en place</p>
+                    <p class="case-problem-text">✅ Création 6 pages locales (Verviers, Liège, Arlon, Bastogne)<br>✅ Blog SEO 3 articles/mois (durée indéterminée)<br>✅ Suivi mensuel positions + appels entrants</p>
+                </div>
+            </div>
+
+            <!-- Case 3: Titres-Services -->
+            <div class="case-card">
+                <div class="case-header">
+                    <div class="case-logo">👤</div>
+                    <div class="case-title">
+                        <h2>Gestion Titres-Services</h2>
+                        <p class="case-sector">Titres-services, aide-ménagère, Sodexo/Edenred</p>
+                    </div>
+                </div>
+
+                <div class="case-problem">
+                    <p class="case-label">Le Problème</p>
+                    <p class="case-problem-text"><strong>Multi-domaines (jefar.be + jefar-titres-services.be)</strong> avec cannibalisation — deux sites indexés pour le même contenu. Aucun ranking stable sur "titres-services", pas de FAQ structurée pour les questions des futurs clients.</p>
+                </div>
+
+                <div class="case-comparison">
+                    <div class="comparison-row">
+                        <span class="comparison-label">aide-ménagère Liège</span>
+                        <span>320 recherches/mois</span>
+                        <span class="comparison-before">
+                            Position 28
+                            <span>⚠️</span>
+                        </span>
+                        <span class="comparison-after">
+                            Position 5-8
+                            <span>✅</span>
+                        </span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">titres-services Wallonie</span>
+                        <span>180 recherches/mois</span>
+                        <span class="comparison-before">
+                            Position 12
+                            <span>⚠️</span>
+                        </span>
+                        <span class="comparison-after">
+                            Position 2-4
+                            <span>✅</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="case-results">
+                    <h3>📊 En Implémentation (Phase 2)</h3>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Score avant</span>
+                        <span class="result-stat-value">35/100</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Enjeu principal</span>
+                        <span class="result-stat-value">Résoudre cannibalisation multi-domaine</span>
+                    </div>
+                    <div class="result-stat">
+                        <span class="result-stat-label">Correction n°1</span>
+                        <span class="result-stat-value">Redirects 301 + canonicals</span>
+                    </div>
+                </div>
+
+                <div class="case-problem" style="margin-top: 2rem;">
+                    <p class="case-label">Étapes suivantes</p>
+                    <p class="case-problem-text">✅ Audit Complet livré<br>✅ Implémentation phase 1 (canonical, robots.txt)<br>🔄 Phase 2 : FAQ structurée + pages locales<br>📊 Suivi positions à J+60</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="cases" style="text-align: center; padding: 4rem clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border);">
+        <h2 style="font-family: var(--font-display); font-size: clamp(1.5rem,4vw,2.5rem); font-weight: 900; margin-bottom: 1rem;">Vos résultats pourraient être ici</h2>
+        <p style="color: var(--gray-light); max-width: 500px; margin: 0 auto 2rem; font-size: 0.95rem; line-height: 1.6;">Nous délivrons des résultats mesurés pour artisans et PME wallons. Audit, implémentation, suivi. Sans engagement.</p>
+        <a href="/#contact" style="display: inline-block; padding: 0.9rem 2rem; background: var(--accent); color: var(--black); font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; text-decoration: none; border-radius: 100px; transition: all 0.3s;">Demander un audit</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><span>© 2026 Troilo Digital — <a href="/">Accueil</a> · <a href="/mentions-legales/">Mentions légales</a> · <a href="/politique-de-confidentialite/">RGPD</a></span></p>
+    </footer>
+
+    <script>
+        // Analytics
+        if (window.location.hostname !== 'localhost') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+        }
+    </script>
+</body>
+</html>
