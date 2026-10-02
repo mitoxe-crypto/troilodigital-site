@@ -35,6 +35,7 @@ Analyse de visibilité Google offerte pour les artisans et PMEs wallons. L'artis
 ### Audits SEO (one-shot)
 | Service | Prix | Délai | Inclus |
 |---------|------|-------|--------|
+| Audit SEO Essentiel | 197 € | 5 jours | 20 points, 2 documents, top 3 concurrents, plan d'action priorisé |
 | Audit SEO Complet | 397 € | 5 jours | 40+ points, schema JSON-LD, llms.txt, meta descriptions rédigées |
 | Audit + Implémentation | 997 € | 10 jours | Audit complet + corrections techniques appliquées sur votre site |
 
@@ -94,7 +95,7 @@ Non. L'audit est 100% externe. Troilo Digital analyse le site comme le font Goog
 Les corrections techniques sont visibles dans Google Search Console en 2 à 6 semaines. Les positions locales sur Google s'améliorent en 1 à 3 mois selon la concurrence dans la ville et le secteur.
 
 **Quel est le prix d'un audit SEO pour artisan en Belgique ?**
-Troilo Digital propose un score SEO gratuit (troilodigital.be/score-gratuit) pour démarrer. L'Audit Complet est à 397 € et inclut le schema JSON-LD et le fichier llms.txt. L'Audit + Implémentation est à 997 €, tout compris.
+Troilo Digital propose un score SEO gratuit (troilodigital.be/score-gratuit) pour démarrer. L'Audit Essentiel est à 197 €. L'Audit Complet est à 397 € et inclut le schema JSON-LD et le fichier llms.txt. L'Audit + Implémentation est à 997 €, tout compris.
 
 **Qu'est-ce que le fichier llms.txt ?**
 Un fichier texte structuré placé sur le site (troilodigital.be/llms.txt) pour améliorer la lisibilité par les LLMs (ChatGPT, Perplexity, Gemini). Il présente l'activité, les services et les pages clés dans un format que les IA analysent efficacement. La plupart des PMEs belges n'en ont pas encore — c'est un avantage concurrentiel concret.
@@ -105,7 +106,7 @@ Vous recevez le rapport complet avec les corrections prêtes à appliquer. Trois
 ## Pages clés
 
 - https://troilodigital.be/ — Page d'accueil
-- https://troilodigital.be/#tarifs — Tarifs et formules
+- https://troilodigital.be/#pricing — Tarifs et formules
 - https://troilodigital.be/#contact — Réserver un appel diagnostic gratuit (15 min)
 - https://troilodigital.be/#faq — Questions fréquentes
 - https://troilodigital.be/a-propos/ — À propos de Michel Troilo, consultant SEO Liège

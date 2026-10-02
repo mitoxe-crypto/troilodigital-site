@@ -24,12 +24,19 @@ La mission de Troilo Digital est d'aider les **artisans** (plombiers, électrici
 - **Format :** Formulaire en ligne → mini-analyse email personnalisée sous 48h
 - **Ce qui est analysé :** 20 points de contrôle — titres, meta, H1, HTTPS, indexation, GBP, NAP, mobile
 - **À qui s'adresse-t-il :** Artisans et PMEs qui veulent comprendre pourquoi leur site n'apparaît pas sur Google. C'est le produit d'appel gratuit de Troilo Digital.
-- **Tunnel de sortie :** Score gratuit → Audit Complet 397€ ou Site Vitrine 497€
+- **Tunnel de sortie :** Score gratuit → Audit Essentiel 197€, Audit Complet 397€ ou Site Vitrine 497€
+
+### Audit SEO Essentiel — 197 €
+- **Délai :** 5 jours ouvrables
+- **Format :** Rapport PDF + plan d'action
+- **Ce qui est analysé :** Titres et meta descriptions, structure H1-H6, balises canoniques, robots.txt, sitemap, vitesse de chargement estimée, présence Google Maps, cohérence NAP (Nom, Adresse, Téléphone), 20 points de contrôle
+- **À qui s'adresse-t-il :** Artisans et PMEs qui veulent comprendre pourquoi leur site n'apparaît pas sur Google
+- **ROI type :** Un seul nouveau client généré rembourse l'audit. Pour un plombier facturant 300-500 € par intervention, le retour est immédiat.
 
 ### Audit SEO Complet — 397 €
 - **Délai :** 5 jours ouvrables
 - **Format :** Rapport PDF + DOCX + plan d'action en 3 horizons + livrables techniques
-- **Ce qui est inclus en plus :** 40+ points de contrôle, schema JSON-LD LocalBusiness prêt à copier-coller, meta descriptions rédigées pour les 5 pages principales (150-160 caractères), alt text des images, fichier llms.txt créé pour le client, analyse concurrents locaux (3 principaux), données rankings réels via Serper.dev
+- **Ce qui est inclus en plus :** 40+ points de contrôle, schema JSON-LD LocalBusiness prêt à copier-coller, meta descriptions rédigées pour les 5 pages principales (150-160 caractères), alt text des images, fichier llms.txt créé pour le client, analyse concurrents locaux (3 principaux), volumes keyword réels via DataForSEO
 - **À qui s'adresse-t-il :** PMEs prêtes à investir dans leur visibilité locale sur 3-6 mois
 - **Valeur marché :** Les agences belges facturent ce niveau d'audit entre 600 € et 1 200 €.
 
@@ -52,7 +59,7 @@ Un agent conversationnel IA configuré pour le métier de l'artisan (plombier, c
 - **À qui s'adresse-t-il :** Artisans qui manquent des appels pendant les chantiers ou veulent automatiser la qualification des leads.
 
 ### Suivi SEO mensuel — 297 à 797 €/mois
-- **Formule Suivi (297 €/mois) :** Rapport mensuel rankings, 1 correction technique
+- **Formule Suivi (297 €/mois) :** Rapport mensuel rankings, 1 correction technique prioritaire
 - **Formule Croissance (497 €/mois) :** Rapport complet + 3 corrections + 1 contenu SEO/mois + call 30 min
 - **Formule Domination (797 €/mois) :** Tout Croissance + correctifs illimités + 3 contenus/mois + veille concurrents mensuelle
 
@@ -75,7 +82,7 @@ Optimisation des pages existantes sur les mots-clés locaux pertinents ("plombie
 Optimisation du **Google Business Profile** (anciennement Google My Business) : catégories, description, horaires, photos, attributs de service. Construction de citations NAP (Nom, Adresse, Téléphone) cohérentes sur les annuaires belges prioritaires (Pages Jaunes BE, Sortlist.be, Kompass.be). Stratégie d'acquisition d'avis Google.
 
 ### E — Ecosystème IA
-Mise en place des signaux pour les moteurs de recherche alimentés par l'IA : fichier llms.txt, schémas structured data avancés (FAQPage, HowTo, LocalBusiness, Person), optimisation des passages citables pour les LLMs (réponses directes, format question-réponse), vérification de l'accessibilité par les crawlers IA (GPTBot, ClaudeBot, PerplexityBot).
+Mise en place des signaux pour les moteurs de recherche alimentés par l'IA : fichier llms.txt, structured data utile (LocalBusiness, Service, Offer, Person, WebPage selon le cas), optimisation des passages citables pour les LLMs (réponses directes, format question-réponse), vérification de l'accessibilité par les crawlers IA (GPTBot, ClaudeBot, PerplexityBot). Les schémas FAQPage et HowTo ne sont pas présentés comme des leviers de rich results Google pour les sites commerciaux.
 
 ---
 

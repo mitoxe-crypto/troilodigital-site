@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="alternate icon" href="/favicon.svg">
-    <meta name="theme-color" content="#0a0a0a">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0B0D0F">
     <title>Agents IA pour artisans : chatbot de vente — Troilo Digital</title>
     <meta name="description" content="Comment un agent IA peut qualifier vos prospects 24/7, répondre à vos questions fréquentes et transformer des enquêtes en commandes fermées pour artisans.">
     <link rel="canonical" href="https://troilodigital.be/blog/agents-ia-artisans-chatbot-ferme-ventes/">
@@ -79,13 +81,13 @@
         @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 
         :root {
-            --black: #0a0a0a;
-            --white: #f5f5f0;
+            --black: #0B0D0F;
+            --white: #F5F5F2;
             --gray: #666;
             --gray-light: #999;
-            --accent: #e8c547;
-            --accent-dim: rgba(232,197,71,0.08);
-            --surface: #141414;
+            --accent: #D4A03A;
+            --accent-dim: rgba(212,160,58,0.08);
+            --surface: #1A1D21;
             --border: rgba(255,255,255,0.06);
             --font-display: 'Satoshi', sans-serif;
             --font-body: 'Instrument Sans', sans-serif;
@@ -110,9 +112,9 @@
         .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
         .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
         .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
-        .nav-mobile-overlay a { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: #F5F5F2; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
         .nav-mobile-overlay a:hover { opacity: 1; }
-        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #D4A03A; border: 1px solid rgba(212,160,58,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
 
         .article-hero {
             padding: 8rem clamp(1.5rem,5vw,4rem) 3rem;
@@ -126,7 +128,7 @@
             top: -100px; left: 50%;
             width: 500px; height: 300px;
             transform: translateX(-50%);
-            background: radial-gradient(circle, rgba(232,197,71,0.03) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(212,160,58,0.03) 0%, transparent 70%);
             pointer-events: none;
         }
         .breadcrumb-inline {
@@ -203,7 +205,7 @@
         .article-body em { font-style: italic; color: var(--accent); }
 
         .highlight-box {
-            background: rgba(232,197,71,0.05);
+            background: rgba(212,160,58,0.05);
             border-left: 3px solid var(--accent);
             padding: 1.5rem;
             margin: 2rem 0;
@@ -271,7 +273,7 @@
 <body>
 
     <nav class="nav">
-        <a href="../../" class="nav-logo">Troilo Digital</a>
+        <a href="../../" class="nav-logo" aria-label="Troilo Digital — Accueil"><img src="/brand/logo-horizontal-dark.svg" alt="Troilo Digital" width="176" height="45" style="display:block;width:clamp(140px,13vw,176px);height:auto"></a>
         <div class="nav-right">
             <a href="../../#work" class="nav-link">Services</a>
             <a href="../../#pricing" class="nav-link">Tarifs</a>

@@ -160,30 +160,6 @@ force = false
 [redirects.headers]
 
 [[redirects]]
-from = "/audit-seo-essentiel/"
-to = "/score-gratuit/"
-status = 301.0
-force = false
-
-[redirects.query]
-
-[redirects.conditions]
-
-[redirects.headers]
-
-[[redirects]]
-from = "/audit-seo-essentiel"
-to = "/score-gratuit/"
-status = 301.0
-force = false
-
-[redirects.query]
-
-[redirects.conditions]
-
-[redirects.headers]
-
-[[redirects]]
 from = "/d/agent-ia"
 to = "/agent-ia-artisan/?utm_source=cold&utm_medium=email&utm_campaign=agent-ia"
 status = 302.0

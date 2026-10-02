@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Monogramme Troilo Digital</title>
+  <desc id="desc">Lettres T et D imbriquées dans un tracé géométrique doré.</desc>
+  <g fill="#D4A03A">
+    <path d="M10 12H58L48 24H40V67L26 82V24H10Z"/>
+    <path d="M43 24H60C77 24 89 36 89 52C89 69 77 81 60 81H33L45 69H60C70 69 77 62 77 52C77 43 70 36 60 36H45Z"/>
+  </g>
+</svg>

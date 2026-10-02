@@ -9,7 +9,9 @@
     <link rel="canonical" href="https://troilodigital.be/audit-seo-complet/">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    <!-- OG -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<!-- OG -->
     <meta property="og:title" content="Audit SEO Complet 397€ — Troilo Digital Liège">
     <meta property="og:description" content="40+ points SEO, schema JSON-LD, llms.txt, guide d'action copy-paste. Pour artisans et PMEs en Wallonie. Livré en 5 jours.">
     <meta property="og:type" content="website">
@@ -84,13 +86,13 @@
         @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 
         :root {
-            --black: #0a0a0a;
-            --white: #f5f5f0;
+            --black: #0B0D0F;
+            --white: #F5F5F2;
             --gray: #666;
             --gray-light: #999;
-            --accent: #e8c547;
-            --accent-dim: rgba(232,197,71,0.08);
-            --surface: #141414;
+            --accent: #D4A03A;
+            --accent-dim: rgba(212,160,58,0.08);
+            --surface: #1A1D21;
             --border: rgba(255,255,255,0.06);
             --font-display: 'Satoshi', sans-serif;
             --font-body: 'Instrument Sans', sans-serif;
@@ -117,24 +119,24 @@
         .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
         .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
         .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
-        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #F5F5F2; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
         .nav-mobile-overlay a:hover { opacity: 1; }
-        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #D4A03A; border: 1px solid rgba(212,160,58,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
 
         /* BREADCRUMB */
         .breadcrumb-bar { padding: 0.85rem clamp(1.5rem,5vw,4rem); border-bottom: 1px solid var(--border); margin-top: 68px; }
         .breadcrumb { font-size: 0.8rem; color: var(--gray); display: flex; align-items: center; gap: 0.4rem; }
         .breadcrumb a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
         .breadcrumb a:hover { color: var(--accent); }
-        .breadcrumb .sep { color: rgba(232,197,71,0.3); }
+        .breadcrumb .sep { color: rgba(212,160,58,0.3); }
         .breadcrumb .current { color: var(--white); font-weight: 600; }
 
         /* HERO */
         .hero-service { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem) clamp(3rem,6vw,5rem); text-align: center; position: relative; overflow: hidden; }
-        .hero-service::before { content: ''; position: absolute; top: -40%; left: 50%; width: 800px; height: 800px; transform: translateX(-50%); background: radial-gradient(circle, rgba(232,197,71,0.05) 0%, transparent 70%); pointer-events: none; }
+        .hero-service::before { content: ''; position: absolute; top: -40%; left: 50%; width: 800px; height: 800px; transform: translateX(-50%); background: radial-gradient(circle, rgba(212,160,58,0.05) 0%, transparent 70%); pointer-events: none; }
         .badge-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.75rem; }
-        .hero-badge { display: inline-block; background: var(--accent-dim); border: 1px solid rgba(232,197,71,0.2); color: var(--accent); font-family: var(--font-mono); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 100px; opacity: 0; transform: translateY(10px); }
-        .hero-badge-outline { display: inline-block; border: 1px solid rgba(232,197,71,0.25); color: var(--accent); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 100px; opacity: 0; transform: translateY(10px); }
+        .hero-badge { display: inline-block; background: var(--accent-dim); border: 1px solid rgba(212,160,58,0.2); color: var(--accent); font-family: var(--font-mono); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 100px; opacity: 0; transform: translateY(10px); }
+        .hero-badge-outline { display: inline-block; border: 1px solid rgba(212,160,58,0.25); color: var(--accent); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 100px; opacity: 0; transform: translateY(10px); }
         .hero-service h1 { font-family: var(--font-display); font-size: clamp(2.5rem,6vw,4.5rem); font-weight: 900; line-height: 1.0; letter-spacing: -0.05em; margin-bottom: 1.5rem; opacity: 0; transform: translateY(20px); }
         .hero-service h1 .accent { color: var(--accent); }
         .hero-subtitle { font-size: 1.05rem; color: var(--gray-light); max-width: 620px; margin: 0 auto 2.5rem; line-height: 1.7; opacity: 0; transform: translateY(15px); }
@@ -145,7 +147,7 @@
         /* BUTTONS */
         .btn-accent, a.btn-accent:link, a.btn-accent:visited { display: inline-block; background: var(--accent); color: var(--black) !important; padding: 0.9rem 2.2rem; border-radius: 100px; text-decoration: none; font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; letter-spacing: -0.01em; transition: background 0.3s, transform 0.15s; }
         .btn-accent:hover, a.btn-accent:hover { background: #d4b03e !important; color: var(--black) !important; transform: translateY(-2px); }
-        .btn-outline, a.btn-outline:link, a.btn-outline:visited { display: inline-block; border: 1px solid rgba(232,197,71,0.3); color: var(--accent) !important; padding: 0.9rem 2.2rem; border-radius: 100px; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.3s; }
+        .btn-outline, a.btn-outline:link, a.btn-outline:visited { display: inline-block; border: 1px solid rgba(212,160,58,0.3); color: var(--accent) !important; padding: 0.9rem 2.2rem; border-radius: 100px; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.3s; }
         .btn-outline:hover, a.btn-outline:hover { background: var(--accent-dim) !important; color: var(--accent) !important; }
 
         /* SECTIONS */
@@ -158,7 +160,7 @@
         /* DIFFERENTIATORS */
         .diff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; max-width: 1100px; margin: 0 auto; }
         .diff-card { background: var(--black); border: 1px solid var(--border); border-top: 2px solid var(--accent); border-radius: 14px; padding: 1.75rem; transition: border-color 0.3s, transform 0.3s; }
-        .diff-card:hover { border-color: rgba(232,197,71,0.2); transform: translateY(-4px); }
+        .diff-card:hover { border-color: rgba(212,160,58,0.2); transform: translateY(-4px); }
         .diff-icon { font-size: 2rem; margin-bottom: 0.75rem; }
         .diff-card h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
         .diff-card p { font-size: 0.88rem; color: var(--gray-light); line-height: 1.6; }
@@ -166,7 +168,7 @@
         /* LIVRABLES */
         .livrables-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
         .livrable-card { background: var(--black); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: border-color 0.3s; }
-        .livrable-card:hover { border-color: rgba(232,197,71,0.15); }
+        .livrable-card:hover { border-color: rgba(212,160,58,0.15); }
         .livrable-doc { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 400; color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.5rem; }
         .livrable-card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 1rem; }
         .livrable-list { list-style: none; }
@@ -176,26 +178,26 @@
         /* BLOCS */
         .blocs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; max-width: 1100px; margin: 0 auto; }
         .bloc-item { background: var(--black); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 0.75rem; transition: border-color 0.3s; }
-        .bloc-item:hover { border-color: rgba(232,197,71,0.15); }
+        .bloc-item:hover { border-color: rgba(212,160,58,0.15); }
         .bloc-num { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 400; color: var(--accent); background: var(--accent-dim); padding: 0.2rem 0.6rem; border-radius: 4px; white-space: nowrap; letter-spacing: 0.05em; }
         .bloc-label { font-size: 0.88rem; font-weight: 600; color: var(--white); }
 
         /* STEPS */
         .steps { display: flex; flex-direction: column; gap: 1rem; max-width: 680px; margin: 0 auto; }
         .step { display: flex; align-items: flex-start; gap: 1.25rem; background: var(--black); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; transition: border-color 0.3s, transform 0.3s; }
-        .step:hover { transform: translateX(4px); border-color: rgba(232,197,71,0.15); }
-        .step-num { min-width: 40px; height: 40px; background: var(--accent-dim); border: 1px solid rgba(232,197,71,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 0.9rem; color: var(--accent); flex-shrink: 0; }
+        .step:hover { transform: translateX(4px); border-color: rgba(212,160,58,0.15); }
+        .step-num { min-width: 40px; height: 40px; background: var(--accent-dim); border: 1px solid rgba(212,160,58,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 0.9rem; color: var(--accent); flex-shrink: 0; }
         .step-content h3 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
         .step-content p { font-size: 0.88rem; color: var(--gray-light); line-height: 1.6; }
 
         /* UPSELL */
-        .upsell-card { background: var(--black); border: 1px solid rgba(232,197,71,0.2); border-radius: 14px; padding: 2.5rem; text-align: center; max-width: 680px; margin: 0 auto; }
+        .upsell-card { background: var(--black); border: 1px solid rgba(212,160,58,0.2); border-radius: 14px; padding: 2.5rem; text-align: center; max-width: 680px; margin: 0 auto; }
         .upsell-card h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 900; letter-spacing: -0.04em; margin-bottom: 0.75rem; }
         .upsell-card p { color: var(--gray-light); margin-bottom: 1.75rem; line-height: 1.7; font-size: 0.95rem; }
 
         /* CTA */
         .cta-section { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); text-align: center; position: relative; }
-        .cta-section::before { content: ''; position: absolute; top: 0; left: 50%; width: 600px; height: 600px; transform: translateX(-50%); background: radial-gradient(circle, rgba(232,197,71,0.04) 0%, transparent 70%); pointer-events: none; }
+        .cta-section::before { content: ''; position: absolute; top: 0; left: 50%; width: 600px; height: 600px; transform: translateX(-50%); background: radial-gradient(circle, rgba(212,160,58,0.04) 0%, transparent 70%); pointer-events: none; }
         .price-big { font-family: var(--font-display); font-size: clamp(3rem,8vw,5rem); font-weight: 900; color: var(--accent); letter-spacing: -0.05em; margin: 1.5rem 0 0.25rem; }
         .price-sub { font-family: var(--font-mono); color: var(--gray); font-size: 0.78rem; letter-spacing: 0.08em; margin-bottom: 2rem; }
         .cta-section h2 { font-family: var(--font-display); font-size: clamp(1.4rem,3vw,2rem); font-weight: 900; letter-spacing: -0.04em; margin-bottom: 0.75rem; }
@@ -231,7 +233,7 @@
 
 <!-- NAV -->
 <nav class="nav">
-    <a href="../" class="nav-logo">Troilo<span>Digital</span></a>
+    <a href="../" class="nav-logo" aria-label="Troilo Digital — Accueil"><img src="/brand/logo-horizontal-dark.svg" alt="Troilo Digital" width="176" height="45" style="display:block;width:clamp(140px,13vw,176px);height:auto"></a>
     <div class="nav-right">
         <a href="../#work" class="nav-link">Services</a>
         <a href="../#pricing" class="nav-link">Tarifs</a>
@@ -360,8 +362,8 @@
     <div class="blocs-grid" style="padding:0 clamp(1.5rem,5vw,4rem);">
         <div class="bloc-item"><span class="bloc-num">BLOC 01</span><span class="bloc-label">robots.txt + sitemap</span></div>
         <div class="bloc-item"><span class="bloc-num">BLOC 02</span><span class="bloc-label">Schema LocalBusiness</span></div>
-        <div class="bloc-item"><span class="bloc-num">BLOC 03</span><span class="bloc-label">Schema FAQPage</span></div>
-        <div class="bloc-item"><span class="bloc-num">BLOC 04</span><span class="bloc-label">Schema HowTo (si pertinent)</span></div>
+        <div class="bloc-item"><span class="bloc-num">BLOC 03</span><span class="bloc-label">FAQ optimisée pour vos pages</span></div>
+        <div class="bloc-item"><span class="bloc-num">BLOC 04</span><span class="bloc-label">Schema Service / Offer pertinent</span></div>
         <div class="bloc-item"><span class="bloc-num">BLOC 05</span><span class="bloc-label">Fichier llms.txt complet</span></div>
         <div class="bloc-item"><span class="bloc-num">BLOC 06</span><span class="bloc-label">Title tags optimisés</span></div>
         <div class="bloc-item"><span class="bloc-num">BLOC 07</span><span class="bloc-label">Meta descriptions rédigées</span></div>

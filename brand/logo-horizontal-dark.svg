@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 112" role="img" aria-labelledby="title desc">
+  <title id="title">Troilo Digital</title>
+  <desc id="desc">Logo horizontal Troilo Digital doré et blanc pour fond sombre.</desc>
+  <style>
+    .wordmark{font-family:Satoshi,Arial,sans-serif;font-weight:500}
+    .descriptor{font-family:Satoshi,Arial,sans-serif;font-weight:500}
+  </style>
+  <g transform="translate(10 8)" fill="#D4A03A">
+    <path d="M10 12H58L48 24H40V67L26 82V24H10Z"/>
+    <path d="M43 24H60C77 24 89 36 89 52C89 69 77 81 60 81H33L45 69H60C70 69 77 62 77 52C77 43 70 36 60 36H45Z"/>
+  </g>
+  <rect x="120" y="18" width="1.5" height="76" fill="#D4A03A"/>
+  <text class="wordmark" x="145" y="52" fill="#F5F5F2" font-size="34" letter-spacing="7">TROILO</text>
+  <path d="M145 78H185M333 78H373" stroke="#D4A03A" stroke-width="1.5"/>
+  <text class="descriptor" x="205" y="84" fill="#D4A03A" font-size="13" letter-spacing="8">DIGITAL</text>
+</svg>

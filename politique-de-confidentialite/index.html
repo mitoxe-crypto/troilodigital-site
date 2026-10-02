@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="alternate icon" href="/favicon.svg">
-    <meta name="theme-color" content="#0a0a0a">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0B0D0F">
     <title>Politique de Confidentialité — Troilo Digital</title>
     <meta name="description" content="Politique de confidentialité de Troilo Digital. Comment vos données sont collectées, utilisées, et vos droits RGPD en tant qu'utilisateur du site.">
     <meta name="robots" content="noindex, follow">
@@ -32,15 +34,15 @@
         @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 
         :root {
-            --black: #0a0a0a;
-            --white: #f5f5f0;
+            --black: #0B0D0F;
+            --white: #F5F5F2;
             --gray: #666;
             --gray-light: #999;
-            --accent: #e8c547;
-            --accent-dim: rgba(232,197,71,0.08);
-            --surface: #141414;
+            --accent: #D4A03A;
+            --accent-dim: rgba(212,160,58,0.08);
+            --surface: #1A1D21;
             --border: rgba(255,255,255,0.06);
-            --border-accent: rgba(232,197,71,0.12);
+            --border-accent: rgba(212,160,58,0.12);
             --font-display: 'Satoshi', sans-serif;
             --font-body: 'Instrument Sans', sans-serif;
             --font-mono: 'GeistMono', monospace;
@@ -80,9 +82,9 @@
         .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
         .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
         .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
-        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #F5F5F2; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
         .nav-mobile-overlay a:hover { opacity: 1; }
-        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #D4A03A; border: 1px solid rgba(212,160,58,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
 
         /* PAGE HERO */
         .page-hero {
@@ -240,7 +242,7 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-        .cookie-btn:hover { background: var(--accent-dim); border-color: rgba(232,197,71,0.3); }
+        .cookie-btn:hover { background: var(--accent-dim); border-color: rgba(212,160,58,0.3); }
 
         .last-update {
             margin-top: 3rem;
@@ -274,14 +276,6 @@
             .rights-grid { grid-template-columns: 1fr; }
         }
     </style>
-  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
-  </script>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Politique de Confidentialité — Troilo Digital">
     <meta name="twitter:description" content="Politique de confidentialité de Troilo Digital. Comment vos données sont collectées, utilisées, et vos droits RGPD en tant qu'utilisateur du site.">
@@ -291,7 +285,7 @@
 
 <!-- NAV -->
 <nav class="nav">
-    <a href="../" class="nav-logo">Troilo Digital</a>
+    <a href="../" class="nav-logo" aria-label="Troilo Digital — Accueil"><img src="/brand/logo-horizontal-dark.svg" alt="Troilo Digital" width="176" height="45" style="display:block;width:clamp(140px,13vw,176px);height:auto"></a>
     <div class="nav-right">
         <a href="../#work" class="nav-link">Services</a>
         <a href="../#pricing" class="nav-link">Tarifs</a>
@@ -356,6 +350,12 @@
     <strong>Conservation :</strong> 14 mois (paramètre GA4 configuré).<br>
     <strong>Sous-traitant :</strong> Google Ireland Ltd — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique Google</a>. L'anonymisation IP est activée.</p>
 
+    <h3>Via Microsoft Clarity et Meta Pixel</h3>
+    <p>Uniquement si vous avez <strong>accepté les cookies de mesure et d'amélioration</strong>. Ces outils peuvent collecter des interactions de navigation, des clics, des pages consultées et des événements de conversion.</p>
+    <p><strong>Finalité :</strong> améliorer l'expérience du site, comprendre les parcours utilisateurs et mesurer les performances marketing.<br>
+    <strong>Base légale :</strong> consentement (art. 6.1.a RGPD).<br>
+    <strong>Sous-traitants :</strong> Microsoft Ireland Operations Limited — <a href="https://www.microsoft.com/en-us/privacy/privacystatement" target="_blank" rel="noopener">politique Microsoft</a> ; Meta Platforms Ireland Limited — <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">politique Meta</a>.</p>
+
     <h2 id="cookies">3. Cookies</h2>
 
     <table>
@@ -386,10 +386,22 @@
                 <td>24 heures</td>
                 <td>Google Analytics — session utilisateur</td>
             </tr>
+            <tr>
+                <td><code>_clck</code>, <code>_clsk</code></td>
+                <td>Analytique</td>
+                <td>Jusqu'à 12 mois</td>
+                <td>Microsoft Clarity — analyse d'usage et amélioration UX</td>
+            </tr>
+            <tr>
+                <td><code>_fbp</code>, <code>_fbc</code></td>
+                <td>Marketing</td>
+                <td>Jusqu'à 3 mois</td>
+                <td>Meta Pixel — mesure des conversions et campagnes</td>
+            </tr>
         </tbody>
     </table>
 
-    <p>Les cookies analytiques ne sont déposés qu'après votre consentement explicite.</p>
+    <p>Les cookies analytiques et marketing ne sont déposés qu'après votre consentement explicite.</p>
 
     <button class="cookie-btn" onclick="if(window.tdResetConsent) window.tdResetConsent(); else { document.cookie='td_cookie_consent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; location.reload(); }">
         Modifier mes préférences cookies

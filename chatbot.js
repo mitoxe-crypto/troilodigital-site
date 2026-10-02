@@ -85,21 +85,21 @@
     #td-chat-btn {
       position: fixed; bottom: 1.4rem; left: 1.25rem; z-index: 9997;
       width: 56px; height: 56px; border-radius: 50%;
-      background: #0a0a0a;
-      border: 2px solid #e8c547;
+      background: #0B0D0F;
+      border: 2px solid #D4A03A;
       display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 4px 20px rgba(232,197,71,0.2);
+      box-shadow: 0 4px 20px rgba(212,160,58,0.2);
       cursor: pointer; transition: transform .2s, box-shadow .2s;
     }
-    #td-chat-btn:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(232,197,71,0.4); }
-    #td-chat-btn svg { width: 26px; height: 26px; fill: #e8c547; }
+    #td-chat-btn:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(212,160,58,0.4); }
+    #td-chat-btn svg { width: 26px; height: 26px; fill: #D4A03A; }
     /* Pulse ring sonar */
     #td-chat-btn::before, #td-chat-btn::after {
       content: '';
       position: absolute;
       inset: -2px;
       border-radius: 50%;
-      border: 2px solid #e8c547;
+      border: 2px solid #D4A03A;
       animation: td-sonar 2.4s ease-out infinite;
       pointer-events: none;
     }
@@ -111,15 +111,15 @@
     #td-chat-badge {
       position: absolute; top: -4px; right: -4px;
       width: 18px; height: 18px; border-radius: 50%;
-      background: #e8c547; color: #0a0a0a; font-size: 11px; font-weight: 700;
+      background: #D4A03A; color: #0B0D0F; font-size: 11px; font-weight: 700;
       display: flex; align-items: center; justify-content: center;
-      font-family: sans-serif; border: 2px solid #0a0a0a;
+      font-family: sans-serif; border: 2px solid #0B0D0F;
     }
     #td-chat-tooltip {
       position: absolute; left: 64px; top: 50%; transform: translateY(-50%);
-      background: #0a0a0a; color: #e8c547; font-size: .75rem; font-family: 'Satoshi', sans-serif;
+      background: #0B0D0F; color: #D4A03A; font-size: .75rem; font-family: 'Satoshi', sans-serif;
       white-space: nowrap; padding: .35rem .7rem; border-radius: 6px;
-      border: 1px solid rgba(232,197,71,0.25);
+      border: 1px solid rgba(212,160,58,0.25);
       opacity: 0; pointer-events: none; transition: opacity .4s;
     }
     #td-chat-btn:hover #td-chat-tooltip { opacity: 1; }

@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="60" viewBox="0 0 600 60">
-  <rect width="600" height="60" fill="#0a0a0a"/>
-  <text x="20" y="40" font-family="Helvetica Neue, Arial, sans-serif" font-size="28" letter-spacing="0.5">
-    <tspan font-weight="700" fill="#f5f5f0">TROILO</tspan><tspan font-weight="400" fill="#e8c547"> DIGITAL</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="60" viewBox="0 0 600 60" role="img" aria-label="Troilo Digital">
+  <rect width="600" height="60" fill="#0B0D0F"/>
+  <g transform="translate(8 4) scale(.54)" fill="#D4A03A"><path d="M10 12H58L48 24H40V67L26 82V24H10Z"/><path d="M43 24H60C77 24 89 36 89 52C89 69 77 81 60 81H33L45 69H60C70 69 77 62 77 52C77 43 70 36 60 36H45Z"/></g>
+  <rect x="69" y="9" width="1" height="42" fill="#D4A03A"/>
+  <text x="84" y="28" font-family="Satoshi,Arial,sans-serif" font-size="23" font-weight="500" letter-spacing="5" fill="#F5F5F2">TROILO</text>
+  <path d="M84 41H108M250 41H274" stroke="#D4A03A"/>
+  <text x="122" y="45" font-family="Satoshi,Arial,sans-serif" font-size="9" font-weight="500" letter-spacing="5" fill="#D4A03A">DIGITAL</text>
 </svg>

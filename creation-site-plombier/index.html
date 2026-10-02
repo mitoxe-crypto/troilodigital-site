@@ -9,7 +9,9 @@
     <link rel="canonical" href="https://troilodigital.be/creation-site-plombier/">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    <meta property="og:title" content="Site Internet pour Plombier — Troilo Digital">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:title" content="Site Internet pour Plombier — Troilo Digital">
     <meta property="og:description" content="Création de site internet pour plombiers en Wallonie. Urgence 24h, devis en ligne, SEO local Liège Namur Charleroi. Dès 497€.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://troilodigital.be/creation-site-plombier/">
@@ -107,17 +109,17 @@
         @font-face { font-family: 'Instrument Sans'; src: url('/fonts/InstrumentSans-latin.woff2') format('woff2'); font-weight: 400 700; font-display: swap; }
 
         :root {
-            --black: #0a0a0a;
-            --white: #f5f5f0;
+            --black: #0B0D0F;
+            --white: #F5F5F2;
             --gray: #666;
             --gray-light: #999;
-            --accent: #e8c547;
-            --accent-dim: rgba(232,197,71,0.08);
+            --accent: #D4A03A;
+            --accent-dim: rgba(212,160,58,0.08);
             --green: #22c55e;
             --green-dim: rgba(34,197,94,0.08);
             --blue: #3b82f6;
             --blue-dim: rgba(59,130,246,0.08);
-            --surface: #141414;
+            --surface: #1A1D21;
             --border: rgba(255,255,255,0.06);
             --font-display: 'Satoshi', sans-serif;
             --font-body: 'Instrument Sans', sans-serif;
@@ -154,7 +156,7 @@
         .hero h1 .accent { color: var(--accent); }
         .hero-sub { color: var(--gray-light); font-size: clamp(1rem,1.5vw,1.1rem); line-height: 1.75; max-width: 640px; margin: 0 auto 1.25rem; }
         .hero-sub strong { color: var(--white); }
-        .hero-stat-bar { max-width: 580px; margin: 0 auto 2.5rem; padding: 1rem 1.5rem; background: rgba(232,197,71,0.04); border: 1px solid rgba(232,197,71,0.12); border-radius: 10px; font-size: 0.78rem; color: var(--gray); letter-spacing: 0.02em; font-family: var(--font-display); }
+        .hero-stat-bar { max-width: 580px; margin: 0 auto 2.5rem; padding: 1rem 1.5rem; background: rgba(212,160,58,0.04); border: 1px solid rgba(212,160,58,0.12); border-radius: 10px; font-size: 0.78rem; color: var(--gray); letter-spacing: 0.02em; font-family: var(--font-display); }
         .hero-stat-bar span { color: var(--accent); font-weight: 700; }
         .hero-price { font-family: var(--font-display); font-size: clamp(3rem,8vw,5rem); font-weight: 700; color: var(--accent); letter-spacing: -0.04em; margin-bottom: 0.4rem; }
         .hero-price-note { font-size: 0.72rem; color: var(--gray); margin-bottom: 2rem; font-family: var(--font-display); }
@@ -185,7 +187,7 @@
         .why-content { max-width: 780px; margin: 0 auto; }
         .why-content p { color: var(--gray-light); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.25rem; }
         .why-content p strong { color: var(--white); }
-        .why-callout { margin: 2rem 0; padding: 1.5rem 2rem; background: rgba(232,197,71,0.04); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; }
+        .why-callout { margin: 2rem 0; padding: 1.5rem 2rem; background: rgba(212,160,58,0.04); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; }
         .why-callout p { color: var(--white); font-size: 0.95rem; line-height: 1.7; margin: 0; }
         .why-callout p em { color: var(--accent); font-style: normal; font-weight: 700; }
         .why-keywords { margin-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
@@ -201,7 +203,7 @@
         .included { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); }
         .included-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; max-width: 1000px; margin: 0 auto; }
         .included-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: border-color 0.3s; }
-        .included-card:hover { border-color: rgba(232,197,71,0.15); }
+        .included-card:hover { border-color: rgba(212,160,58,0.15); }
         .ic-num { font-size: 0.65rem; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 1rem; font-family: var(--font-display); }
         .included-card h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; }
         .included-card p { color: var(--gray-light); font-size: 0.85rem; line-height: 1.6; }
@@ -210,7 +212,7 @@
         .musthaves { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); background: linear-gradient(180deg, rgba(59,130,246,0.03) 0%, transparent 100%); }
         .musthaves-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.25rem; }
         .mh-item { display: grid; grid-template-columns: 3rem 1fr; gap: 1.25rem; align-items: start; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; transition: border-color 0.3s; }
-        .mh-item:hover { border-color: rgba(232,197,71,0.15); }
+        .mh-item:hover { border-color: rgba(212,160,58,0.15); }
         .mh-num { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--accent); opacity: 0.35; line-height: 1; }
         .mh-item h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem; }
         .mh-item p { color: var(--gray-light); font-size: 0.88rem; line-height: 1.6; }
@@ -220,8 +222,8 @@
         .pricing { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); }
         .pricing-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; max-width: 1050px; margin: 0 auto; }
         .p-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2.5rem; display: flex; flex-direction: column; transition: border-color 0.3s; }
-        .p-card:hover { border-color: rgba(232,197,71,0.2); }
-        .p-card-popular { border-color: rgba(232,197,71,0.3); position: relative; }
+        .p-card:hover { border-color: rgba(212,160,58,0.2); }
+        .p-card-popular { border-color: rgba(212,160,58,0.3); position: relative; }
         .p-card-best { border-color: rgba(34,197,94,0.3); position: relative; }
         .p-card-popular::before { content: 'Populaire'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; background: var(--accent); color: var(--black); padding: 0.2rem 0.8rem; border-radius: 100px; white-space: nowrap; }
         .p-card-best::before { content: 'Meilleur ROI'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; background: var(--green); color: var(--black); padding: 0.2rem 0.8rem; border-radius: 100px; white-space: nowrap; }
@@ -244,7 +246,7 @@
         .faq { padding: clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,4rem); border-top: 1px solid var(--border); }
         .faq-list { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
         .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: border-color 0.3s; }
-        .faq-item:hover { border-color: rgba(232,197,71,0.15); }
+        .faq-item:hover { border-color: rgba(212,160,58,0.15); }
         .faq-q { width: 100%; background: none; border: none; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; color: var(--white); font-family: var(--font-body); font-size: 0.9rem; font-weight: 500; text-align: left; }
         .faq-icon { color: var(--accent); font-size: 1.2rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 1rem; }
         .faq-item.open .faq-icon { transform: rotate(45deg); }
@@ -302,7 +304,7 @@
 <body>
 
 <nav class="nav" aria-label="Navigation principale">
-    <a href="/" class="nav-logo">Troilo<span>Digital</span></a>
+    <a href="/" class="nav-logo" aria-label="Troilo Digital — Accueil"><img src="/brand/logo-horizontal-dark.svg" alt="Troilo Digital" width="176" height="45" style="display:block;width:clamp(140px,13vw,176px);height:auto"></a>
     <div class="nav-right">
         <a href="/audit-seo-complet/" class="nav-link">Audit SEO</a>
         <a href="/creation-site-artisan/" class="nav-link">Sites artisans</a>

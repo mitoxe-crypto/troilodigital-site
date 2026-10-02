@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="18" fill="#0f1e3c"/>
-  <text x="50" y="62" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#C9A84C" text-anchor="middle" letter-spacing="-2">TD</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Troilo Digital">
+  <rect width="64" height="64" rx="13" fill="#0B0D0F"/>
+  <g transform="translate(6 6) scale(.54)" fill="#D4A03A"><path d="M10 12H58L48 24H40V67L26 82V24H10Z"/><path d="M43 24H60C77 24 89 36 89 52C89 69 77 81 60 81H33L45 69H60C70 69 77 62 77 52C77 43 70 36 60 36H45Z"/></g>
 </svg>

@@ -6,9 +6,11 @@
     <title>Troilo Digital — Agence SEO Liège | Artisans Wallonie</title>
 <meta name="robots" content="index, follow">
 <meta name="description" content="Consultant SEO pour artisans et PME wallons. Audit SEO, création de site, visibilité locale. Michel Troilo — résultats mesurables dès 197€.">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#0B0D0F">
 <meta name="google-site-verification" content="KvdXlbG7c22qXZDyiEQhPewOi4QpZg7M2Y93mL3mr5c">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="canonical" href="https://troilodigital.be/">
 <link rel="alternate" hreflang="fr" href="https://troilodigital.be/">
 <link rel="alternate" hreflang="x-default" href="https://troilodigital.be/">
@@ -34,13 +36,13 @@
         @font-face { font-family: 'GeistMono'; src: url('/fonts/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 
         :root {
-            --black: #0a0a0a;
-            --white: #f5f5f0;
-            --gray: #666;
-            --gray-light: #999;
-            --accent: #e8c547;
-            --accent-dim: rgba(232,197,71,0.08);
-            --surface: #141414;
+            --black: #0B0D0F;
+            --white: #F5F5F2;
+            --gray: #73767b;
+            --gray-light: #A7A7A7;
+            --accent: #D4A03A;
+            --accent-dim: rgba(212,160,58,0.08);
+            --surface: #1A1D21;
             --border: rgba(255,255,255,0.06);
             --font-display: 'Satoshi', sans-serif;
             --font-body: 'Instrument Sans', sans-serif;
@@ -54,9 +56,9 @@
 
         /* ===== CURSOR ===== */
         .cur { width: 12px; height: 12px; background: var(--accent); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; transform: translate(-50%,-50%); mix-blend-mode: difference; transition: transform 0.15s; }
-        .cur-t { width: 44px; height: 44px; border: 1px solid rgba(232,197,71,0.25); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); transition: all 0.2s ease-out; }
+        .cur-t { width: 44px; height: 44px; border: 1px solid rgba(212,160,58,0.25); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); transition: all 0.2s ease-out; }
         .cur.big { transform: translate(-50%,-50%) scale(5); }
-        .cur-t.big { width: 80px; height: 80px; border-color: rgba(232,197,71,0.08); }
+        .cur-t.big { width: 80px; height: 80px; border-color: rgba(212,160,58,0.08); }
 
         /* ===== LOADER ===== */
         .loader { position: fixed; inset: 0; background: var(--black); z-index: 20000; display: flex; flex-direction: column; align-items: center; justify-content: center; }
@@ -66,8 +68,10 @@
         .loader-pct { font-family: var(--font-mono); font-size: 0.75rem; color: var(--gray); margin-top: 1.5rem; letter-spacing: 0.1em; }
 
         /* ===== NAV ===== */
-        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1.5rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; mix-blend-mode: difference; opacity: 0; }
-        .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 900; color: var(--white); text-decoration: none; letter-spacing: -0.03em; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1rem clamp(1.5rem,5vw,4rem); display: flex; justify-content: space-between; align-items: center; background: rgba(11,13,15,0.84); border-bottom: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); opacity: 0; }
+        .nav-logo { display: inline-flex; align-items: center; min-width: 140px; min-height: 44px; text-decoration: none; }
+        .nav-logo img { display: block; width: min(176px,40vw); height: auto; }
+        .nav-logo:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
         .nav-right { display: flex; gap: 2.5rem; align-items: center; }
         .nav-link { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em; opacity: 0.7; transition: opacity 0.3s; }
         .nav-link:hover { opacity: 1; }
@@ -81,7 +85,7 @@
         .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
         .nav-mobile-overlay a { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
         .nav-mobile-overlay a:hover { opacity: 1; }
-        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: var(--accent); border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: var(--radius-sm); }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: var(--accent); border: 1px solid rgba(212,160,58,0.3); padding: 0.6rem 1.5rem; border-radius: var(--radius-sm); }
 
         /* ===== HERO ===== */
         .hero { height: 280vh; position: relative; }
@@ -115,7 +119,7 @@
         .hscroll-header p { color: var(--gray); font-size: 0.85rem; max-width: 280px; text-align: right; line-height: 1.5; }
         .cards-track { display: flex; gap: 1.25rem; padding: 0 clamp(1.5rem,5vw,4rem); width: max-content; }
         .card { width: clamp(300px,28vw,380px); background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; flex-shrink: 0; transition: transform 0.5s cubic-bezier(.4,0,.2,1), border-color 0.3s; }
-        .card:hover { transform: translateY(-10px); border-color: rgba(232,197,71,0.15); }
+        .card:hover { transform: translateY(-10px); border-color: rgba(212,160,58,0.15); }
         .card-top { height: 160px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
         .card-gradient { width: 100%; height: 100%; transition: transform 0.7s cubic-bezier(.4,0,.2,1); position: absolute; inset: 0; }
         .card-icon { position: relative; z-index: 1; opacity: 0.6; }
@@ -177,9 +181,9 @@
         .pricing h2 { font-family: var(--font-display); font-size: clamp(2rem,5vw,3.5rem); font-weight: 900; letter-spacing: -0.05em; }
         .pricing-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; max-width: 1300px; margin: 0 auto; }
         .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; display: flex; flex-direction: column; transition: border-color 0.3s; }
-        .price-card.feat { border-color: rgba(232,197,71,0.3); position: relative; }
+        .price-card.feat { border-color: rgba(212,160,58,0.3); position: relative; }
         .price-card.feat::before { content: 'Populaire'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; background: var(--accent); color: var(--black); padding: 0.2rem 0.8rem; border-radius: 100px; }
-        .price-card:hover { border-color: rgba(232,197,71,0.2); }
+        .price-card:hover { border-color: rgba(212,160,58,0.2); }
         .price-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; }
         .price-amount { font-family: var(--font-display); font-size: 2.5rem; font-weight: 900; color: var(--accent); letter-spacing: -0.03em; }
         .price-period { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); margin-bottom: 1.5rem; }
@@ -199,7 +203,7 @@
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto; align-items: start; }
         .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
         .contact-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; transition: border-color 0.3s; }
-        .contact-card:hover { border-color: rgba(232,197,71,0.15); }
+        .contact-card:hover { border-color: rgba(212,160,58,0.15); }
         .contact-card-label { font-family: var(--font-mono); font-size: 0.65rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; }
         .contact-card a { color: var(--white); text-decoration: none; font-size: 1rem; font-weight: 500; transition: color 0.3s; }
         .contact-card a:hover { color: var(--accent); }
@@ -238,7 +242,7 @@
             .pricing-grid { grid-template-columns: 1fr; max-width: 460px; }
         }
         .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: border-color 0.3s; }
-        .faq-item:hover { border-color: rgba(232,197,71,0.15); }
+        .faq-item:hover { border-color: rgba(212,160,58,0.15); }
         .faq-q { width: 100%; background: none; border: none; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; color: var(--white); font-family: var(--font-body); font-size: 0.9rem; font-weight: 500; text-align: left; }
         .faq-icon { color: var(--accent); font-size: 1.2rem; transition: transform 0.3s; }
         .faq-item.open .faq-icon { transform: rotate(45deg); }
@@ -315,68 +319,7 @@
   "publisher": {"@id": "https://troilodigital.be/#organization"}
 }
 </script>
-  <!-- Google Tag GT-TQS9X4N9 → GA4 G-LW314GTBSZ -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQS9X4N9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag('config', 'GT-TQS9X4N9', { anonymize_ip: true });
-  </script>
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "w3tmcesoy0");
-  </script>
-  <!-- Meta Pixel — Troilo Digital Event Data (ID: 2207782226698486) -->
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init','2207782226698486');
-    fbq('track','PageView');
-
-    // ── Meta CAPI — tracking côté serveur (déduplication via event_id) ──
-    // Envoie le même PageView à notre Netlify Function qui relaie vers Meta CAPI.
-    // L'event_id identique assure que Meta ne compte pas le même event deux fois.
-    (function sendCAPIPageView() {
-      var eventId = 'pv-' + Date.now() + '-' + Math.random().toString(36).slice(2, 9);
-
-      // Lire les cookies Meta si présents (améliorent la correspondance)
-      function getCookie(name) {
-        var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
-        return m ? m.pop() : undefined;
-      }
-
-      var userData = {};
-      var fbp = getCookie('_fbp');
-      var fbc = getCookie('_fbc');
-      if (fbp) userData.fbp = fbp;
-      if (fbc) userData.fbc = fbc;
-
-      fetch('/.netlify/functions/meta-capi', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          event_name: 'PageView',
-          event_id: eventId,
-          event_source_url: window.location.href,
-          user_data: Object.keys(userData).length ? userData : undefined,
-        }),
-      }).catch(function() { /* silencieux — le Pixel navigateur reste le fallback */ });
-
-      // Stocker l'eventId pour déduplication si fbq supporte setExtraInfo
-      // (non bloquant si l'API n'existe pas)
-      try { fbq('set', 'agent', eventId, '2207782226698486'); } catch(e) {}
-    })();
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2207782226698486&ev=PageView&noscript=1"/></noscript>
-  <!-- End Meta Pixel -->
+  <script src="/cookie-banner.js" defer></script>
 </head>
 <body>
 
@@ -392,7 +335,7 @@
 
 <!-- NAV -->
 <nav class="nav" id="nav">
-    <a href="/" class="nav-logo">Troilo Digital</a>
+    <a href="/" class="nav-logo" aria-label="Troilo Digital — Accueil"><img src="/brand/logo-horizontal-dark.svg" alt="Troilo Digital" width="176" height="45"></a>
     <div class="nav-right">
         <a href="#work" class="nav-link">Services</a>
         <a href="#pricing" class="nav-link">Tarifs</a>
@@ -448,7 +391,7 @@
     </div>
     <div class="cards-track" id="cardsTrack">
         <div class="card"><div class="card-top"><div class="card-gradient cg1"></div><span class="card-number">01</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg><div class="card-stat">3</div><div class="card-stat-label">places visibles<br>sur la carte</div></div></div><div class="card-body"><h3>Google Maps</h3><p>La carte avec 3 résultats : si vous n'y êtes pas, le client appelle quelqu'un d'autre. On vérifie et on corrige.</p></div></div>
-        <div class="card"><div class="card-top"><div class="card-gradient cg2"></div><span class="card-number">02</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div class="card-stat">3s</div><div class="card-stat-label">et Google vous<br>fait disparaitre</div></div></div><div class="card-body"><h3>Votre site est lent</h3><p>Plus de 3 secondes sur mobile = Google vous cache. On mesure la vitesse, les erreurs, tout ce que Google regarde.</p></div></div>
+        <div class="card"><div class="card-top"><div class="card-gradient cg2"></div><span class="card-number">02</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div class="card-stat">3s</div><div class="card-stat-label">et vos clients<br>attendent</div></div></div><div class="card-body"><h3>Votre site est lent</h3><p>Plus de 3 secondes sur mobile peut freiner votre visibilité et vos demandes. On mesure la vitesse, les erreurs, tout ce que Google regarde.</p></div></div>
         <div class="card"><div class="card-top"><div class="card-gradient cg3"></div><span class="card-number">03</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><line x1="1" y1="1" x2="23" y2="23" stroke-width="2"/></svg><div class="card-stat">0</div><div class="card-stat-label">mot-clé trouvé<br>par Google</div></div></div><div class="card-body"><h3>Contenu invisible</h3><p>Votre site dit "bienvenue" au lieu de "plombier à Liège". Google ne devine pas — on écrit ce que vos clients cherchent.</p></div></div>
         <div class="card"><div class="card-top"><div class="card-gradient cg4"></div><span class="card-number">04</span><div class="card-visual"><svg class="card-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg><div class="card-stat">#1</div><div class="card-stat-label">vs votre position<br>actuelle</div></div></div><div class="card-body"><h3>Le concurrent fait mieux</h3><p>Pas plus beau — juste mieux organisé pour Google. On analyse ce qu'il fait et comment le rattraper.</p></div></div>
     </div>
@@ -497,7 +440,7 @@
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:14px;overflow:hidden;">
             <div style="padding:0.6rem 1.25rem;background:rgba(255,255,255,0.02);font-family:var(--font-mono);font-size:0.6rem;color:var(--gray);letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid var(--border);">Grosse agence</div>
-            <div style="padding:0.6rem 1.25rem;background:rgba(232,197,71,0.04);font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid var(--border);border-left:1px solid var(--border);">Troilo Digital</div>
+            <div style="padding:0.6rem 1.25rem;background:rgba(212,160,58,0.04);font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid var(--border);border-left:1px solid var(--border);">Troilo Digital</div>
 
             <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--gray);border-bottom:1px solid var(--border);">Prix cachés — devis sur mesure, souvent 600€+/mois</div>
             <div style="padding:0.9rem 1.25rem;font-size:0.82rem;color:var(--white);border-bottom:1px solid var(--border);border-left:1px solid var(--border);">Tarifs affichés. 397€ one-shot, sans surprise.</div>
@@ -528,14 +471,14 @@
         </div>
         <div class="ba-col">
             <span class="ba-tag green">Après corrections</span>
-            <div class="ba-row"><span>Position Google</span><span class="green">Top 3–5</span></div>
-            <div class="ba-row"><span>Trafic mensuel</span><span class="green">~200–345 visites</span></div>
+            <div class="ba-row"><span>Position Google</span><span class="green">Top 3–5 observé</span></div>
+            <div class="ba-row"><span>Trafic mensuel</span><span class="green">~200–345 visites observées</span></div>
             <div class="ba-row"><span>Schema structuré</span><span class="green">LocalBusiness actif</span></div>
             <div class="ba-row"><span>Fiche Google</span><span class="green">Optimisée</span></div>
             <div class="ba-row"><span>Annuaires locaux</span><span class="green">3+ citations NAP</span></div>
         </div>
     </div>
-    <p class="ba-note">Exemple concret — secteur alimentaire, province de Liège — résultats variables selon secteur et niveau de concurrence. Nom masqué par confidentialité.</p>
+    <p class="ba-note">Exemple observé — secteur alimentaire, province de Liège — résultats variables selon secteur et niveau de concurrence. Nom masqué par confidentialité.</p>
 </section>
 
 <!-- PRICING -->
@@ -564,7 +507,7 @@
 
         <!-- Audit Essentiel -->
         <div class="price-card">
-            <div style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;background:rgba(232,197,71,0.08);color:var(--accent);border:1px solid rgba(232,197,71,0.2);padding:0.2rem 0.7rem;border-radius:100px;display:inline-block;margin-bottom:0.75rem;">Bilan complet</div>
+            <div style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;background:rgba(212,160,58,0.08);color:var(--accent);border:1px solid rgba(212,160,58,0.2);padding:0.2rem 0.7rem;border-radius:100px;display:inline-block;margin-bottom:0.75rem;">Bilan complet</div>
             <div class="price-name">Audit Essentiel</div>
             <div class="price-amount">197€</div>
             <div class="price-period">One-shot &middot; Livr&eacute; en 5 jours ouvrables</div>
@@ -578,9 +521,9 @@
             <a href="/audit-seo-essentiel/" class="price-btn">Voir le d&eacute;tail &rarr;</a>
         </div>
 
-        <!-- Plan de Domination -->
+        <!-- Audit Complet -->
         <div class="price-card feat">
-            <div class="price-name">Plan de Domination</div>
+            <div class="price-name">Audit Complet</div>
             <div class="price-amount">397€</div>
             <div class="price-period">One-shot &middot; Livr&eacute; en 5 jours ouvrables</div>
             <ul class="price-list">
@@ -595,19 +538,19 @@
             <a href="/audit-seo-complet/" class="price-btn">Voir le d&eacute;tail &rarr;</a>
         </div>
 
-        <!-- Mise en Orbite -->
+        <!-- Audit + Implémentation -->
         <div class="price-card">
-            <div class="price-name">Mise en Orbite</div>
+            <div class="price-name">Audit + Implémentation</div>
             <div class="price-amount">997€</div>
             <div class="price-period">Audit complet + corrections + suivi 30j</div>
             <ul class="price-list">
-                <li>Tout le Plan de Domination inclus</li>
+                <li>Tout l'Audit Complet inclus</li>
                 <li>Corrections appliqu&eacute;es &agrave; votre place</li>
                 <li>Schema + technique d&eacute;ploy&eacute;s</li>
                 <li>Suivi GSC J+7 et J+30</li>
                 <li>Vous ne faites rien c&ocirc;t&eacute; technique</li>
             </ul>
-            <a href="https://wa.me/32492222677?text=Bonjour%20Michel%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20Mise%20en%20Orbite." class="price-btn">Parler &agrave; Michel &rarr;</a>
+            <a href="https://wa.me/32492222677?text=Bonjour%20Michel%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27Audit%20%2B%20Impl%C3%A9mentation." class="price-btn">Parler &agrave; Michel &rarr;</a>
         </div>
 
     </div>
@@ -626,14 +569,14 @@
         <p style="color:var(--gray);font-size:0.9rem;margin-top:0.5rem;max-width:520px;margin-left:auto;margin-right:auto;">L'audit révèle les problèmes. Ces services les règlent — ou vous évitent d'en avoir.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;max-width:900px;margin:0 auto;">
-        <a href="/creation-site-artisan/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.75rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.25)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <a href="/creation-site-artisan/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.75rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(212,160,58,0.25)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
             <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">Site web</div>
             <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:800;color:var(--white);margin-bottom:0.4rem;">Création de site artisan</div>
             <div style="font-size:0.82rem;color:var(--gray);line-height:1.5;margin-bottom:1rem;">Responsive, rapide, optimisé dès le départ. Hébergement inclus 1 an. Livré en 7 jours.</div>
             <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--accent);">dès 497€</div>
             <div style="font-size:0.75rem;color:var(--gray);margin-top:0.25rem;">one-shot, sans abonnement</div>
         </a>
-        <a href="/agent-ia-artisan/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.75rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.25)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <a href="/agent-ia-artisan/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.75rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(212,160,58,0.25)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
             <div style="font-family:var(--font-mono);font-size:0.55rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.75rem;">Réceptionniste IA</div>
             <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:800;color:var(--white);margin-bottom:0.4rem;">Réceptionniste IA pour artisans</div>
             <div style="font-size:0.82rem;color:var(--gray);line-height:1.5;margin-bottom:1rem;">Répond à vos prospects 24h/24 — WhatsApp ou site. Qualifie, organise, vous envoie un récap.</div>
@@ -651,7 +594,7 @@
     <div style="max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:0.5rem;" id="faqList">
         <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Avez-vous besoin de mes accès WordPress ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Non. L'audit est 100% externe. On analyse votre site comme le fait Google — de l'extérieur. Aucun mot de passe, aucun accès requis.</div></div></div>
         <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Combien de temps avant de voir des résultats ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Les corrections techniques sont visibles en 2 à 6 semaines dans Google Search Console. Pour les rankings locaux, comptez 1 à 3 mois selon la concurrence.</div></div></div>
-        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Quelle différence entre l'Audit Essentiel et le Plan de Domination ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">L'<a href="/audit-seo-essentiel/" style="color:var(--accent)">Audit Essentiel (197€)</a> analyse 20 points critiques et vous remet un plan d'action clair. Le <strong>Plan de Domination (397€)</strong> couvre 40+ points, inclut l'analyse concurrentielle complète, les volumes keyword réels (DataForSEO), le schema JSON-LD et les meta descriptions prêtes à déployer. Avec le Complet, vous n'avez plus qu'à copier-coller.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Quelle différence entre l'Audit Essentiel et l'Audit Complet ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">L'<a href="/audit-seo-essentiel/" style="color:var(--accent)">Audit Essentiel (197€)</a> analyse 20 points critiques et vous remet un plan d'action clair. L'<strong>Audit Complet (397€)</strong> couvre 40+ points, inclut l'analyse concurrentielle complète, les volumes keyword réels (DataForSEO), le schema JSON-LD et les meta descriptions prêtes à déployer. Avec le Complet, vous n'avez plus qu'à copier-coller.</div></div></div>
         <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Mon site est déjà sur Google — pourquoi un audit ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Être "sur Google" et être trouvé par vos clients, c'est différent. Si votre site apparaît en page 3 ou 4, vos concurrents captent vos clients à votre place. L'audit identifié exactement pourquoi.</div></div></div>
         <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Vous travaillez avec WordPress, Wix, site sur mesure ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Oui. L'audit analyse n'importe quel site web. Pour l'implémentation, on s'adapte à votre CMS. Si vous n'avez pas accès technique, on explique comment transmettre les instructions à votre webmaster.</div></div></div>
         <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Proposez-vous un suivi mensuel après l'audit ?</span><span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Oui. Trois formules sans engagement : Suivi (297€/mois) pour un rapport mensuel + 1 correction, Croissance (497€/mois) pour 3 corrections + 1 contenu SEO rédigé, Domination (797€/mois) pour des correctifs illimités + 3 contenus/mois. L'audit n'est pas obligatoire pour démarrer un suivi, mais fortement recommandé pour avoir une baseline.</div></div></div>
@@ -666,12 +609,12 @@
         <a href="/blog/" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent);text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;">Voir tout →</a>
     </div>
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;" id="blogCards">
-        <a href="/blog/pourquoi-votre-site-est-invisible-sur-google/" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.15)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <a href="/blog/pourquoi-votre-site-est-invisible-sur-google/" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(212,160,58,0.15)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
             <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;">Guide SEO</div>
             <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:0.5rem;">7 raisons pour lesquelles votre site est invisible sur Google</div>
             <div style="font-size:0.8rem;color:var(--gray);line-height:1.5;">Les erreurs techniques qui empêchent Google de trouver votre site.</div>
         </a>
-        <a href="/blog/quest-ce-que-le-llms-txt/" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(232,197,71,0.15)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <a href="/blog/quest-ce-que-le-llms-txt/" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(212,160,58,0.15)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='none'">
             <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;">IA & SEO</div>
             <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:0.5rem;">Qu'est-ce que le llms.txt ?</div>
             <div style="font-size:0.8rem;color:var(--gray);line-height:1.5;">Le fichier qui rend votre site lisible par ChatGPT et Perplexity.</div>
@@ -726,7 +669,7 @@
                     <option value="question">Juste une question</option>
                 </select>
                 <textarea name="message" placeholder="Décrivez votre situation..." rows="3" style="padding:0.75rem 1rem;background:var(--black);border:1px solid var(--border);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:0.9rem;outline:none;resize:vertical;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'"></textarea>
-                <button type="submit" style="padding:0.85rem;background:var(--accent);color:var(--black);border:none;border-radius:100px;font-family:var(--font-body);font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.3s;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 0 30px rgba(232,197,71,0.3)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='none'">Envoyer →</button>
+                <button type="submit" style="padding:0.85rem;background:var(--accent);color:var(--black);border:none;border-radius:100px;font-family:var(--font-body);font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.3s;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 0 30px rgba(212,160,58,0.3)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='none'">Envoyer →</button>
             </form>
         </div>
     </div>
@@ -832,9 +775,6 @@ function closeMobileNav(){navBurger.classList.remove('open');navOverlay.classLis
 <script defer src="/chatbot.js?v=20260422"></script>
 <!-- Facebook Customer Chat Plugin — connecté à ManyChat -->
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-  src="https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js">
-</script>
 <div class="fb-customerchat"
   attribution="biz_inbox"
   page_id="1085206458007435"

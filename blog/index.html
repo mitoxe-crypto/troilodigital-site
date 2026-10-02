@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="alternate icon" href="/favicon.svg">
-    <meta name="theme-color" content="#0a0a0a">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate icon" href="/favicon.svg">
+    <meta name="theme-color" content="#0B0D0F">
     <title>Blog SEO — Conseils pour artisans | Troilo Digital</title>
     <meta name="description" content="Articles et conseils SEO pratiques pour artisans et PMEs en Wallonie. Référencement local, Google Business Profile, AI-Ready SEO — expliques simplement.">
     <link rel="canonical" href="https://troilodigital.be/blog/">
@@ -60,13 +62,13 @@
         @font-face { font-family: 'GeistMono'; src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 
         :root {
-            --black: #0a0a0a;
-            --white: #f5f5f0;
+            --black: #0B0D0F;
+            --white: #F5F5F2;
             --gray: #666;
             --gray-light: #999;
-            --accent: #e8c547;
-            --accent-dim: rgba(232,197,71,0.08);
-            --surface: #141414;
+            --accent: #D4A03A;
+            --accent-dim: rgba(212,160,58,0.08);
+            --surface: #1A1D21;
             --border: rgba(255,255,255,0.06);
             --font-display: 'Satoshi', sans-serif;
             --font-body: 'Instrument Sans', sans-serif;
@@ -92,9 +94,9 @@
         .nav-burger.open span:nth-child(3) { transform: rotate(-45deg) translate(3px, -4px); }
         .nav-mobile-overlay { position: fixed; inset: 0; background: rgba(10,10,10,0.97); z-index: 195; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
         .nav-mobile-overlay.open { opacity: 1; pointer-events: auto; }
-        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #f5f5f0; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
+        .nav-mobile-overlay a { font-family: var(--font-display, 'Satoshi', sans-serif); font-size: 1.5rem; font-weight: 700; color: #F5F5F2; text-decoration: none; letter-spacing: -0.02em; opacity: 0.7; transition: opacity 0.3s; }
         .nav-mobile-overlay a:hover { opacity: 1; }
-        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #e8c547; border: 1px solid rgba(232,197,71,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
+        .nav-mobile-overlay .nav-cta { font-size: 1.2rem; color: #D4A03A; border: 1px solid rgba(212,160,58,0.3); padding: 0.6rem 1.5rem; border-radius: 0.5rem; }
 
         /* HERO */
         .blog-hero {
@@ -108,7 +110,7 @@
             top: 0; left: 50%;
             width: 600px; height: 400px;
             transform: translateX(-50%);
-            background: radial-gradient(circle, rgba(232,197,71,0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(212,160,58,0.05) 0%, transparent 70%);
             pointer-events: none;
         }
         .breadcrumb-inline {
@@ -166,7 +168,7 @@
         }
         .article-card:hover {
             transform: translateY(-8px);
-            border-color: rgba(232,197,71,0.2);
+            border-color: rgba(212,160,58,0.2);
         }
         .article-card-img {
             height: 160px;
@@ -206,7 +208,7 @@
             margin-bottom: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            border: 1px solid rgba(232,197,71,0.12);
+            border: 1px solid rgba(212,160,58,0.12);
             width: fit-content;
         }
         .article-card h2 {
@@ -310,7 +312,7 @@
 
     <!-- NAV -->
     <nav class="nav">
-        <a href="../" class="nav-logo">Troilo Digital</a>
+        <a href="../" class="nav-logo" aria-label="Troilo Digital — Accueil"><img src="/brand/logo-horizontal-dark.svg" alt="Troilo Digital" width="176" height="45" style="display:block;width:clamp(140px,13vw,176px);height:auto"></a>
         <div class="nav-right">
             <a href="../#work" class="nav-link">Services</a>
             <a href="../#pricing" class="nav-link">Tarifs</a>
@@ -427,6 +429,19 @@
                     <p>En 45 minutes, redistribuez l'autorité de votre site pour faire remonter vos pages de services — méthode silo, ancres efficaces et erreurs à éviter expliquées sans jargon.</p>
                     <div class="article-card-meta">
                         <span>1er juin 2026 &middot; 9 min</span>
+                        <span class="article-read">Lire &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="combien-clients-perdez-vous-google-artisan/" class="article-card">
+                <div class="article-card-img"><div class="card-gradient cg3"></div><span class="card-num">21</span></div>
+                <div class="article-card-body">
+                    <span class="article-tag">Référencement local</span>
+                    <h2>Combien de clients perdez-vous chaque mois sur Google ? Le calcul exact</h2>
+                    <p>La formule Volume × CTR × Conversion appliquée à 4 métiers wallons : plombier, chauffagiste, menuisier, titres-services. Entre 300 € et 5 000 € de revenus mensuels qui passent à côté.</p>
+                    <div class="article-card-meta">
+                        <span>26 mai 2026 &middot; 11 min</span>
                         <span class="article-read">Lire &rarr;</span>
                     </div>
                 </div>

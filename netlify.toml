@@ -47,17 +47,6 @@
   to   = "/score-gratuit/"
   status = 301
 
-# ── Redirect audit-seo-essentiel → score-gratuit (produit 197€ → gratuit) ──
-[[redirects]]
-  from = "/audit-seo-essentiel/"
-  to   = "/score-gratuit/"
-  status = 301
-
-[[redirects]]
-  from = "/audit-seo-essentiel"
-  to   = "/score-gratuit/"
-  status = 301
-
 # ── Short link Agent IA (tracking cold outreach) ──
 [[redirects]]
   from = "/d/agent-ia"
